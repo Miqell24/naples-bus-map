@@ -21,7 +21,19 @@ const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
 // m — longer jumps between shape points are GTFS data gaps. Inside a real gap
 // the HMM bridges by routing instead of interpolating observations, which would
 // fabricate straight-line detours through side streets.
-const GAP_MIN = 300;
+// ANM's shapes are coarse: a straight leg of 200-400 m between two points is
+// routine, and resampling it every 20 m invents observations along the chord.
+// On a motorway node those fake points land on ramps and the matcher follows
+// them (line 169P collected 57 roundabout segments and 21% extra kilometres).
+// Below this length a leg is real geometry to follow; above it, it is a gap:
+// no invented observations, bridged by routing — and if the bridge wanders,
+// the operator's own trace is drawn (GAP_DETOUR).
+const GAP_MIN = 150;
+// A bridge over such a gap may be at most this much longer than the straight
+// leg it replaces; beyond that the operator's own trace is drawn instead. Tight
+// here on purpose — see lib/hmm.mjs for why ANM's coarse shapes need it.
+const GAP_DETOUR = 1.35;
+const GAP_DETOUR_M = 120;
 // m — a pole closer than this to the matched axis is inside the track corridor:
 // its coordinate carries no usable side signal and the half-disc falls back to
 // the right-hand rule (see the stop pass). Named after the case that set it:
@@ -560,7 +572,7 @@ async function processMode(cfg) {
       // 2.5× contraflow surcharge otherwise out-costs real distance and the
       // bridge circles the block (X499 rectangle at El Kafr, user report:
       // Nahia Axis' eastbound carriageway is unmapped in OSM there)
-      opts = { gapMin: GAP_MIN };
+      opts = { gapMin: GAP_MIN, gapDetour: GAP_DETOUR, gapDetourM: GAP_DETOUR_M };
       // metro shapes are tunnel approximations — often 40–70 m off the OSM
       // subway axis (street-grid drawn), so the snap net widens and the
       // emission softens; surface trams keep the tight default

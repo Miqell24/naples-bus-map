@@ -129,6 +129,15 @@ export function matchShape(graph, pts, opts = {}) {
   // legs longer than this are GTFS shape gaps: bridge them on raw meters
   // (noPen) so the bridge hugs the corridor instead of dodging soft oneways
   const gapMin = opts.gapMin ?? Infinity;
+  // How much longer than the raw trace a bridge over a shape gap may come out
+  // before it is thrown away and the trace itself is drawn. ANM publishes very
+  // coarse shapes — 101 of the 114 Naples lines have legs over 300 m, 904 in
+  // total — and on a motorway node a bridge that is merely 1.8× the straight
+  // leg is already a ramp loop the bus never takes (line 169P drew 21% more
+  // kilometres than its own shape). Cities with dense shapes keep the loose
+  // default, which only catches the absurd cases.
+  const gapDetour = opts.gapDetour ?? 2.2;
+  const gapDetourM = opts.gapDetourM ?? 150;
 
   const obs = [];
   let skipped = 0;
@@ -242,7 +251,7 @@ export function matchShape(graph, pts, opts = {}) {
     // Kafr drew an 850 m rectangle over a 340 m straight corridor.
     const wildDetour = conn && (
       ((isBreak || spansSkipped) && conn.d > Math.max(rawLen * 2.5, rawLen + 150)) ||
-      (noPen && conn.d > Math.max(rawLen * 2.2, rawLen + 150)));
+      (noPen && conn.d > Math.max(rawLen * gapDetour, rawLen + gapDetourM)));
     if (conn && !wildDetour) {
       appendCoords(coords, conn.coords);
       if (conn.nodesPath) {
