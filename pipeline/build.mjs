@@ -173,7 +173,16 @@ if (tramAll || tramSel.length) MODES.push(railCfg('trams', ['tram'], ['0']));
 const otherLine = (name) => (e) => { const n = e.tags?.name; return !n || n === name; };
 if (tramAll || metroSel.includes('L1')) MODES.push(railCfg('metro L1', ['subway'], ['1'], (l) => l === 'L1', otherLine('Linea 1')));
 if (tramAll || metroSel.includes('L6')) MODES.push(railCfg('metro L6', ['subway'], ['1'], (l) => l === 'L6', otherLine('Linea 6')));
-if (tramAll || metroSel.includes('L2')) MODES.push(railCfg('Linea 2', ['rail', 'light_rail'], ['1'], (l) => l === 'L2'));
+// Linea 2 rides the Passante and the Naples–Salerno mainline. The throat of
+// Napoli Centrale also carries the connecting curves — Raccordo AV, Raccordo
+// per/da Caserta — and a fan of yard leads. Service tracks are already out of
+// the graph, but the curves are tagged usage=main like the line itself, and
+// Viterbi rode them across the fan and back (user report). Two rules keep L2
+// on the through tracks: no usage=branch and nothing named "Raccordo", which
+// in Italian IS the word for a connecting curve — never a passenger route.
+const throughTrack = (e) => !['branch', 'industrial', 'military', 'tourism'].includes(e.tags?.usage)
+  && !/raccordo/i.test(e.tags?.name || '');
+if (tramAll || metroSel.includes('L2')) MODES.push(railCfg('Linea 2', ['rail', 'light_rail'], ['1'], (l) => l === 'L2', throughTrack));
 if (tramAll || metroSel.some((l) => l.startsWith('F'))) MODES.push(railCfg('funiculars', ['funicular'], ['7']));
 
 // Feed coordinate fixes: poles the GTFS places on the wrong street, keyed by
@@ -595,8 +604,24 @@ async function processMode(cfg) {
       const runLen = (a, b) => { let m = 0; for (let i = a; i < b; i++) m += Math.hypot(xy[i + 1][0] - xy[i][0], xy[i + 1][1] - xy[i][1]); return m; };
       const i0 = near(res.coords[0]), i1 = near(res.coords[res.coords.length - 1]);
       const headM = runLen(0, i0), tailM = runLen(i1, xy.length - 1);
-      if (headM > 60) res.coords = [...xy.slice(0, i0), ...res.coords];
-      if (tailM > 60) res.coords = [...res.coords, ...xy.slice(i1 + 1)];
+      // …and it has to reach the DRAWN layer too: the strokes come from graph
+      // segments, and these metres have none, so they go in as "outside OSM"
+      // runs exactly like the matcher's own raw fallback. Without this L1 was
+      // complete in route.geojson and still broke off before Centro
+      // Direzionale on the map (user report).
+      const asRun = (part) => {
+        if (part.length < 2) return;
+        let len = 0;
+        for (let i = 1; i < part.length; i++) len += Math.hypot(part[i][0] - part[i - 1][0], part[i][1] - part[i - 1][1]);
+        const mid = part[Math.floor(part.length / 2)];
+        rawRunsAll.push({
+          x: mid[0], y: mid[1], len,
+          lines: new Set([r.line]),
+          coords: part.map(([x, y]) => { const [lon, lat] = proj.toLonLat(x, y); return [round6(lon), round6(lat)]; }),
+        });
+      };
+      if (headM > 60) { asRun([...xy.slice(0, i0), res.coords[0]]); res.coords = [...xy.slice(0, i0), ...res.coords]; }
+      if (tailM > 60) { asRun([res.coords[res.coords.length - 1], ...xy.slice(i1 + 1)]); res.coords = [...res.coords, ...xy.slice(i1 + 1)]; }
       if (headM > 60 || tailM > 60) log(`  shape tail ${r.line}/${r.dir}: drawn from the raw shape` +
         `${headM > 60 ? ` (+${Math.round(headM)} m before)` : ''}${tailM > 60 ? ` (+${Math.round(tailM)} m past)` : ''}` +
         ` — no routable track in OSM there`);
