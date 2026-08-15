@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-15T20:20:31.617Z",
+  "generatedAt": "2026-08-15T20:31:41.944Z",
   "bbox": [
     14.120652,
     40.760437,
@@ -41,7 +41,12 @@
     },
     {
       "mode": "tram",
-      "label": "metro",
+      "label": "metro L1",
+      "color": "#d6212b"
+    },
+    {
+      "mode": "tram",
+      "label": "metro L6",
       "color": "#d6212b"
     },
     {
@@ -5233,17 +5238,19 @@
           "variants": 1,
           "tripCount": 353,
           "stops": 21,
-          "lengthKm": 18.72,
+          "lengthKm": 19.04,
           "stats": {
             "observations": 704,
-            "matched": 704,
-            "noCandidates": 0,
-            "viterbiBreaks": 0,
+            "matched": 648,
+            "noCandidates": 56,
+            "viterbiBreaks": 5,
             "bridged": 0,
-            "rawStretchCount": 1,
-            "rawMeters": 18724,
-            "meanError": 0,
-            "roundaboutSegs": 0
+            "rawStretchCount": 5,
+            "rawMeters": 529,
+            "meanError": 14.664511059087992,
+            "roundaboutSegs": 0,
+            "extStart": 0,
+            "extEnd": 0
           }
         }
       ]
@@ -5262,14 +5269,16 @@
           "lengthKm": 5.49,
           "stats": {
             "observations": 75,
-            "matched": 75,
-            "noCandidates": 0,
+            "matched": 65,
+            "noCandidates": 10,
             "viterbiBreaks": 0,
             "bridged": 0,
-            "rawStretchCount": 1,
-            "rawMeters": 5494,
-            "meanError": 0,
-            "roundaboutSegs": 0
+            "rawStretchCount": 0,
+            "rawMeters": 0,
+            "meanError": 20.744831761100254,
+            "roundaboutSegs": 0,
+            "extStart": 0,
+            "extEnd": 0
           }
         },
         {
@@ -5278,17 +5287,19 @@
           "variants": 1,
           "tripCount": 40,
           "stops": 8,
-          "lengthKm": 5.47,
+          "lengthKm": 5.49,
           "stats": {
-            "observations": 73,
-            "matched": 73,
-            "noCandidates": 0,
+            "observations": 74,
+            "matched": 64,
+            "noCandidates": 10,
             "viterbiBreaks": 0,
             "bridged": 0,
-            "rawStretchCount": 1,
-            "rawMeters": 5468,
-            "meanError": 0,
-            "roundaboutSegs": 0
+            "rawStretchCount": 0,
+            "rawMeters": 0,
+            "meanError": 19.045846202256467,
+            "roundaboutSegs": 0,
+            "extStart": 0,
+            "extEnd": 0
           }
         }
       ]

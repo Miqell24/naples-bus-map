@@ -154,9 +154,9 @@ const MODES = [{
 const tramAll = tramLines.length === 1 && tramLines[0] === 'all';
 const tramSel = tramLines.filter((l) => !isMetroLine(l));
 const metroSel = tramLines.filter(isMetroLine);
-const railCfg = (label, railKeep, routeTypes, keep) => ({
+const railCfg = (label, railKeep, routeTypes, keep, railFilter) => ({
   mode: 'tram', label, osmFile: 'data/osm/naples-rail.json',
-  graphMode: 'tram', railKeep: new Set(railKeep),
+  graphMode: 'tram', railKeep: new Set(railKeep), railFilter,
   color: '#d6212b', colorDark: '#7c1116',
   all: tramAll, lines: tramAll ? [] : tramLines.filter((l) => !keep || keep(l)),
   feeds: [
@@ -164,16 +164,15 @@ const railCfg = (label, railKeep, routeTypes, keep) => ({
   ],
 });
 if (tramAll || tramSel.length) MODES.push(railCfg('trams', ['tram'], ['0']));
-// L1 and L6 are drawn from ANM's own shape, not matched to OSM: the subway
-// graph here is incomplete (the newest L1 extension to Tribunale is not
-// routable, so the line ended 447 m short of its terminus) AND doubled (two
-// parallel tunnels under Piazza Municipio), and Viterbi hopped between the
-// axes, leaving a zigzag with a hook at the station (user report). Where the
-// graph cannot be trusted, the operator's published alignment is the honest
-// geometry — an approximation, but a continuous one that runs where the line
-// runs. The mainline (L2), the trams and the funiculars stay matched: their
-// tracks are mapped properly.
-if (tramAll || metroSel.some((l) => l !== 'L2')) MODES.push({ ...railCfg('metro', ['subway'], ['1'], (l) => l !== 'L2'), rawShape: true });
+// L1 and L6 get a cfg — and therefore a matching graph — EACH. Under Piazza
+// Municipio the two tubes run ~100 m apart and interchange, and a shared graph
+// let Viterbi cross from one line's tunnel to the other's and back, leaving a
+// V-shaped dip at the station (user report). OSM names the tunnels ("Linea 1",
+// "Linea 6"), so each line simply cannot see the other's track; unnamed ways
+// stay in both graphs, since they are the connecting bits neither line owns.
+const otherLine = (name) => (e) => { const n = e.tags?.name; return !n || n === name; };
+if (tramAll || metroSel.includes('L1')) MODES.push(railCfg('metro L1', ['subway'], ['1'], (l) => l === 'L1', otherLine('Linea 1')));
+if (tramAll || metroSel.includes('L6')) MODES.push(railCfg('metro L6', ['subway'], ['1'], (l) => l === 'L6', otherLine('Linea 6')));
 if (tramAll || metroSel.includes('L2')) MODES.push(railCfg('Linea 2', ['rail', 'light_rail'], ['1'], (l) => l === 'L2'));
 if (tramAll || metroSel.some((l) => l.startsWith('F'))) MODES.push(railCfg('funiculars', ['funicular'], ['7']));
 
@@ -508,6 +507,7 @@ async function processMode(cfg) {
   const osm = JSON.parse(readFileSync(join(ROOT, cfg.osmFile), 'utf8'));
   // railKeep: this cfg sees only its own kind of rails (see MODES above)
   if (cfg.railKeep) osm.elements = osm.elements.filter((e) => cfg.railKeep.has(e.tags?.railway));
+  if (cfg.railFilter) osm.elements = osm.elements.filter(cfg.railFilter);
   // OSM maps the Bucharest metro as per-direction tunnels that meet nowhere:
   // at junctions the ways pass within metres but share NO node (the Dristor
   // ways even carry a fixme about the missing crossovers), and M5 is split in
@@ -556,32 +556,19 @@ async function processMode(cfg) {
       // subway axis (street-grid drawn), so the snap net widens and the
       // emission softens; surface trams keep the tight default
       if (cfg.mode === 'tram' && isMetroLine(r.line)) {
-        opts = { sigma: 15, radii: [60, 120], maxCand: 16, gapMin: GAP_MIN };
+        // Tunnel shapes are drawn on the street grid above them, so the net has
+        // to be wider than a tram's — but not 120 m wide: under Piazza
+        // Municipio the L1 and L6 tubes run ~100 m apart and a net that reaches
+        // both let Viterbi hop from one to the other and back, leaving a zigzag
+        // with a hook at the station (user report). 80 m still catches the
+        // approximation, and it cannot reach the neighbouring line.
+        opts = { sigma: 12, radii: [40, 80], maxCand: 14, gapMin: GAP_MIN };
         // …except on the mainline, where the rescue radius is the problem, not
         // the cure: Linea 2 shares Napoli Centrale's throat with a dozen
         // parallel tracks 10–40 m apart, and a 120 m net let Viterbi step onto
         // a yard track and back — the rectangle at Gianturco (user report).
         if (cfg.railKeep?.has('rail')) opts = { sigma: 12, radii: [40, 70], maxCand: 12, gapMin: GAP_MIN };
       }
-    }
-    if (cfg.rawShape) {
-      // the shape IS the geometry: no graph, no segments, drawn as an
-      // "outside OSM" run exactly like the matcher's own raw fallback
-      const km = polylineLength(sampled) / 1000;
-      r.matchedXY = sampled;
-      r.usedSegs = new Set();
-      r.stats = { observations: sampled.length, matched: sampled.length, noCandidates: 0,
-        viterbiBreaks: 0, bridged: 0, rawStretchCount: 1, rawMeters: Math.round(km * 1000),
-        meanError: 0, roundaboutSegs: 0 };
-      r.lengthKm = km;
-      const mid = sampled[Math.floor(sampled.length / 2)];
-      rawRunsAll.push({
-        x: mid[0], y: mid[1], len: km * 1000,
-        lines: new Set([r.line]),
-        coords: sampled.map(([x, y]) => { const [lon, lat] = proj.toLonLat(x, y); return [round6(lon), round6(lat)]; }),
-      });
-      log(`line ${r.line} dir ${r.dir}: ${km.toFixed(2)} km drawn from the operator's shape (subway graph not trusted here)`);
-      continue;
     }
     const res = matchShape(graph, sampled, opts);
     if (!res) { log(`SKIPPED ${r.line}/${r.dir}: matching failed`); continue; }
