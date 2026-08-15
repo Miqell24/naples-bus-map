@@ -138,6 +138,13 @@ export function matchShape(graph, pts, opts = {}) {
   // default, which only catches the absurd cases.
   const gapDetour = opts.gapDetour ?? 2.2;
   const gapDetourM = opts.gapDetourM ?? 150;
+  // The same allowance for a leg whose observations had to be SKIPPED — the
+  // shape wandered somewhere no road exists at all. That is a different
+  // situation: there the trace is the thing that is wrong (ANM drops points
+  // 130-340 m into open fields beside the Asse Mediano), so the road deserves
+  // more benefit of the doubt than the straight chord between two points that
+  // are themselves misplaced.
+  const skipDetour = opts.skipDetour ?? 2.5;
 
   const obs = [];
   let skipped = 0;
@@ -250,7 +257,7 @@ export function matchShape(graph, pts, opts = {}) {
     // the block (unstitched parallel ways are routine in OSM) — X499 at El
     // Kafr drew an 850 m rectangle over a 340 m straight corridor.
     const wildDetour = conn && (
-      ((isBreak || spansSkipped) && conn.d > Math.max(rawLen * 2.5, rawLen + 150)) ||
+      ((isBreak || spansSkipped) && conn.d > Math.max(rawLen * skipDetour, rawLen + 150)) ||
       (noPen && conn.d > Math.max(rawLen * gapDetour, rawLen + gapDetourM)));
     if (conn && !wildDetour) {
       appendCoords(coords, conn.coords);

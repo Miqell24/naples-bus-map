@@ -32,8 +32,13 @@ const GAP_MIN = 150;
 // A bridge over such a gap may be at most this much longer than the straight
 // leg it replaces; beyond that the operator's own trace is drawn instead. Tight
 // here on purpose — see lib/hmm.mjs for why ANM's coarse shapes need it.
-const GAP_DETOUR = 1.35;
-const GAP_DETOUR_M = 120;
+// Where the shape left the road network entirely and observations had to be
+// dropped, the ROAD is the better guess — ANM scatters points into fields
+// beside the Asse Mediano, and a chord between two misplaced points cuts
+// across open ground (user report). 4x the chord is generous on purpose.
+const SKIP_DETOUR = 4;
+const GAP_DETOUR = 1.9;
+const GAP_DETOUR_M = 250;
 // m — a pole closer than this to the matched axis is inside the track corridor:
 // its coordinate carries no usable side signal and the half-disc falls back to
 // the right-hand rule (see the stop pass). Named after the case that set it:
@@ -572,7 +577,7 @@ async function processMode(cfg) {
       // 2.5× contraflow surcharge otherwise out-costs real distance and the
       // bridge circles the block (X499 rectangle at El Kafr, user report:
       // Nahia Axis' eastbound carriageway is unmapped in OSM there)
-      opts = { gapMin: GAP_MIN, gapDetour: GAP_DETOUR, gapDetourM: GAP_DETOUR_M };
+      opts = { gapMin: GAP_MIN, gapDetour: GAP_DETOUR, gapDetourM: GAP_DETOUR_M, skipDetour: SKIP_DETOUR };
       // metro shapes are tunnel approximations — often 40–70 m off the OSM
       // subway axis (street-grid drawn), so the snap net widens and the
       // emission softens; surface trams keep the tight default
