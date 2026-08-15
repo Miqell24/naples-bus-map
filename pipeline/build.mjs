@@ -175,6 +175,76 @@ if (tramAll || metroSel.some((l) => l.startsWith('F'))) MODES.push(railCfg('funi
 // dragged into a detour. Empty until a pole is found to be wrong.
 const STOP_FIX = {};
 
+
+// ---------- dead-end excursions ----------
+// A matched path that steps off the corridor and comes straight back leaves a
+// stub hanging off the network: the reader sees a tail pointing at nothing
+// (user report, Largo Sant'Erasmo). The pattern is an EXCURSION — the path
+// returns to a point it has already visited — which covers both the exact
+// out-and-back and the little loop that returns by a slightly different
+// vertex, the shape this bug actually takes on the ground.
+//
+// An excursion is cut only when it is short and exists for no stop: a real
+// dead-end street with a turnaround has its stop inside, and there the detour
+// is the service. "Serves" means the stop is CLEARLY closer to the excursion
+// than to the rest of the path — in a dense grid a stop is always within a few
+// dozen metres of something.
+// Which graph segment does a step of the path travel? The path is built from
+// graph nodes, so a consecutive pair identifies a segment exactly — an index
+// built once per graph turns the trimmed path back into a set of segments with
+// no distance guessing, which is what the streets layer needs.
+function pairIndex(graph) {
+  if (graph._pairIdx) return graph._pairIdx;
+  const m = new Map();
+  const k = (x1, y1, x2, y2) => `${x1.toFixed(1)}|${y1.toFixed(1)}|${x2.toFixed(1)}|${y2.toFixed(1)}`;
+  graph.segs.forEach((g, i) => {
+    m.set(k(g.ax, g.ay, g.bx, g.by), i);
+    m.set(k(g.bx, g.by, g.ax, g.ay), i);
+  });
+  graph._pairIdx = m;
+  return m;
+}
+function segsOfPath(graph, coords) {
+  const idx = pairIndex(graph);
+  const k = (x1, y1, x2, y2) => `${x1.toFixed(1)}|${y1.toFixed(1)}|${x2.toFixed(1)}|${y2.toFixed(1)}`;
+  const out = new Set();
+  for (let i = 0; i + 1 < coords.length; i++) {
+    const si = idx.get(k(coords[i][0], coords[i][1], coords[i + 1][0], coords[i + 1][1]));
+    if (si !== undefined) out.add(si);
+  }
+  return out;
+}
+
+const SPUR_MAX = 120;    // m of detour; a longer one is a service pattern
+const SPUR_STOP = 30;    // m — how close a stop must be to count as served
+const SPUR_WIN = 40;     // points to look ahead for the return to a visited point
+function trimSpurs(coords, stopsXY, removed) {
+  const same = (a, b) => Math.hypot(a[0] - b[0], a[1] - b[1]) < 0.5;
+  const pathDist = (p, line) => (line.length > 1 ? nearestOnPolyline(p[0], p[1], line).d : Infinity);
+  let out = coords.slice();
+  for (let i = 0; i + 2 < out.length; i++) {
+    let j = -1;
+    for (let k = Math.min(i + SPUR_WIN, out.length - 1); k > i + 1; k--) {
+      if (same(out[i], out[k])) { j = k; break; }
+    }
+    if (j < 0) continue;
+    let len = 0;
+    for (let t = i; t < j; t++) len += Math.hypot(out[t + 1][0] - out[t][0], out[t + 1][1] - out[t][1]);
+    if (len > 2 * SPUR_MAX) continue;                      // out and back = twice the detour
+    const spur = out.slice(i, j + 1);
+    const rest = [...out.slice(0, i + 1), ...out.slice(j)];
+    const serves = stopsXY.some((st) => {
+      const ds = pathDist(st, spur.slice(1, -1).length ? spur : []);
+      return ds < SPUR_STOP && ds < pathDist(st, rest) - 10;
+    });
+    if (serves) continue;
+    removed.push(spur);
+    out = rest;
+    i = Math.max(-1, i - 1);
+  }
+  return out;
+}
+
 function mergeRuns(all) {
   const merged = [];
   const byKey = new Map();
@@ -493,6 +563,25 @@ async function processMode(cfg) {
     if (ext) log(`  terminal repair ${r.line}/${r.dir}: ` +
       `${ext.head ? `${ext.head} stop(s) before the shape (+${ext.startM} m) ` : ''}` +
       `${ext.tail ? `${ext.tail} stop(s) past the shape (+${ext.endM} m)` : ''}`);
+    // cut the out-and-back stubs before anything downstream sees them: the
+    // stroke layer, the number rows and the length all come off these
+    const spurs = [];
+    const trimmed = trimSpurs(res.coords, stopsXY, spurs);
+    if (spurs.length) {
+      res.coords = trimmed;
+      // a segment travelled ONLY inside a cut excursion leaves the streets layer
+      // too — otherwise the tail stays drawn although the line no longer runs
+      // there. Segments the trimmed path still uses are never touched, so a
+      // corridor can never be broken open by this.
+      const kept = segsOfPath(graph, trimmed);
+      let dropped = 0;
+      for (const sp of spurs) {
+        for (const si of segsOfPath(graph, sp)) {
+          if (!kept.has(si) && res.usedSegs.delete(si)) { res.usedIv.delete(si); dropped++; }
+        }
+      }
+      log(`  spur trim ${r.line}/${r.dir}: ${spurs.length} dead-end stub(s), ${dropped} segment(s) dropped`);
+    }
     r.matchedXY = res.coords;
     r.usedSegs = res.usedSegs;
     r.stats = res.stats;
@@ -894,6 +983,33 @@ const stopFeatures = results.flatMap((r) => r.stopFeatures);
 const streetFeatures = results.flatMap((r) => r.streetFeatures);
 const metaLines = results.flatMap((r) => r.metaLines);
 
+// Dangling stubs: ANM's own shapes wiggle off the corridor and back (the zigzag
+// at Largo Sant'Erasmo is three shape points wide), and where the wiggle is not
+// an exact excursion the matcher leaves a few metres of stroke hanging off the
+// network — a tail pointing at nothing (user report). A run whose free end is
+// shared with no other run, shorter than 25 m and with no stop of its own to
+// justify it, is display noise: it is dropped from the drawn layer. Anything
+// longer stays, because that is where real service patterns start.
+{
+  const STUB_MAX = 25, STUB_STOP = 40;
+  const stopXY = stopFeatures.map((f) => f.geometry.coordinates);
+  const kx = 111320 * Math.cos(((stopXY[0] && stopXY[0][1]) || 40.85) * Math.PI / 180);
+  const key = (c) => `${c[0].toFixed(6)}|${c[1].toFixed(6)}`;
+  const deg = new Map();
+  for (const f of streetFeatures) {
+    for (const c of [f.geometry.coordinates[0], f.geometry.coordinates.at(-1)]) deg.set(key(c), (deg.get(key(c)) || 0) + 1);
+  }
+  const near = (c) => stopXY.some((s) => Math.hypot((c[0] - s[0]) * kx, (c[1] - s[1]) * 111320) < STUB_STOP);
+  const len = (cs) => cs.reduce((a, c, i) => (i ? a + Math.hypot((c[0] - cs[i - 1][0]) * kx, (c[1] - cs[i - 1][1]) * 111320) : 0), 0);
+  const stubs = streetFeatures.filter((f) => {
+    const cs = f.geometry.coordinates;
+    const free = [cs[0], cs.at(-1)].filter((c) => deg.get(key(c)) === 1);
+    return free.length && len(cs) < STUB_MAX && free.every((c) => !near(c));
+  });
+  for (const f of stubs) streetFeatures.splice(streetFeatures.indexOf(f), 1);
+  if (stubs.length) log(`Stubs: ${stubs.length} dangling run(s) under ${STUB_MAX} m dropped from the drawn layer`);
+}
+
 // ---------- 10) line-number labels: SHARED across both modes ----------
 // On a street shared by trams and buses the roadway and the track are parallel
 // geometries 2–6 m apart — separate labels of both modes fought for space.
@@ -1158,14 +1274,19 @@ const metaLines = results.flatMap((r) => r.metaLines);
     const arr = p.busLines ? [...p.lines.split(', '), ...p.busLines.split(', ')] : p.lines.split(', ');
     const baseProps = { lines: p.lines, color: p.color, mode: p.mode, arr, ...(p.metro ? { metro: 1 } : {}) };
     if (p.busLines) baseProps.busLines = p.busLines;
-    // mixed bus+trolleybus roadway: the label keeps the trolleybus numbers
-    // GREEN in a two-colour row (user 14.08.2026, Athens pattern) —
-    // all-trolleybus sets already come out green whole via colorOf
-    if (p.mode === 'bus' && TSET.size) {
-      const tl = arr.filter((l) => TSET.has(l));
-      if (tl.length && tl.length < arr.length) {
+    // The trolleybus numbers stay GREEN inside the navy half of a row (user
+    // 14.08.2026, Athens pattern; all-trolleybus sets already come out green
+    // whole via colorOf). The navy half is the whole set on a roadway — but on
+    // a tram track it is only the numbers the track ADOPTED from the road
+    // beside it, and the tram numbers above them keep the rail color, so the
+    // split must run on busLines there (user report, Naples 254 on the Reggia
+    // di Portici tracks).
+    const navy = p.busLines ? p.busLines.split(', ') : (p.mode === 'bus' ? arr : null);
+    if (navy && TSET.size) {
+      const tl = navy.filter((l) => TSET.has(l));
+      if (tl.length && tl.length < navy.length) {
         baseProps.tLines = tl.join(', ');
-        baseProps.ntLines = arr.filter((l) => !TSET.has(l)).join(', ');
+        baseProps.ntLines = navy.filter((l) => !TSET.has(l)).join(', ');
       }
     }
     // mixed paratransit corridors carry both halves so the frontend can show

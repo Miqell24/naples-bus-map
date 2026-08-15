@@ -218,11 +218,21 @@ async function init() {
   // own color — M1 green, M2 red, M3 azure, tram purple) above the bus row.
   const TRAM_RED = '#d6212b';
   const railColor = ['coalesce', ['get', 'color'], TRAM_RED];
+  // A track row prints its own lines in the rail color and the numbers it
+  // adopted from the roadway under them — and inside that adopted half the
+  // trolleybuses keep their green, exactly as they do on a roadway row.
   const numberField = ['case', ['has', 'busLines'],
-    ['format',
-      ['get', 'lines'], { 'text-color': railColor },
-      '\n', {},
-      ['get', 'busLines'], { 'text-color': KMK }],
+    ['case', ['has', 'tLines'],
+      ['format',
+        ['get', 'lines'], { 'text-color': railColor },
+        '\n', {},
+        ['get', 'tLines'], { 'text-color': TROLLEY_GREEN },
+        '\n', {},
+        ['get', 'ntLines'], { 'text-color': KMK }],
+      ['format',
+        ['get', 'lines'], { 'text-color': railColor },
+        '\n', {},
+        ['get', 'busLines'], { 'text-color': KMK }]],
     ['case', ['has', 'tLines'],
       // mixed bus+trolleybus roadway: trolleybus numbers keep their green
       ['format',
@@ -701,7 +711,13 @@ async function init() {
   let densityCond = true; // repeat-thinning condition, set by the Number density row below
   let densityMainCond = true; // sparsest step: one main row per same-content corridor chain
   const busOnlyNumbers = ['case', ['has', 'busLines'],
-    ['format', ['get', 'busLines'], { 'text-color': KMK }],
+    // trams switched off: only the adopted half is drawn, still two-coloured
+    ['case', ['has', 'tLines'],
+      ['format',
+        ['get', 'tLines'], { 'text-color': TROLLEY_GREEN },
+        '\n', {},
+        ['get', 'ntLines'], { 'text-color': KMK }],
+      ['format', ['get', 'busLines'], { 'text-color': KMK }]],
     ['case', ['has', 'tLines'],
       ['format',
         ['get', 'tLines'], { 'text-color': TROLLEY_GREEN },

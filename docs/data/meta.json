@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-15T19:49:44.871Z",
+  "generatedAt": "2026-08-15T20:03:36.592Z",
   "bbox": [
     14.120652,
     40.760437,
@@ -67,7 +67,7 @@
           "variants": 2,
           "tripCount": 177,
           "stops": 20,
-          "lengthKm": 5.29,
+          "lengthKm": 5.04,
           "stats": {
             "observations": 263,
             "matched": 263,
@@ -116,7 +116,7 @@
           "variants": 1,
           "tripCount": 32,
           "stops": 39,
-          "lengthKm": 11.87,
+          "lengthKm": 11.79,
           "stats": {
             "observations": 498,
             "matched": 498,
@@ -137,7 +137,7 @@
           "variants": 1,
           "tripCount": 32,
           "stops": 32,
-          "lengthKm": 11.86,
+          "lengthKm": 11.6,
           "stats": {
             "observations": 497,
             "matched": 497,
@@ -165,7 +165,7 @@
           "variants": 1,
           "tripCount": 263,
           "stops": 58,
-          "lengthKm": 15.74,
+          "lengthKm": 15.64,
           "stats": {
             "observations": 700,
             "matched": 700,
@@ -186,7 +186,7 @@
           "variants": 1,
           "tripCount": 270,
           "stops": 43,
-          "lengthKm": 13.46,
+          "lengthKm": 13.35,
           "stats": {
             "observations": 547,
             "matched": 547,
@@ -214,7 +214,7 @@
           "variants": 1,
           "tripCount": 9,
           "stops": 37,
-          "lengthKm": 8.82,
+          "lengthKm": 8.81,
           "stats": {
             "observations": 404,
             "matched": 404,
@@ -235,7 +235,7 @@
           "variants": 1,
           "tripCount": 12,
           "stops": 34,
-          "lengthKm": 7.64,
+          "lengthKm": 7.62,
           "stats": {
             "observations": 370,
             "matched": 370,
@@ -263,7 +263,7 @@
           "variants": 1,
           "tripCount": 174,
           "stops": 21,
-          "lengthKm": 12.8,
+          "lengthKm": 12.59,
           "stats": {
             "observations": 439,
             "matched": 439,
@@ -284,7 +284,7 @@
           "variants": 1,
           "tripCount": 174,
           "stops": 26,
-          "lengthKm": 12.38,
+          "lengthKm": 12.34,
           "stats": {
             "observations": 470,
             "matched": 470,
@@ -312,7 +312,7 @@
           "variants": 1,
           "tripCount": 170,
           "stops": 27,
-          "lengthKm": 6.46,
+          "lengthKm": 6.37,
           "stats": {
             "observations": 284,
             "matched": 284,
@@ -333,7 +333,7 @@
           "variants": 1,
           "tripCount": 171,
           "stops": 23,
-          "lengthKm": 5.49,
+          "lengthKm": 5.48,
           "stats": {
             "observations": 221,
             "matched": 221,
@@ -361,7 +361,7 @@
           "variants": 1,
           "tripCount": 270,
           "stops": 28,
-          "lengthKm": 6.76,
+          "lengthKm": 6.71,
           "stats": {
             "observations": 300,
             "matched": 300,
@@ -382,7 +382,7 @@
           "variants": 1,
           "tripCount": 270,
           "stops": 29,
-          "lengthKm": 6.67,
+          "lengthKm": 6.62,
           "stats": {
             "observations": 299,
             "matched": 299,
@@ -410,7 +410,7 @@
           "variants": 1,
           "tripCount": 470,
           "stops": 32,
-          "lengthKm": 8.66,
+          "lengthKm": 8.59,
           "stats": {
             "observations": 434,
             "matched": 434,
@@ -431,7 +431,7 @@
           "variants": 1,
           "tripCount": 415,
           "stops": 32,
-          "lengthKm": 9.09,
+          "lengthKm": 9,
           "stats": {
             "observations": 408,
             "matched": 408,
@@ -459,7 +459,7 @@
           "variants": 1,
           "tripCount": 212,
           "stops": 33,
-          "lengthKm": 8.75,
+          "lengthKm": 8.73,
           "stats": {
             "observations": 388,
             "matched": 388,
@@ -480,7 +480,7 @@
           "variants": 1,
           "tripCount": 212,
           "stops": 37,
-          "lengthKm": 10.18,
+          "lengthKm": 9.99,
           "stats": {
             "observations": 454,
             "matched": 454,
@@ -508,7 +508,7 @@
           "variants": 1,
           "tripCount": 168,
           "stops": 31,
-          "lengthKm": 8.05,
+          "lengthKm": 8,
           "stats": {
             "observations": 386,
             "matched": 386,
@@ -529,7 +529,7 @@
           "variants": 1,
           "tripCount": 168,
           "stops": 27,
-          "lengthKm": 7.47,
+          "lengthKm": 7.45,
           "stats": {
             "observations": 354,
             "matched": 354,
@@ -557,7 +557,7 @@
           "variants": 1,
           "tripCount": 15,
           "stops": 45,
-          "lengthKm": 11.81,
+          "lengthKm": 11.71,
           "stats": {
             "observations": 570,
             "matched": 570,
@@ -578,7 +578,7 @@
           "variants": 1,
           "tripCount": 15,
           "stops": 18,
-          "lengthKm": 4.71,
+          "lengthKm": 4.7,
           "stats": {
             "observations": 217,
             "matched": 217,
@@ -606,7 +606,7 @@
           "variants": 1,
           "tripCount": 15,
           "stops": 22,
-          "lengthKm": 5.52,
+          "lengthKm": 5.48,
           "stats": {
             "observations": 261,
             "matched": 261,
@@ -627,7 +627,7 @@
           "variants": 1,
           "tripCount": 15,
           "stops": 43,
-          "lengthKm": 11.21,
+          "lengthKm": 11.17,
           "stats": {
             "observations": 537,
             "matched": 537,
@@ -655,7 +655,7 @@
           "variants": 1,
           "tripCount": 311,
           "stops": 26,
-          "lengthKm": 6.66,
+          "lengthKm": 6.47,
           "stats": {
             "observations": 319,
             "matched": 319,
@@ -676,7 +676,7 @@
           "variants": 1,
           "tripCount": 311,
           "stops": 29,
-          "lengthKm": 6.92,
+          "lengthKm": 6.34,
           "stats": {
             "observations": 326,
             "matched": 326,
@@ -704,7 +704,7 @@
           "variants": 1,
           "tripCount": 150,
           "stops": 26,
-          "lengthKm": 10.16,
+          "lengthKm": 9.87,
           "stats": {
             "observations": 346,
             "matched": 346,
@@ -725,7 +725,7 @@
           "variants": 1,
           "tripCount": 442,
           "stops": 22,
-          "lengthKm": 8.79,
+          "lengthKm": 8.76,
           "stats": {
             "observations": 348,
             "matched": 348,
@@ -753,7 +753,7 @@
           "variants": 1,
           "tripCount": 166,
           "stops": 17,
-          "lengthKm": 4.96,
+          "lengthKm": 4.95,
           "stats": {
             "observations": 214,
             "matched": 214,
@@ -774,7 +774,7 @@
           "variants": 1,
           "tripCount": 166,
           "stops": 20,
-          "lengthKm": 5.64,
+          "lengthKm": 5.59,
           "stats": {
             "observations": 215,
             "matched": 215,
@@ -802,7 +802,7 @@
           "variants": 1,
           "tripCount": 8,
           "stops": 30,
-          "lengthKm": 9.78,
+          "lengthKm": 9.39,
           "stats": {
             "observations": 427,
             "matched": 427,
@@ -830,7 +830,7 @@
           "variants": 1,
           "tripCount": 219,
           "stops": 42,
-          "lengthKm": 13.72,
+          "lengthKm": 13.59,
           "stats": {
             "observations": 554,
             "matched": 554,
@@ -851,7 +851,7 @@
           "variants": 1,
           "tripCount": 206,
           "stops": 52,
-          "lengthKm": 15.67,
+          "lengthKm": 15.59,
           "stats": {
             "observations": 594,
             "matched": 594,
@@ -879,7 +879,7 @@
           "variants": 1,
           "tripCount": 248,
           "stops": 39,
-          "lengthKm": 12.1,
+          "lengthKm": 11.94,
           "stats": {
             "observations": 492,
             "matched": 492,
@@ -900,7 +900,7 @@
           "variants": 1,
           "tripCount": 256,
           "stops": 36,
-          "lengthKm": 11.57,
+          "lengthKm": 11.44,
           "stats": {
             "observations": 441,
             "matched": 441,
@@ -928,7 +928,7 @@
           "variants": 1,
           "tripCount": 197,
           "stops": 45,
-          "lengthKm": 14.01,
+          "lengthKm": 13.77,
           "stats": {
             "observations": 623,
             "matched": 623,
@@ -949,7 +949,7 @@
           "variants": 1,
           "tripCount": 197,
           "stops": 47,
-          "lengthKm": 14.75,
+          "lengthKm": 14.51,
           "stats": {
             "observations": 724,
             "matched": 724,
@@ -977,7 +977,7 @@
           "variants": 1,
           "tripCount": 16,
           "stops": 50,
-          "lengthKm": 17.59,
+          "lengthKm": 17.55,
           "stats": {
             "observations": 845,
             "matched": 842,
@@ -998,7 +998,7 @@
           "variants": 1,
           "tripCount": 16,
           "stops": 48,
-          "lengthKm": 17.64,
+          "lengthKm": 17.35,
           "stats": {
             "observations": 785,
             "matched": 782,
@@ -1026,7 +1026,7 @@
           "variants": 1,
           "tripCount": 78,
           "stops": 41,
-          "lengthKm": 13.11,
+          "lengthKm": 13.07,
           "stats": {
             "observations": 503,
             "matched": 503,
@@ -1047,7 +1047,7 @@
           "variants": 1,
           "tripCount": 78,
           "stops": 38,
-          "lengthKm": 13.79,
+          "lengthKm": 13.67,
           "stats": {
             "observations": 532,
             "matched": 532,
@@ -1075,7 +1075,7 @@
           "variants": 1,
           "tripCount": 293,
           "stops": 25,
-          "lengthKm": 6.24,
+          "lengthKm": 6.23,
           "stats": {
             "observations": 240,
             "matched": 240,
@@ -1096,7 +1096,7 @@
           "variants": 1,
           "tripCount": 293,
           "stops": 25,
-          "lengthKm": 6.22,
+          "lengthKm": 6.18,
           "stats": {
             "observations": 227,
             "matched": 227,
@@ -1124,7 +1124,7 @@
           "variants": 3,
           "tripCount": 373,
           "stops": 33,
-          "lengthKm": 13.22,
+          "lengthKm": 12.89,
           "stats": {
             "observations": 440,
             "matched": 440,
@@ -1145,7 +1145,7 @@
           "variants": 3,
           "tripCount": 365,
           "stops": 39,
-          "lengthKm": 13.97,
+          "lengthKm": 13.92,
           "stats": {
             "observations": 514,
             "matched": 514,
@@ -1173,7 +1173,7 @@
           "variants": 1,
           "tripCount": 11,
           "stops": 12,
-          "lengthKm": 19.17,
+          "lengthKm": 17.39,
           "stats": {
             "observations": 402,
             "matched": 378,
@@ -1194,7 +1194,7 @@
           "variants": 1,
           "tripCount": 11,
           "stops": 12,
-          "lengthKm": 21.52,
+          "lengthKm": 19.9,
           "stats": {
             "observations": 408,
             "matched": 383,
@@ -1222,7 +1222,7 @@
           "variants": 1,
           "tripCount": 201,
           "stops": 35,
-          "lengthKm": 11.33,
+          "lengthKm": 10.95,
           "stats": {
             "observations": 457,
             "matched": 457,
@@ -1243,7 +1243,7 @@
           "variants": 1,
           "tripCount": 211,
           "stops": 22,
-          "lengthKm": 6.57,
+          "lengthKm": 6.56,
           "stats": {
             "observations": 326,
             "matched": 326,
@@ -1271,7 +1271,7 @@
           "variants": 1,
           "tripCount": 25,
           "stops": 33,
-          "lengthKm": 11.11,
+          "lengthKm": 10.85,
           "stats": {
             "observations": 402,
             "matched": 402,
@@ -1292,7 +1292,7 @@
           "variants": 1,
           "tripCount": 18,
           "stops": 55,
-          "lengthKm": 15.69,
+          "lengthKm": 15.46,
           "stats": {
             "observations": 653,
             "matched": 653,
@@ -1320,7 +1320,7 @@
           "variants": 2,
           "tripCount": 195,
           "stops": 40,
-          "lengthKm": 20.46,
+          "lengthKm": 20.34,
           "stats": {
             "observations": 768,
             "matched": 768,
@@ -1341,7 +1341,7 @@
           "variants": 1,
           "tripCount": 213,
           "stops": 32,
-          "lengthKm": 16.58,
+          "lengthKm": 16.49,
           "stats": {
             "observations": 667,
             "matched": 667,
@@ -1369,7 +1369,7 @@
           "variants": 1,
           "tripCount": 40,
           "stops": 28,
-          "lengthKm": 7.29,
+          "lengthKm": 7.21,
           "stats": {
             "observations": 293,
             "matched": 293,
@@ -1390,7 +1390,7 @@
           "variants": 1,
           "tripCount": 40,
           "stops": 19,
-          "lengthKm": 6.34,
+          "lengthKm": 6.1,
           "stats": {
             "observations": 307,
             "matched": 307,
@@ -1418,7 +1418,7 @@
           "variants": 1,
           "tripCount": 62,
           "stops": 34,
-          "lengthKm": 10.15,
+          "lengthKm": 10.04,
           "stats": {
             "observations": 402,
             "matched": 402,
@@ -1439,7 +1439,7 @@
           "variants": 1,
           "tripCount": 72,
           "stops": 31,
-          "lengthKm": 10.37,
+          "lengthKm": 10.08,
           "stats": {
             "observations": 454,
             "matched": 454,
@@ -1467,7 +1467,7 @@
           "variants": 1,
           "tripCount": 148,
           "stops": 31,
-          "lengthKm": 8.3,
+          "lengthKm": 8.28,
           "stats": {
             "observations": 391,
             "matched": 391,
@@ -1488,7 +1488,7 @@
           "variants": 1,
           "tripCount": 148,
           "stops": 29,
-          "lengthKm": 7.01,
+          "lengthKm": 6.79,
           "stats": {
             "observations": 303,
             "matched": 303,
@@ -1516,7 +1516,7 @@
           "variants": 1,
           "tripCount": 138,
           "stops": 48,
-          "lengthKm": 26.42,
+          "lengthKm": 26.34,
           "stats": {
             "observations": 1103,
             "matched": 1103,
@@ -1537,7 +1537,7 @@
           "variants": 1,
           "tripCount": 137,
           "stops": 50,
-          "lengthKm": 25.89,
+          "lengthKm": 25.76,
           "stats": {
             "observations": 1004,
             "matched": 1004,
@@ -1565,7 +1565,7 @@
           "variants": 2,
           "tripCount": 342,
           "stops": 27,
-          "lengthKm": 6.55,
+          "lengthKm": 6.53,
           "stats": {
             "observations": 298,
             "matched": 298,
@@ -1586,7 +1586,7 @@
           "variants": 2,
           "tripCount": 342,
           "stops": 25,
-          "lengthKm": 5.8,
+          "lengthKm": 5.77,
           "stats": {
             "observations": 288,
             "matched": 288,
@@ -1614,7 +1614,7 @@
           "variants": 2,
           "tripCount": 349,
           "stops": 39,
-          "lengthKm": 13.93,
+          "lengthKm": 13.91,
           "stats": {
             "observations": 524,
             "matched": 524,
@@ -1635,7 +1635,7 @@
           "variants": 1,
           "tripCount": 301,
           "stops": 38,
-          "lengthKm": 13.43,
+          "lengthKm": 13.19,
           "stats": {
             "observations": 518,
             "matched": 518,
@@ -1663,7 +1663,7 @@
           "variants": 1,
           "tripCount": 303,
           "stops": 35,
-          "lengthKm": 8.42,
+          "lengthKm": 8.41,
           "stats": {
             "observations": 323,
             "matched": 323,
@@ -1684,7 +1684,7 @@
           "variants": 1,
           "tripCount": 303,
           "stops": 30,
-          "lengthKm": 7.46,
+          "lengthKm": 7.35,
           "stats": {
             "observations": 329,
             "matched": 329,
@@ -1712,7 +1712,7 @@
           "variants": 1,
           "tripCount": 127,
           "stops": 27,
-          "lengthKm": 7.11,
+          "lengthKm": 6.82,
           "stats": {
             "observations": 351,
             "matched": 351,
@@ -1733,7 +1733,7 @@
           "variants": 1,
           "tripCount": 127,
           "stops": 15,
-          "lengthKm": 5.04,
+          "lengthKm": 4.8,
           "stats": {
             "observations": 249,
             "matched": 249,
@@ -1761,7 +1761,7 @@
           "variants": 1,
           "tripCount": 237,
           "stops": 39,
-          "lengthKm": 13.67,
+          "lengthKm": 13.49,
           "stats": {
             "observations": 594,
             "matched": 594,
@@ -1782,7 +1782,7 @@
           "variants": 1,
           "tripCount": 225,
           "stops": 45,
-          "lengthKm": 13.16,
+          "lengthKm": 13.05,
           "stats": {
             "observations": 488,
             "matched": 488,
@@ -1810,7 +1810,7 @@
           "variants": 1,
           "tripCount": 136,
           "stops": 48,
-          "lengthKm": 12.86,
+          "lengthKm": 12.8,
           "stats": {
             "observations": 553,
             "matched": 553,
@@ -1831,7 +1831,7 @@
           "variants": 1,
           "tripCount": 136,
           "stops": 21,
-          "lengthKm": 5.44,
+          "lengthKm": 5.34,
           "stats": {
             "observations": 174,
             "matched": 174,
@@ -1859,7 +1859,7 @@
           "variants": 1,
           "tripCount": 215,
           "stops": 44,
-          "lengthKm": 14.28,
+          "lengthKm": 13.77,
           "stats": {
             "observations": 576,
             "matched": 576,
@@ -1880,7 +1880,7 @@
           "variants": 1,
           "tripCount": 194,
           "stops": 63,
-          "lengthKm": 17.22,
+          "lengthKm": 16.9,
           "stats": {
             "observations": 705,
             "matched": 705,
@@ -1908,7 +1908,7 @@
           "variants": 2,
           "tripCount": 281,
           "stops": 36,
-          "lengthKm": 11.01,
+          "lengthKm": 10.86,
           "stats": {
             "observations": 418,
             "matched": 418,
@@ -1929,7 +1929,7 @@
           "variants": 2,
           "tripCount": 297,
           "stops": 32,
-          "lengthKm": 11.19,
+          "lengthKm": 11.11,
           "stats": {
             "observations": 407,
             "matched": 407,
@@ -1957,7 +1957,7 @@
           "variants": 1,
           "tripCount": 12,
           "stops": 13,
-          "lengthKm": 4.71,
+          "lengthKm": 4.63,
           "stats": {
             "observations": 149,
             "matched": 149,
@@ -1978,7 +1978,7 @@
           "variants": 1,
           "tripCount": 12,
           "stops": 14,
-          "lengthKm": 5.5,
+          "lengthKm": 5.47,
           "stats": {
             "observations": 181,
             "matched": 181,
@@ -2006,7 +2006,7 @@
           "variants": 1,
           "tripCount": 304,
           "stops": 18,
-          "lengthKm": 4.22,
+          "lengthKm": 4.19,
           "stats": {
             "observations": 178,
             "matched": 178,
@@ -2027,7 +2027,7 @@
           "variants": 1,
           "tripCount": 304,
           "stops": 13,
-          "lengthKm": 3.32,
+          "lengthKm": 3.31,
           "stats": {
             "observations": 153,
             "matched": 153,
@@ -2055,7 +2055,7 @@
           "variants": 2,
           "tripCount": 46,
           "stops": 13,
-          "lengthKm": 3.22,
+          "lengthKm": 3.21,
           "stats": {
             "observations": 132,
             "matched": 132,
@@ -2076,7 +2076,7 @@
           "variants": 2,
           "tripCount": 46,
           "stops": 10,
-          "lengthKm": 2.26,
+          "lengthKm": 2.22,
           "stats": {
             "observations": 100,
             "matched": 100,
@@ -2125,7 +2125,7 @@
           "variants": 1,
           "tripCount": 278,
           "stops": 15,
-          "lengthKm": 3.96,
+          "lengthKm": 3.9,
           "stats": {
             "observations": 130,
             "matched": 130,
@@ -2153,7 +2153,7 @@
           "variants": 3,
           "tripCount": 483,
           "stops": 29,
-          "lengthKm": 7.13,
+          "lengthKm": 7.1,
           "stats": {
             "observations": 270,
             "matched": 270,
@@ -2174,7 +2174,7 @@
           "variants": 2,
           "tripCount": 520,
           "stops": 36,
-          "lengthKm": 8.3,
+          "lengthKm": 8.23,
           "stats": {
             "observations": 320,
             "matched": 320,
@@ -2202,7 +2202,7 @@
           "variants": 2,
           "tripCount": 273,
           "stops": 43,
-          "lengthKm": 11.01,
+          "lengthKm": 10.83,
           "stats": {
             "observations": 372,
             "matched": 372,
@@ -2223,7 +2223,7 @@
           "variants": 2,
           "tripCount": 266,
           "stops": 48,
-          "lengthKm": 11.83,
+          "lengthKm": 11.82,
           "stats": {
             "observations": 427,
             "matched": 427,
@@ -2251,7 +2251,7 @@
           "variants": 1,
           "tripCount": 37,
           "stops": 17,
-          "lengthKm": 4.17,
+          "lengthKm": 4.16,
           "stats": {
             "observations": 134,
             "matched": 134,
@@ -2272,7 +2272,7 @@
           "variants": 1,
           "tripCount": 17,
           "stops": 14,
-          "lengthKm": 3.27,
+          "lengthKm": 3.21,
           "stats": {
             "observations": 97,
             "matched": 97,
@@ -2300,7 +2300,7 @@
           "variants": 1,
           "tripCount": 101,
           "stops": 17,
-          "lengthKm": 5.12,
+          "lengthKm": 5.01,
           "stats": {
             "observations": 210,
             "matched": 210,
@@ -2321,7 +2321,7 @@
           "variants": 1,
           "tripCount": 101,
           "stops": 16,
-          "lengthKm": 5.09,
+          "lengthKm": 5,
           "stats": {
             "observations": 226,
             "matched": 226,
@@ -2349,7 +2349,7 @@
           "variants": 1,
           "tripCount": 2,
           "stops": 50,
-          "lengthKm": 20.94,
+          "lengthKm": 20.72,
           "stats": {
             "observations": 811,
             "matched": 811,
@@ -2377,7 +2377,7 @@
           "variants": 1,
           "tripCount": 3,
           "stops": 84,
-          "lengthKm": 27.01,
+          "lengthKm": 26.21,
           "stats": {
             "observations": 966,
             "matched": 965,
@@ -2398,7 +2398,7 @@
           "variants": 2,
           "tripCount": 8,
           "stops": 71,
-          "lengthKm": 20.81,
+          "lengthKm": 20.66,
           "stats": {
             "observations": 803,
             "matched": 803,
@@ -2426,7 +2426,7 @@
           "variants": 1,
           "tripCount": 1,
           "stops": 58,
-          "lengthKm": 16.71,
+          "lengthKm": 16.46,
           "stats": {
             "observations": 702,
             "matched": 702,
@@ -2447,7 +2447,7 @@
           "variants": 1,
           "tripCount": 1,
           "stops": 64,
-          "lengthKm": 18.72,
+          "lengthKm": 18.58,
           "stats": {
             "observations": 793,
             "matched": 793,
@@ -2475,7 +2475,7 @@
           "variants": 1,
           "tripCount": 16,
           "stops": 56,
-          "lengthKm": 16.8,
+          "lengthKm": 16.68,
           "stats": {
             "observations": 718,
             "matched": 718,
@@ -2496,7 +2496,7 @@
           "variants": 1,
           "tripCount": 11,
           "stops": 73,
-          "lengthKm": 22.57,
+          "lengthKm": 22.08,
           "stats": {
             "observations": 956,
             "matched": 956,
@@ -2524,7 +2524,7 @@
           "variants": 1,
           "tripCount": 204,
           "stops": 28,
-          "lengthKm": 9.03,
+          "lengthKm": 8.74,
           "stats": {
             "observations": 416,
             "matched": 416,
@@ -2545,7 +2545,7 @@
           "variants": 1,
           "tripCount": 204,
           "stops": 28,
-          "lengthKm": 9.81,
+          "lengthKm": 9.64,
           "stats": {
             "observations": 443,
             "matched": 443,
@@ -2573,7 +2573,7 @@
           "variants": 1,
           "tripCount": 14,
           "stops": 22,
-          "lengthKm": 7.21,
+          "lengthKm": 7.16,
           "stats": {
             "observations": 338,
             "matched": 338,
@@ -2594,7 +2594,7 @@
           "variants": 1,
           "tripCount": 14,
           "stops": 20,
-          "lengthKm": 7.89,
+          "lengthKm": 7.78,
           "stats": {
             "observations": 316,
             "matched": 316,
@@ -2622,7 +2622,7 @@
           "variants": 2,
           "tripCount": 49,
           "stops": 29,
-          "lengthKm": 7.84,
+          "lengthKm": 7.8,
           "stats": {
             "observations": 358,
             "matched": 358,
@@ -2643,7 +2643,7 @@
           "variants": 1,
           "tripCount": 65,
           "stops": 23,
-          "lengthKm": 6.33,
+          "lengthKm": 6.3,
           "stats": {
             "observations": 257,
             "matched": 257,
@@ -2671,7 +2671,7 @@
           "variants": 1,
           "tripCount": 354,
           "stops": 32,
-          "lengthKm": 10.46,
+          "lengthKm": 10.44,
           "stats": {
             "observations": 385,
             "matched": 380,
@@ -2692,7 +2692,7 @@
           "variants": 1,
           "tripCount": 354,
           "stops": 30,
-          "lengthKm": 8.62,
+          "lengthKm": 8.54,
           "stats": {
             "observations": 354,
             "matched": 350,
@@ -2720,7 +2720,7 @@
           "variants": 1,
           "tripCount": 195,
           "stops": 34,
-          "lengthKm": 8.22,
+          "lengthKm": 8.17,
           "stats": {
             "observations": 366,
             "matched": 366,
@@ -2741,7 +2741,7 @@
           "variants": 1,
           "tripCount": 193,
           "stops": 19,
-          "lengthKm": 5.5,
+          "lengthKm": 5.47,
           "stats": {
             "observations": 254,
             "matched": 254,
@@ -2790,7 +2790,7 @@
           "variants": 1,
           "tripCount": 25,
           "stops": 7,
-          "lengthKm": 1.83,
+          "lengthKm": 1.82,
           "stats": {
             "observations": 94,
             "matched": 94,
@@ -2818,7 +2818,7 @@
           "variants": 1,
           "tripCount": 324,
           "stops": 32,
-          "lengthKm": 8.47,
+          "lengthKm": 8.45,
           "stats": {
             "observations": 330,
             "matched": 325,
@@ -2839,7 +2839,7 @@
           "variants": 1,
           "tripCount": 326,
           "stops": 35,
-          "lengthKm": 8.38,
+          "lengthKm": 8.33,
           "stats": {
             "observations": 360,
             "matched": 356,
@@ -2867,7 +2867,7 @@
           "variants": 1,
           "tripCount": 177,
           "stops": 16,
-          "lengthKm": 2.58,
+          "lengthKm": 2.53,
           "stats": {
             "observations": 132,
             "matched": 132,
@@ -2888,7 +2888,7 @@
           "variants": 2,
           "tripCount": 177,
           "stops": 14,
-          "lengthKm": 2.56,
+          "lengthKm": 2.53,
           "stats": {
             "observations": 130,
             "matched": 130,
@@ -2916,7 +2916,7 @@
           "variants": 1,
           "tripCount": 24,
           "stops": 27,
-          "lengthKm": 6.93,
+          "lengthKm": 6.89,
           "stats": {
             "observations": 288,
             "matched": 288,
@@ -3014,7 +3014,7 @@
           "variants": 1,
           "tripCount": 104,
           "stops": 4,
-          "lengthKm": 7.58,
+          "lengthKm": 7.07,
           "stats": {
             "observations": 294,
             "matched": 294,
@@ -3035,7 +3035,7 @@
           "variants": 3,
           "tripCount": 103,
           "stops": 6,
-          "lengthKm": 7.84,
+          "lengthKm": 7.65,
           "stats": {
             "observations": 337,
             "matched": 337,
@@ -3063,7 +3063,7 @@
           "variants": 1,
           "tripCount": 114,
           "stops": 30,
-          "lengthKm": 8.52,
+          "lengthKm": 8.51,
           "stats": {
             "observations": 336,
             "matched": 336,
@@ -3112,7 +3112,7 @@
           "variants": 1,
           "tripCount": 69,
           "stops": 34,
-          "lengthKm": 10.34,
+          "lengthKm": 10.31,
           "stats": {
             "observations": 425,
             "matched": 425,
@@ -3133,7 +3133,7 @@
           "variants": 1,
           "tripCount": 69,
           "stops": 30,
-          "lengthKm": 9.45,
+          "lengthKm": 9.43,
           "stats": {
             "observations": 347,
             "matched": 347,
@@ -3161,7 +3161,7 @@
           "variants": 1,
           "tripCount": 48,
           "stops": 41,
-          "lengthKm": 13.75,
+          "lengthKm": 13.44,
           "stats": {
             "observations": 636,
             "matched": 636,
@@ -3182,7 +3182,7 @@
           "variants": 1,
           "tripCount": 48,
           "stops": 23,
-          "lengthKm": 5.94,
+          "lengthKm": 5.87,
           "stats": {
             "observations": 265,
             "matched": 265,
@@ -3210,7 +3210,7 @@
           "variants": 1,
           "tripCount": 377,
           "stops": 27,
-          "lengthKm": 6.51,
+          "lengthKm": 6.5,
           "stats": {
             "observations": 325,
             "matched": 325,
@@ -3231,7 +3231,7 @@
           "variants": 1,
           "tripCount": 377,
           "stops": 27,
-          "lengthKm": 5.9,
+          "lengthKm": 5.89,
           "stats": {
             "observations": 295,
             "matched": 295,
@@ -3259,7 +3259,7 @@
           "variants": 1,
           "tripCount": 252,
           "stops": 26,
-          "lengthKm": 6.26,
+          "lengthKm": 6.25,
           "stats": {
             "observations": 284,
             "matched": 284,
@@ -3308,7 +3308,7 @@
           "variants": 1,
           "tripCount": 333,
           "stops": 36,
-          "lengthKm": 7.94,
+          "lengthKm": 7.93,
           "stats": {
             "observations": 385,
             "matched": 385,
@@ -3357,7 +3357,7 @@
           "variants": 1,
           "tripCount": 136,
           "stops": 15,
-          "lengthKm": 3.51,
+          "lengthKm": 3.42,
           "stats": {
             "observations": 162,
             "matched": 162,
@@ -3378,7 +3378,7 @@
           "variants": 1,
           "tripCount": 136,
           "stops": 16,
-          "lengthKm": 2.92,
+          "lengthKm": 2.88,
           "stats": {
             "observations": 134,
             "matched": 134,
@@ -3406,7 +3406,7 @@
           "variants": 1,
           "tripCount": 229,
           "stops": 11,
-          "lengthKm": 2.26,
+          "lengthKm": 2.25,
           "stats": {
             "observations": 99,
             "matched": 99,
@@ -3427,7 +3427,7 @@
           "variants": 1,
           "tripCount": 229,
           "stops": 11,
-          "lengthKm": 2.06,
+          "lengthKm": 1.98,
           "stats": {
             "observations": 107,
             "matched": 107,
@@ -3455,7 +3455,7 @@
           "variants": 1,
           "tripCount": 160,
           "stops": 17,
-          "lengthKm": 5.14,
+          "lengthKm": 4.92,
           "stats": {
             "observations": 235,
             "matched": 235,
@@ -3483,7 +3483,7 @@
           "variants": 1,
           "tripCount": 183,
           "stops": 40,
-          "lengthKm": 9.6,
+          "lengthKm": 9.54,
           "stats": {
             "observations": 427,
             "matched": 427,
@@ -3504,7 +3504,7 @@
           "variants": 1,
           "tripCount": 183,
           "stops": 30,
-          "lengthKm": 6.37,
+          "lengthKm": 6.36,
           "stats": {
             "observations": 281,
             "matched": 281,
@@ -3532,7 +3532,7 @@
           "variants": 1,
           "tripCount": 126,
           "stops": 9,
-          "lengthKm": 2.09,
+          "lengthKm": 2.08,
           "stats": {
             "observations": 105,
             "matched": 105,
@@ -3553,7 +3553,7 @@
           "variants": 1,
           "tripCount": 126,
           "stops": 14,
-          "lengthKm": 2.79,
+          "lengthKm": 2.52,
           "stats": {
             "observations": 141,
             "matched": 141,
@@ -3581,7 +3581,7 @@
           "variants": 1,
           "tripCount": 224,
           "stops": 12,
-          "lengthKm": 3.14,
+          "lengthKm": 3.02,
           "stats": {
             "observations": 143,
             "matched": 143,
@@ -3602,7 +3602,7 @@
           "variants": 1,
           "tripCount": 224,
           "stops": 10,
-          "lengthKm": 2.48,
+          "lengthKm": 2.47,
           "stats": {
             "observations": 108,
             "matched": 108,
@@ -3630,7 +3630,7 @@
           "variants": 1,
           "tripCount": 289,
           "stops": 25,
-          "lengthKm": 6.77,
+          "lengthKm": 6.73,
           "stats": {
             "observations": 338,
             "matched": 338,
@@ -3651,7 +3651,7 @@
           "variants": 1,
           "tripCount": 289,
           "stops": 25,
-          "lengthKm": 6.97,
+          "lengthKm": 6.75,
           "stats": {
             "observations": 304,
             "matched": 304,
@@ -3679,7 +3679,7 @@
           "variants": 1,
           "tripCount": 83,
           "stops": 15,
-          "lengthKm": 3.93,
+          "lengthKm": 3.92,
           "stats": {
             "observations": 167,
             "matched": 167,
@@ -3700,7 +3700,7 @@
           "variants": 1,
           "tripCount": 83,
           "stops": 13,
-          "lengthKm": 2.82,
+          "lengthKm": 2.81,
           "stats": {
             "observations": 106,
             "matched": 106,
@@ -3728,7 +3728,7 @@
           "variants": 1,
           "tripCount": 174,
           "stops": 40,
-          "lengthKm": 11.72,
+          "lengthKm": 11.6,
           "stats": {
             "observations": 495,
             "matched": 495,
@@ -3749,7 +3749,7 @@
           "variants": 1,
           "tripCount": 174,
           "stops": 41,
-          "lengthKm": 11.79,
+          "lengthKm": 11.75,
           "stats": {
             "observations": 507,
             "matched": 507,
@@ -3777,7 +3777,7 @@
           "variants": 1,
           "tripCount": 130,
           "stops": 16,
-          "lengthKm": 4.16,
+          "lengthKm": 4.05,
           "stats": {
             "observations": 188,
             "matched": 188,
@@ -3798,7 +3798,7 @@
           "variants": 1,
           "tripCount": 130,
           "stops": 18,
-          "lengthKm": 4.07,
+          "lengthKm": 4.06,
           "stats": {
             "observations": 181,
             "matched": 181,
@@ -3826,7 +3826,7 @@
           "variants": 1,
           "tripCount": 96,
           "stops": 16,
-          "lengthKm": 5.12,
+          "lengthKm": 5.07,
           "stats": {
             "observations": 210,
             "matched": 210,
@@ -3847,7 +3847,7 @@
           "variants": 1,
           "tripCount": 96,
           "stops": 23,
-          "lengthKm": 7.73,
+          "lengthKm": 7.67,
           "stats": {
             "observations": 333,
             "matched": 333,
@@ -3875,7 +3875,7 @@
           "variants": 1,
           "tripCount": 169,
           "stops": 29,
-          "lengthKm": 7.5,
+          "lengthKm": 7.4,
           "stats": {
             "observations": 340,
             "matched": 340,
@@ -3896,7 +3896,7 @@
           "variants": 1,
           "tripCount": 181,
           "stops": 22,
-          "lengthKm": 5.18,
+          "lengthKm": 5.12,
           "stats": {
             "observations": 207,
             "matched": 207,
@@ -3924,7 +3924,7 @@
           "variants": 1,
           "tripCount": 157,
           "stops": 36,
-          "lengthKm": 11.68,
+          "lengthKm": 11.66,
           "stats": {
             "observations": 470,
             "matched": 470,
@@ -3945,7 +3945,7 @@
           "variants": 1,
           "tripCount": 101,
           "stops": 34,
-          "lengthKm": 11.3,
+          "lengthKm": 11.18,
           "stats": {
             "observations": 446,
             "matched": 446,
@@ -4022,7 +4022,7 @@
           "variants": 1,
           "tripCount": 53,
           "stops": 14,
-          "lengthKm": 3.87,
+          "lengthKm": 3.82,
           "stats": {
             "observations": 188,
             "matched": 188,
@@ -4120,7 +4120,7 @@
           "variants": 1,
           "tripCount": 2,
           "stops": 34,
-          "lengthKm": 13.02,
+          "lengthKm": 12.4,
           "stats": {
             "observations": 462,
             "matched": 462,
@@ -4141,7 +4141,7 @@
           "variants": 1,
           "tripCount": 26,
           "stops": 35,
-          "lengthKm": 12.01,
+          "lengthKm": 11.93,
           "stats": {
             "observations": 521,
             "matched": 521,
@@ -4169,7 +4169,7 @@
           "variants": 1,
           "tripCount": 24,
           "stops": 59,
-          "lengthKm": 16.38,
+          "lengthKm": 15.76,
           "stats": {
             "observations": 659,
             "matched": 659,
@@ -4190,7 +4190,7 @@
           "variants": 1,
           "tripCount": 24,
           "stops": 37,
-          "lengthKm": 9.15,
+          "lengthKm": 9.07,
           "stats": {
             "observations": 387,
             "matched": 387,
@@ -4218,7 +4218,7 @@
           "variants": 1,
           "tripCount": 8,
           "stops": 47,
-          "lengthKm": 12.08,
+          "lengthKm": 12,
           "stats": {
             "observations": 451,
             "matched": 451,
@@ -4267,7 +4267,7 @@
           "variants": 1,
           "tripCount": 24,
           "stops": 40,
-          "lengthKm": 11.11,
+          "lengthKm": 11.06,
           "stats": {
             "observations": 481,
             "matched": 481,
@@ -4288,7 +4288,7 @@
           "variants": 1,
           "tripCount": 24,
           "stops": 28,
-          "lengthKm": 8.8,
+          "lengthKm": 8.78,
           "stats": {
             "observations": 377,
             "matched": 377,
@@ -4316,7 +4316,7 @@
           "variants": 1,
           "tripCount": 40,
           "stops": 42,
-          "lengthKm": 10.08,
+          "lengthKm": 10.01,
           "stats": {
             "observations": 452,
             "matched": 452,
@@ -4337,7 +4337,7 @@
           "variants": 1,
           "tripCount": 37,
           "stops": 46,
-          "lengthKm": 11.49,
+          "lengthKm": 11.36,
           "stats": {
             "observations": 511,
             "matched": 511,
@@ -4365,7 +4365,7 @@
           "variants": 1,
           "tripCount": 63,
           "stops": 5,
-          "lengthKm": 8.78,
+          "lengthKm": 8.72,
           "stats": {
             "observations": 406,
             "matched": 406,
@@ -4386,7 +4386,7 @@
           "variants": 1,
           "tripCount": 63,
           "stops": 5,
-          "lengthKm": 8.75,
+          "lengthKm": 8.67,
           "stats": {
             "observations": 436,
             "matched": 436,
@@ -4414,7 +4414,7 @@
           "variants": 1,
           "tripCount": 136,
           "stops": 5,
-          "lengthKm": 6.67,
+          "lengthKm": 6.62,
           "stats": {
             "observations": 260,
             "matched": 260,
@@ -4435,7 +4435,7 @@
           "variants": 1,
           "tripCount": 143,
           "stops": 6,
-          "lengthKm": 7.87,
+          "lengthKm": 7.85,
           "stats": {
             "observations": 346,
             "matched": 346,
@@ -4463,7 +4463,7 @@
           "variants": 1,
           "tripCount": 504,
           "stops": 16,
-          "lengthKm": 4.46,
+          "lengthKm": 4.18,
           "stats": {
             "observations": 148,
             "matched": 148,
@@ -4484,7 +4484,7 @@
           "variants": 1,
           "tripCount": 506,
           "stops": 16,
-          "lengthKm": 4.79,
+          "lengthKm": 4.56,
           "stats": {
             "observations": 205,
             "matched": 205,
@@ -4512,7 +4512,7 @@
           "variants": 1,
           "tripCount": 353,
           "stops": 47,
-          "lengthKm": 13.49,
+          "lengthKm": 13.24,
           "stats": {
             "observations": 445,
             "matched": 445,
@@ -4533,7 +4533,7 @@
           "variants": 1,
           "tripCount": 359,
           "stops": 42,
-          "lengthKm": 11.46,
+          "lengthKm": 11.44,
           "stats": {
             "observations": 335,
             "matched": 335,
@@ -4561,7 +4561,7 @@
           "variants": 1,
           "tripCount": 538,
           "stops": 14,
-          "lengthKm": 4.2,
+          "lengthKm": 4.18,
           "stats": {
             "observations": 195,
             "matched": 195,
@@ -4582,7 +4582,7 @@
           "variants": 1,
           "tripCount": 536,
           "stops": 33,
-          "lengthKm": 10.05,
+          "lengthKm": 10.02,
           "stats": {
             "observations": 446,
             "matched": 446,
@@ -4610,7 +4610,7 @@
           "variants": 2,
           "tripCount": 230,
           "stops": 27,
-          "lengthKm": 10.38,
+          "lengthKm": 10.36,
           "stats": {
             "observations": 377,
             "matched": 377,
@@ -4631,7 +4631,7 @@
           "variants": 2,
           "tripCount": 186,
           "stops": 29,
-          "lengthKm": 10.76,
+          "lengthKm": 10.64,
           "stats": {
             "observations": 323,
             "matched": 323,
@@ -4659,7 +4659,7 @@
           "variants": 1,
           "tripCount": 78,
           "stops": 4,
-          "lengthKm": 2.83,
+          "lengthKm": 2.8,
           "stats": {
             "observations": 127,
             "matched": 127,
@@ -4680,7 +4680,7 @@
           "variants": 1,
           "tripCount": 78,
           "stops": 6,
-          "lengthKm": 2.41,
+          "lengthKm": 2.39,
           "stats": {
             "observations": 120,
             "matched": 120,
@@ -4708,7 +4708,7 @@
           "variants": 1,
           "tripCount": 24,
           "stops": 15,
-          "lengthKm": 8.03,
+          "lengthKm": 8.01,
           "stats": {
             "observations": 385,
             "matched": 385,
@@ -4729,7 +4729,7 @@
           "variants": 1,
           "tripCount": 28,
           "stops": 17,
-          "lengthKm": 8.43,
+          "lengthKm": 8.32,
           "stats": {
             "observations": 382,
             "matched": 382,
@@ -4757,7 +4757,7 @@
           "variants": 1,
           "tripCount": 2,
           "stops": 40,
-          "lengthKm": 10.97,
+          "lengthKm": 10.94,
           "stats": {
             "observations": 458,
             "matched": 458,
@@ -4785,7 +4785,7 @@
           "variants": 1,
           "tripCount": 4,
           "stops": 43,
-          "lengthKm": 10.71,
+          "lengthKm": 10.68,
           "stats": {
             "observations": 479,
             "matched": 479,
@@ -4834,7 +4834,7 @@
           "variants": 1,
           "tripCount": 1,
           "stops": 24,
-          "lengthKm": 7.64,
+          "lengthKm": 7.63,
           "stats": {
             "observations": 293,
             "matched": 288,
@@ -4862,7 +4862,7 @@
           "variants": 1,
           "tripCount": 1,
           "stops": 30,
-          "lengthKm": 10.9,
+          "lengthKm": 10.76,
           "stats": {
             "observations": 488,
             "matched": 483,
@@ -4890,7 +4890,7 @@
           "variants": 1,
           "tripCount": 3,
           "stops": 36,
-          "lengthKm": 10.94,
+          "lengthKm": 10.93,
           "stats": {
             "observations": 462,
             "matched": 462,
@@ -4911,7 +4911,7 @@
           "variants": 1,
           "tripCount": 4,
           "stops": 16,
-          "lengthKm": 7.04,
+          "lengthKm": 6.92,
           "stats": {
             "observations": 296,
             "matched": 296,
@@ -4939,7 +4939,7 @@
           "variants": 1,
           "tripCount": 22,
           "stops": 14,
-          "lengthKm": 8.01,
+          "lengthKm": 7.98,
           "stats": {
             "observations": 354,
             "matched": 349,
@@ -4960,7 +4960,7 @@
           "variants": 1,
           "tripCount": 20,
           "stops": 17,
-          "lengthKm": 7.65,
+          "lengthKm": 7.53,
           "stats": {
             "observations": 342,
             "matched": 337,
@@ -5086,7 +5086,7 @@
           "variants": 1,
           "tripCount": 356,
           "stops": 22,
-          "lengthKm": 6.96,
+          "lengthKm": 6.83,
           "stats": {
             "observations": 206,
             "matched": 206,
@@ -5135,7 +5135,7 @@
           "variants": 1,
           "tripCount": 353,
           "stops": 32,
-          "lengthKm": 9.92,
+          "lengthKm": 9.81,
           "stats": {
             "observations": 329,
             "matched": 329,
@@ -5156,7 +5156,7 @@
           "variants": 1,
           "tripCount": 353,
           "stops": 22,
-          "lengthKm": 6.82,
+          "lengthKm": 6.8,
           "stats": {
             "observations": 218,
             "matched": 218,
@@ -5184,7 +5184,7 @@
           "variants": 1,
           "tripCount": 180,
           "stops": 17,
-          "lengthKm": 5.17,
+          "lengthKm": 5.04,
           "stats": {
             "observations": 197,
             "matched": 195,
@@ -5205,7 +5205,7 @@
           "variants": 1,
           "tripCount": 180,
           "stops": 16,
-          "lengthKm": 5.22,
+          "lengthKm": 5.17,
           "stats": {
             "observations": 224,
             "matched": 220,
@@ -5233,7 +5233,7 @@
           "variants": 1,
           "tripCount": 353,
           "stops": 21,
-          "lengthKm": 18.32,
+          "lengthKm": 18.31,
           "stats": {
             "observations": 704,
             "matched": 674,
@@ -5261,7 +5261,7 @@
           "variants": 1,
           "tripCount": 38,
           "stops": 8,
-          "lengthKm": 5.51,
+          "lengthKm": 5.49,
           "stats": {
             "observations": 75,
             "matched": 70,
@@ -5310,7 +5310,7 @@
           "variants": 1,
           "tripCount": 313,
           "stops": 12,
-          "lengthKm": 20,
+          "lengthKm": 19.9,
           "stats": {
             "observations": 518,
             "matched": 478,
@@ -5331,7 +5331,7 @@
           "variants": 1,
           "tripCount": 337,
           "stops": 12,
-          "lengthKm": 19.99,
+          "lengthKm": 19.85,
           "stats": {
             "observations": 517,
             "matched": 477,
