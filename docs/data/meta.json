@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-15T20:03:36.592Z",
+  "generatedAt": "2026-08-15T20:20:31.617Z",
   "bbox": [
     14.120652,
     40.760437,
@@ -5184,7 +5184,7 @@
           "variants": 1,
           "tripCount": 180,
           "stops": 17,
-          "lengthKm": 5.04,
+          "lengthKm": 5.14,
           "stats": {
             "observations": 197,
             "matched": 195,
@@ -5205,7 +5205,7 @@
           "variants": 1,
           "tripCount": 180,
           "stops": 16,
-          "lengthKm": 5.17,
+          "lengthKm": 5.32,
           "stats": {
             "observations": 224,
             "matched": 220,
@@ -5233,19 +5233,17 @@
           "variants": 1,
           "tripCount": 353,
           "stops": 21,
-          "lengthKm": 18.31,
+          "lengthKm": 18.72,
           "stats": {
             "observations": 704,
-            "matched": 674,
-            "noCandidates": 30,
-            "viterbiBreaks": 3,
+            "matched": 704,
+            "noCandidates": 0,
+            "viterbiBreaks": 0,
             "bridged": 0,
-            "rawStretchCount": 4,
-            "rawMeters": 790,
-            "meanError": 18.72428492431403,
-            "roundaboutSegs": 0,
-            "extStart": 0,
-            "extEnd": 0
+            "rawStretchCount": 1,
+            "rawMeters": 18724,
+            "meanError": 0,
+            "roundaboutSegs": 0
           }
         }
       ]
@@ -5264,16 +5262,14 @@
           "lengthKm": 5.49,
           "stats": {
             "observations": 75,
-            "matched": 70,
-            "noCandidates": 5,
+            "matched": 75,
+            "noCandidates": 0,
             "viterbiBreaks": 0,
             "bridged": 0,
-            "rawStretchCount": 0,
-            "rawMeters": 0,
-            "meanError": 26.434847157017657,
-            "roundaboutSegs": 0,
-            "extStart": 0,
-            "extEnd": 0
+            "rawStretchCount": 1,
+            "rawMeters": 5494,
+            "meanError": 0,
+            "roundaboutSegs": 0
           }
         },
         {
@@ -5282,19 +5278,17 @@
           "variants": 1,
           "tripCount": 40,
           "stops": 8,
-          "lengthKm": 5.48,
+          "lengthKm": 5.47,
           "stats": {
             "observations": 73,
-            "matched": 68,
-            "noCandidates": 5,
+            "matched": 73,
+            "noCandidates": 0,
             "viterbiBreaks": 0,
             "bridged": 0,
-            "rawStretchCount": 0,
-            "rawMeters": 0,
-            "meanError": 25.274936051326755,
-            "roundaboutSegs": 0,
-            "extStart": 0,
-            "extEnd": 0
+            "rawStretchCount": 1,
+            "rawMeters": 5468,
+            "meanError": 0,
+            "roundaboutSegs": 0
           }
         }
       ]
@@ -5310,16 +5304,16 @@
           "variants": 1,
           "tripCount": 313,
           "stops": 12,
-          "lengthKm": 19.9,
+          "lengthKm": 19.91,
           "stats": {
             "observations": 518,
-            "matched": 478,
-            "noCandidates": 40,
+            "matched": 455,
+            "noCandidates": 63,
             "viterbiBreaks": 4,
             "bridged": 0,
             "rawStretchCount": 4,
-            "rawMeters": 536,
-            "meanError": 20.033382604671043,
+            "rawMeters": 537,
+            "meanError": 16.763794516744,
             "roundaboutSegs": 0,
             "extStart": 0,
             "extEnd": 0
@@ -5334,13 +5328,13 @@
           "lengthKm": 19.85,
           "stats": {
             "observations": 517,
-            "matched": 477,
-            "noCandidates": 40,
-            "viterbiBreaks": 3,
+            "matched": 455,
+            "noCandidates": 62,
+            "viterbiBreaks": 4,
             "bridged": 0,
-            "rawStretchCount": 3,
-            "rawMeters": 517,
-            "meanError": 19.94767287288199,
+            "rawStretchCount": 4,
+            "rawMeters": 556,
+            "meanError": 16.885213236728262,
             "roundaboutSegs": 0,
             "extStart": 0,
             "extEnd": 0
@@ -5429,7 +5423,7 @@
           "variants": 2,
           "tripCount": 64,
           "stops": 4,
-          "lengthKm": 1.23,
+          "lengthKm": 1.3,
           "stats": {
             "observations": 11,
             "matched": 11,

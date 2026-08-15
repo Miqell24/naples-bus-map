@@ -164,7 +164,16 @@ const railCfg = (label, railKeep, routeTypes, keep) => ({
   ],
 });
 if (tramAll || tramSel.length) MODES.push(railCfg('trams', ['tram'], ['0']));
-if (tramAll || metroSel.some((l) => l !== 'L2')) MODES.push(railCfg('metro', ['subway'], ['1'], (l) => l !== 'L2'));
+// L1 and L6 are drawn from ANM's own shape, not matched to OSM: the subway
+// graph here is incomplete (the newest L1 extension to Tribunale is not
+// routable, so the line ended 447 m short of its terminus) AND doubled (two
+// parallel tunnels under Piazza Municipio), and Viterbi hopped between the
+// axes, leaving a zigzag with a hook at the station (user report). Where the
+// graph cannot be trusted, the operator's published alignment is the honest
+// geometry — an approximation, but a continuous one that runs where the line
+// runs. The mainline (L2), the trams and the funiculars stay matched: their
+// tracks are mapped properly.
+if (tramAll || metroSel.some((l) => l !== 'L2')) MODES.push({ ...railCfg('metro', ['subway'], ['1'], (l) => l !== 'L2'), rawShape: true });
 if (tramAll || metroSel.includes('L2')) MODES.push(railCfg('Linea 2', ['rail', 'light_rail'], ['1'], (l) => l === 'L2'));
 if (tramAll || metroSel.some((l) => l.startsWith('F'))) MODES.push(railCfg('funiculars', ['funicular'], ['7']));
 
@@ -548,7 +557,31 @@ async function processMode(cfg) {
       // emission softens; surface trams keep the tight default
       if (cfg.mode === 'tram' && isMetroLine(r.line)) {
         opts = { sigma: 15, radii: [60, 120], maxCand: 16, gapMin: GAP_MIN };
+        // …except on the mainline, where the rescue radius is the problem, not
+        // the cure: Linea 2 shares Napoli Centrale's throat with a dozen
+        // parallel tracks 10–40 m apart, and a 120 m net let Viterbi step onto
+        // a yard track and back — the rectangle at Gianturco (user report).
+        if (cfg.railKeep?.has('rail')) opts = { sigma: 12, radii: [40, 70], maxCand: 12, gapMin: GAP_MIN };
       }
+    }
+    if (cfg.rawShape) {
+      // the shape IS the geometry: no graph, no segments, drawn as an
+      // "outside OSM" run exactly like the matcher's own raw fallback
+      const km = polylineLength(sampled) / 1000;
+      r.matchedXY = sampled;
+      r.usedSegs = new Set();
+      r.stats = { observations: sampled.length, matched: sampled.length, noCandidates: 0,
+        viterbiBreaks: 0, bridged: 0, rawStretchCount: 1, rawMeters: Math.round(km * 1000),
+        meanError: 0, roundaboutSegs: 0 };
+      r.lengthKm = km;
+      const mid = sampled[Math.floor(sampled.length / 2)];
+      rawRunsAll.push({
+        x: mid[0], y: mid[1], len: km * 1000,
+        lines: new Set([r.line]),
+        coords: sampled.map(([x, y]) => { const [lon, lat] = proj.toLonLat(x, y); return [round6(lon), round6(lat)]; }),
+      });
+      log(`line ${r.line} dir ${r.dir}: ${km.toFixed(2)} km drawn from the operator's shape (subway graph not trusted here)`);
+      continue;
     }
     const res = matchShape(graph, sampled, opts);
     if (!res) { log(`SKIPPED ${r.line}/${r.dir}: matching failed`); continue; }
@@ -559,10 +592,33 @@ async function processMode(cfg) {
       .map((s) => stopsById.get(s.stopId))
       .filter(Boolean)
       .map((st) => proj.toXY(st.lat, st.lon));
-    const ext = extendToStops(graph, res, stopsXY);
-    if (ext) log(`  terminal repair ${r.line}/${r.dir}: ` +
-      `${ext.head ? `${ext.head} stop(s) before the shape (+${ext.startM} m) ` : ''}` +
-      `${ext.tail ? `${ext.tail} stop(s) past the shape (+${ext.endM} m)` : ''}`);
+    // On RAILS the path is never dragged toward a stop: metro station
+    // coordinates are entrance-based (Municipio sits 76 m off the tunnel,
+    // Arco Mirelli 273 m), so chasing them builds a hook out of the line and
+    // back — the doubled kink at Piazza Municipio (user report). What the rail
+    // lines do need is the opposite repair: where the OSM tunnel gives out,
+    // the drawn line simply stops, and L1 ended 447 m short of Tribunale
+    // because the newest extension is not routable in OSM. There the shape
+    // itself is drawn — the operator's own geometry, honest about being an
+    // approximation, instead of a line that ends in the middle of nowhere.
+    if (cfg.graphMode === 'tram' && !r.pseudo) {
+      const near = (q) => { let bi = 0, bd = Infinity;
+        for (let i = 0; i < xy.length; i++) { const dd = Math.hypot(xy[i][0] - q[0], xy[i][1] - q[1]); if (dd < bd) { bd = dd; bi = i; } }
+        return bi; };
+      const runLen = (a, b) => { let m = 0; for (let i = a; i < b; i++) m += Math.hypot(xy[i + 1][0] - xy[i][0], xy[i + 1][1] - xy[i][1]); return m; };
+      const i0 = near(res.coords[0]), i1 = near(res.coords[res.coords.length - 1]);
+      const headM = runLen(0, i0), tailM = runLen(i1, xy.length - 1);
+      if (headM > 60) res.coords = [...xy.slice(0, i0), ...res.coords];
+      if (tailM > 60) res.coords = [...res.coords, ...xy.slice(i1 + 1)];
+      if (headM > 60 || tailM > 60) log(`  shape tail ${r.line}/${r.dir}: drawn from the raw shape` +
+        `${headM > 60 ? ` (+${Math.round(headM)} m before)` : ''}${tailM > 60 ? ` (+${Math.round(tailM)} m past)` : ''}` +
+        ` — no routable track in OSM there`);
+    } else {
+      const ext = extendToStops(graph, res, stopsXY);
+      if (ext) log(`  terminal repair ${r.line}/${r.dir}: ` +
+        `${ext.head ? `${ext.head} stop(s) before the shape (+${ext.startM} m) ` : ''}` +
+        `${ext.tail ? `${ext.tail} stop(s) past the shape (+${ext.endM} m)` : ''}`);
+    }
     // cut the out-and-back stubs before anything downstream sees them: the
     // stroke layer, the number rows and the length all come off these
     const spurs = [];
