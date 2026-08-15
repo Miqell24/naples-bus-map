@@ -26,9 +26,10 @@ const PEN_CONTRAFLOW = 2.5;
 // tram tracks and surface rail (parts of M1 run in a rail-tagged corridor; plain
 // rail also brings the suburban railway, which is harmless — Viterbi consistency
 // keeps each line on its own connected network). Depot tracks excluded.
-// funicular is Naples-specific: Chiaia, Centrale and Mergellina are tagged
-// railway=funicular and would otherwise be invisible to the rail graph
-const RAIL_OK = new Set(['subway', 'tram', 'light_rail', 'rail', 'funicular']);
+// funicular is Naples-specific (Chiaia, Centrale, Mergellina), and so is
+// narrow_gauge: the Circumvesuviana runs on 950 mm track and parts of it are
+// tagged that way — without it the EAV graph loses whole branches
+const RAIL_OK = new Set(['subway', 'tram', 'light_rail', 'rail', 'funicular', 'narrow_gauge']);
 function tramAccess(tags) {
   if (!tags || !RAIL_OK.has(tags.railway)) return null;
   const s = tags.service;

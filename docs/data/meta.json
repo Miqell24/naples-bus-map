@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-08-15T21:38:56.002Z",
+  "generatedAt": "2026-08-15T22:01:49.450Z",
   "bbox": [
-    14.120652,
-    40.760437,
-    14.431368,
-    40.952315
+    14.045296,
+    40.625631,
+    14.618406,
+    41.351078
   ],
   "badgeBands": [
     [
@@ -57,6 +57,11 @@
     {
       "mode": "tram",
       "label": "funiculars",
+      "color": "#d6212b"
+    },
+    {
+      "mode": "tram",
+      "label": "EAV rail",
       "color": "#d6212b"
     }
   ],
@@ -5248,6 +5253,629 @@
             "rawStretchCount": 0,
             "rawMeters": 0,
             "meanError": 3.4611065290400886,
+            "roundaboutSegs": 0,
+            "extStart": 0,
+            "extEnd": 0
+          }
+        }
+      ]
+    },
+    {
+      "line": "E1",
+      "mode": "tram",
+      "color": "#C8102E",
+      "dirs": [
+        {
+          "dir": "Napoli Porta Nolana",
+          "headsign": "Napoli Porta Nolana",
+          "variants": 1,
+          "tripCount": 29,
+          "stops": 18,
+          "lengthKm": 42.22,
+          "stats": {
+            "observations": 18,
+            "matched": 18,
+            "noCandidates": 0,
+            "viterbiBreaks": 0,
+            "bridged": 0,
+            "rawStretchCount": 0,
+            "rawMeters": 0,
+            "meanError": 9.728848601640934,
+            "roundaboutSegs": 0,
+            "extStart": 0,
+            "extEnd": 0
+          }
+        },
+        {
+          "dir": "Sorrento",
+          "headsign": "Sorrento",
+          "variants": 1,
+          "tripCount": 29,
+          "stops": 18,
+          "lengthKm": 42.22,
+          "stats": {
+            "observations": 18,
+            "matched": 18,
+            "noCandidates": 0,
+            "viterbiBreaks": 0,
+            "bridged": 0,
+            "rawStretchCount": 0,
+            "rawMeters": 0,
+            "meanError": 10.49434484843944,
+            "roundaboutSegs": 0,
+            "extStart": 0,
+            "extEnd": 0
+          }
+        }
+      ]
+    },
+    {
+      "line": "E1a",
+      "mode": "tram",
+      "color": "#C8102E",
+      "dirs": [
+        {
+          "dir": "Napoli Porta Nolana",
+          "headsign": "Napoli Porta Nolana",
+          "variants": 1,
+          "tripCount": 27,
+          "stops": 18,
+          "lengthKm": 20.27,
+          "stats": {
+            "observations": 18,
+            "matched": 18,
+            "noCandidates": 0,
+            "viterbiBreaks": 0,
+            "bridged": 0,
+            "rawStretchCount": 0,
+            "rawMeters": 0,
+            "meanError": 9.25065054010445,
+            "roundaboutSegs": 0,
+            "extStart": 0,
+            "extEnd": 0
+          }
+        },
+        {
+          "dir": "Torre Annunziata - Oplonti",
+          "headsign": "Torre Annunziata - Oplonti",
+          "variants": 1,
+          "tripCount": 27,
+          "stops": 18,
+          "lengthKm": 20.27,
+          "stats": {
+            "observations": 18,
+            "matched": 18,
+            "noCandidates": 0,
+            "viterbiBreaks": 0,
+            "bridged": 0,
+            "rawStretchCount": 0,
+            "rawMeters": 0,
+            "meanError": 9.202959609411343,
+            "roundaboutSegs": 0,
+            "extStart": 0,
+            "extEnd": 0
+          }
+        }
+      ]
+    },
+    {
+      "line": "E2",
+      "mode": "tram",
+      "color": "#7d2b8b",
+      "dirs": [
+        {
+          "dir": "Aversa",
+          "headsign": "Aversa",
+          "variants": 1,
+          "tripCount": 49,
+          "stops": 5,
+          "lengthKm": 10.11,
+          "stats": {
+            "observations": 5,
+            "matched": 5,
+            "noCandidates": 0,
+            "viterbiBreaks": 0,
+            "bridged": 0,
+            "rawStretchCount": 0,
+            "rawMeters": 0,
+            "meanError": 5.168028125011568,
+            "roundaboutSegs": 0,
+            "extStart": 0,
+            "extEnd": 0
+          }
+        },
+        {
+          "dir": "Piscinola Scampia",
+          "headsign": "Piscinola Scampia",
+          "variants": 1,
+          "tripCount": 49,
+          "stops": 5,
+          "lengthKm": 10.11,
+          "stats": {
+            "observations": 5,
+            "matched": 5,
+            "noCandidates": 0,
+            "viterbiBreaks": 0,
+            "bridged": 0,
+            "rawStretchCount": 0,
+            "rawMeters": 0,
+            "meanError": 8.714023513138915,
+            "roundaboutSegs": 0,
+            "extStart": 0,
+            "extEnd": 0
+          }
+        }
+      ]
+    },
+    {
+      "line": "E4",
+      "mode": "tram",
+      "color": "#C8102E",
+      "dirs": [
+        {
+          "dir": "Napoli Porta Nolana",
+          "headsign": "Napoli Porta Nolana",
+          "variants": 1,
+          "tripCount": 19,
+          "stops": 25,
+          "lengthKm": 34.56,
+          "stats": {
+            "observations": 25,
+            "matched": 25,
+            "noCandidates": 0,
+            "viterbiBreaks": 0,
+            "bridged": 0,
+            "rawStretchCount": 0,
+            "rawMeters": 0,
+            "meanError": 9.70422120452355,
+            "roundaboutSegs": 0,
+            "extStart": 0,
+            "extEnd": 0
+          }
+        },
+        {
+          "dir": "Poggiomarino",
+          "headsign": "Poggiomarino",
+          "variants": 1,
+          "tripCount": 19,
+          "stops": 25,
+          "lengthKm": 34.56,
+          "stats": {
+            "observations": 25,
+            "matched": 25,
+            "noCandidates": 0,
+            "viterbiBreaks": 0,
+            "bridged": 0,
+            "rawStretchCount": 0,
+            "rawMeters": 0,
+            "meanError": 9.458077126722726,
+            "roundaboutSegs": 0,
+            "extStart": 0,
+            "extEnd": 0
+          }
+        }
+      ]
+    },
+    {
+      "line": "E5",
+      "mode": "tram",
+      "color": "#0069B4",
+      "dirs": [
+        {
+          "dir": "Licola",
+          "headsign": "Licola",
+          "variants": 1,
+          "tripCount": 42,
+          "stops": 12,
+          "lengthKm": 19.48,
+          "stats": {
+            "observations": 12,
+            "matched": 12,
+            "noCandidates": 0,
+            "viterbiBreaks": 0,
+            "bridged": 0,
+            "rawStretchCount": 0,
+            "rawMeters": 0,
+            "meanError": 1.6299777344803845,
+            "roundaboutSegs": 0,
+            "extStart": 0,
+            "extEnd": 0
+          }
+        },
+        {
+          "dir": "Montesanto",
+          "headsign": "Montesanto",
+          "variants": 1,
+          "tripCount": 42,
+          "stops": 12,
+          "lengthKm": 19.48,
+          "stats": {
+            "observations": 12,
+            "matched": 12,
+            "noCandidates": 0,
+            "viterbiBreaks": 0,
+            "bridged": 0,
+            "rawStretchCount": 0,
+            "rawMeters": 0,
+            "meanError": 2.2502956746506766,
+            "roundaboutSegs": 0,
+            "extStart": 0,
+            "extEnd": 0
+          }
+        },
+        {
+          "dir": "Quarto",
+          "headsign": "Quarto",
+          "variants": 1,
+          "tripCount": 2,
+          "stops": 9,
+          "lengthKm": 12.82,
+          "stats": {
+            "observations": 9,
+            "matched": 9,
+            "noCandidates": 0,
+            "viterbiBreaks": 0,
+            "bridged": 0,
+            "rawStretchCount": 0,
+            "rawMeters": 0,
+            "meanError": 2.026040161028394,
+            "roundaboutSegs": 0,
+            "extStart": 0,
+            "extEnd": 0
+          }
+        }
+      ]
+    },
+    {
+      "line": "E5a",
+      "mode": "tram",
+      "color": "#0069B4",
+      "dirs": [
+        {
+          "dir": "Monte Sant'Angelo",
+          "headsign": "Monte Sant'Angelo",
+          "variants": 1,
+          "tripCount": 31,
+          "stops": 2,
+          "lengthKm": 1.32,
+          "stats": {
+            "observations": 2,
+            "matched": 2,
+            "noCandidates": 0,
+            "viterbiBreaks": 0,
+            "bridged": 0,
+            "rawStretchCount": 0,
+            "rawMeters": 0,
+            "meanError": 56.051718197440316,
+            "roundaboutSegs": 0,
+            "extStart": 0,
+            "extEnd": 0
+          }
+        },
+        {
+          "dir": "Soccavo",
+          "headsign": "Soccavo",
+          "variants": 1,
+          "tripCount": 31,
+          "stops": 2,
+          "lengthKm": 1.32,
+          "stats": {
+            "observations": 2,
+            "matched": 2,
+            "noCandidates": 0,
+            "viterbiBreaks": 0,
+            "bridged": 0,
+            "rawStretchCount": 0,
+            "rawMeters": 0,
+            "meanError": 15.60777139577447,
+            "roundaboutSegs": 0,
+            "extStart": 0,
+            "extEnd": 0
+          }
+        }
+      ]
+    },
+    {
+      "line": "E6",
+      "mode": "tram",
+      "color": "#C8102E",
+      "dirs": [
+        {
+          "dir": "Napoli Porta Nolana",
+          "headsign": "Napoli Porta Nolana",
+          "variants": 1,
+          "tripCount": 22,
+          "stops": 28,
+          "lengthKm": 43.03,
+          "stats": {
+            "observations": 28,
+            "matched": 28,
+            "noCandidates": 0,
+            "viterbiBreaks": 0,
+            "bridged": 0,
+            "rawStretchCount": 0,
+            "rawMeters": 0,
+            "meanError": 9.524587963374627,
+            "roundaboutSegs": 0,
+            "extStart": 0,
+            "extEnd": 0
+          }
+        },
+        {
+          "dir": "Poggiomarino",
+          "headsign": "Poggiomarino",
+          "variants": 1,
+          "tripCount": 1,
+          "stops": 22,
+          "lengthKm": 29.84,
+          "stats": {
+            "observations": 22,
+            "matched": 22,
+            "noCandidates": 0,
+            "viterbiBreaks": 0,
+            "bridged": 0,
+            "rawStretchCount": 0,
+            "rawMeters": 0,
+            "meanError": 6.462116386595284,
+            "roundaboutSegs": 0,
+            "extStart": 0,
+            "extEnd": 0
+          }
+        },
+        {
+          "dir": "Sarno",
+          "headsign": "Sarno",
+          "variants": 1,
+          "tripCount": 21,
+          "stops": 25,
+          "lengthKm": 38.3,
+          "stats": {
+            "observations": 25,
+            "matched": 25,
+            "noCandidates": 0,
+            "viterbiBreaks": 0,
+            "bridged": 0,
+            "rawStretchCount": 0,
+            "rawMeters": 0,
+            "meanError": 6.645708404228961,
+            "roundaboutSegs": 0,
+            "extStart": 0,
+            "extEnd": 0
+          }
+        }
+      ]
+    },
+    {
+      "line": "E7",
+      "mode": "tram",
+      "color": "#7d2b8b",
+      "dirs": [
+        {
+          "dir": "Cancello RFI",
+          "headsign": "Cancello RFI",
+          "variants": 1,
+          "tripCount": 2,
+          "stops": 15,
+          "lengthKm": 59.36,
+          "stats": {
+            "observations": 15,
+            "matched": 15,
+            "noCandidates": 0,
+            "viterbiBreaks": 0,
+            "bridged": 0,
+            "rawStretchCount": 0,
+            "rawMeters": 0,
+            "meanError": 6.40997390640492,
+            "roundaboutSegs": 0,
+            "extStart": 0,
+            "extEnd": 0
+          }
+        },
+        {
+          "dir": "Napoli Centrale RFI",
+          "headsign": "Napoli Centrale RFI",
+          "variants": 1,
+          "tripCount": 8,
+          "stops": 18,
+          "lengthKm": 107.91,
+          "stats": {
+            "observations": 18,
+            "matched": 18,
+            "noCandidates": 0,
+            "viterbiBreaks": 0,
+            "bridged": 0,
+            "rawStretchCount": 0,
+            "rawMeters": 0,
+            "meanError": 7.089392140683764,
+            "roundaboutSegs": 0,
+            "extStart": 0,
+            "extEnd": 0
+          }
+        },
+        {
+          "dir": "Piedimonte Matese",
+          "headsign": "Piedimonte Matese",
+          "variants": 1,
+          "tripCount": 10,
+          "stops": 18,
+          "lengthKm": 107.91,
+          "stats": {
+            "observations": 18,
+            "matched": 18,
+            "noCandidates": 0,
+            "viterbiBreaks": 0,
+            "bridged": 0,
+            "rawStretchCount": 0,
+            "rawMeters": 0,
+            "meanError": 6.006744327364503,
+            "roundaboutSegs": 0,
+            "extStart": 0,
+            "extEnd": 0
+          }
+        }
+      ]
+    },
+    {
+      "line": "E8",
+      "mode": "tram",
+      "color": "#C8102E",
+      "dirs": [
+        {
+          "dir": "Baiano",
+          "headsign": "Baiano",
+          "variants": 1,
+          "tripCount": 14,
+          "stops": 22,
+          "lengthKm": 31.37,
+          "stats": {
+            "observations": 22,
+            "matched": 22,
+            "noCandidates": 0,
+            "viterbiBreaks": 0,
+            "bridged": 0,
+            "rawStretchCount": 0,
+            "rawMeters": 0,
+            "meanError": 5.45183434930879,
+            "roundaboutSegs": 0,
+            "extStart": 0,
+            "extEnd": 0
+          }
+        },
+        {
+          "dir": "Casoria Arpino - Volla",
+          "headsign": "Casoria Arpino - Volla",
+          "variants": 1,
+          "tripCount": 14,
+          "stops": 22,
+          "lengthKm": 31.37,
+          "stats": {
+            "observations": 22,
+            "matched": 22,
+            "noCandidates": 0,
+            "viterbiBreaks": 0,
+            "bridged": 0,
+            "rawStretchCount": 0,
+            "rawMeters": 0,
+            "meanError": 5.313604445291651,
+            "roundaboutSegs": 0,
+            "extStart": 0,
+            "extEnd": 0
+          }
+        }
+      ]
+    },
+    {
+      "line": "E9",
+      "mode": "tram",
+      "color": "#0069B4",
+      "dirs": [
+        {
+          "dir": "Fuorigrotta",
+          "headsign": "Fuorigrotta",
+          "variants": 1,
+          "tripCount": 9,
+          "stops": 11,
+          "lengthKm": 15.05,
+          "stats": {
+            "observations": 11,
+            "matched": 11,
+            "noCandidates": 0,
+            "viterbiBreaks": 0,
+            "bridged": 0,
+            "rawStretchCount": 0,
+            "rawMeters": 0,
+            "meanError": 5.979608922357864,
+            "roundaboutSegs": 0,
+            "extStart": 0,
+            "extEnd": 0
+          }
+        },
+        {
+          "dir": "Montesanto",
+          "headsign": "Montesanto",
+          "variants": 1,
+          "tripCount": 41,
+          "stops": 13,
+          "lengthKm": 19.32,
+          "stats": {
+            "observations": 13,
+            "matched": 13,
+            "noCandidates": 0,
+            "viterbiBreaks": 0,
+            "bridged": 0,
+            "rawStretchCount": 0,
+            "rawMeters": 0,
+            "meanError": 5.881415378898453,
+            "roundaboutSegs": 0,
+            "extStart": 0,
+            "extEnd": 0
+          }
+        },
+        {
+          "dir": "Torregaveta",
+          "headsign": "Torregaveta",
+          "variants": 1,
+          "tripCount": 35,
+          "stops": 13,
+          "lengthKm": 19.32,
+          "stats": {
+            "observations": 13,
+            "matched": 13,
+            "noCandidates": 0,
+            "viterbiBreaks": 0,
+            "bridged": 0,
+            "rawStretchCount": 0,
+            "rawMeters": 0,
+            "meanError": 5.623298245023121,
+            "roundaboutSegs": 0,
+            "extStart": 0,
+            "extEnd": 0
+          }
+        }
+      ]
+    },
+    {
+      "line": "E9a",
+      "mode": "tram",
+      "color": "#0069B4",
+      "dirs": [
+        {
+          "dir": "Bagnoli",
+          "headsign": "Bagnoli",
+          "variants": 1,
+          "tripCount": 25,
+          "stops": 7,
+          "lengthKm": 7.63,
+          "stats": {
+            "observations": 7,
+            "matched": 7,
+            "noCandidates": 0,
+            "viterbiBreaks": 0,
+            "bridged": 0,
+            "rawStretchCount": 0,
+            "rawMeters": 0,
+            "meanError": 4.779627603115848,
+            "roundaboutSegs": 0,
+            "extStart": 0,
+            "extEnd": 0
+          }
+        },
+        {
+          "dir": "Montesanto",
+          "headsign": "Montesanto",
+          "variants": 1,
+          "tripCount": 25,
+          "stops": 7,
+          "lengthKm": 7.63,
+          "stats": {
+            "observations": 7,
+            "matched": 7,
+            "noCandidates": 0,
+            "viterbiBreaks": 0,
+            "bridged": 0,
+            "rawStretchCount": 0,
+            "rawMeters": 0,
+            "meanError": 4.757990006793191,
             "roundaboutSegs": 0,
             "extStart": 0,
             "extEnd": 0

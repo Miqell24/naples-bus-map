@@ -2,17 +2,18 @@
 
 Interactive, poster-grade map of the public transport network of **Naples**:
 ANM buses and trolleybuses, the three tram lines, the metro (L1, L6 and
-Trenitalia's Linea 2, drawn in the official line colors) and the Chiaia,
-Centrale and Mergellina funiculars — 114 lines drawn along the real street and
-track geometry.
+Trenitalia's Linea 2, drawn in the official line colors), the Chiaia, Centrale
+and Mergellina funiculars, and the **EAV railways** — Circumvesuviana, Cumana,
+Circumflegrea and the Aversa and Piedimonte lines — 125 lines drawn along the
+real street and track geometry.
 
 ## Live
 
 **https://miqell24.github.io/naples-bus-map/** — GitHub Pages from `main:/docs`.
 
-Everything comes from ONE feed — ANM's Google Transit bundle
-(http://www.anm.it/google/google-transit.zip) — split by `route_type` at build
-time:
+Two feeds feed the map: ANM's Google Transit bundle
+(http://www.anm.it/google/google-transit.zip) split by `route_type`, and EAV's
+"ferro e gomma" GTFS (rail half only):
 
 | mode | route_type | lines | graph |
 |---|---|---|---|
@@ -22,6 +23,7 @@ time:
 | metro | 1 | L1 and L6, official colors from `routes.txt` | `railway=subway` tunnels |
 | Linea 2 | 1 | Trenitalia's Passante, published with the ANM feed | `railway=rail` mainline |
 | funiculars | 7 | F1 Chiaia, F3 Centrale, F4 Mergellina | `railway=funicular` |
+| EAV rail | 2 | E1–E9b: Vesuviane (red), Cumana & Circumflegrea (blue), Aversa & Piedimonte (violet) — own feed from [eavsrl.it/open-data](https://www.eavsrl.it/open-data/) | `railway=rail/narrow_gauge/subway`, own extract |
 
 Build quirks worth knowing:
 
@@ -41,6 +43,11 @@ Build quirks worth knowing:
   lures the matcher onto the wrong rails.
 * Metro shapes are tunnel approximations: mean matching error is 19–26 m on
   L1/L2/L6 against 2–5 m on the surface network.
+* **EAV's rail half ships no shapes and no direction_id** — stop sequences are
+  the matching observations (pseudo-matching) and headsigns split the
+  directions. EAV's regional buses are not drawn: they run out to Benevento,
+  far outside the road graph. Keys map the operator's dotted branch numbers
+  to letters: `1` → E1, `1.` → E1a, `1..` → E1b.
 
 ## Pipeline
 

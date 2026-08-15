@@ -58,7 +58,11 @@ const MLINE_DARK = '#7d5600';
 // sibling cities test for an M prefix. The funiculars earn it: they are the
 // city's vertical metro, four minutes end to end, and ANM's own diagram draws
 // them next to L1.
-const isMetroLine = (l) => /^[LF]\d/.test(l);
+// …and E = the EAV railways (Circumvesuviana, Cumana, Circumflegrea, the
+// Aversa and Piedimonte lines), which get the same treatment: wide ribbon,
+// station discs, names that never yield. The test is only ever applied inside
+// the tram-mode cfgs, so ANM's E6 BUS keeps its navy.
+const isMetroLine = (l) => /^[LFE]\d/.test(l);
 
 // ANM ships every stop name in capitals; OSM holds the same words written
 // properly, accents and lowercase articles included — see lib/italian.mjs.
@@ -208,6 +212,28 @@ const throughTrack = (e) => !['branch', 'industrial', 'military', 'tourism'].inc
   && !/raccordo/i.test(e.tags?.name || '');
 if (tramAll || metroSel.includes('L2')) MODES.push(railCfg('Linea 2', ['rail', 'light_rail'], ['1'], (l) => l === 'L2', throughTrack));
 if (tramAll || metroSel.some((l) => l.startsWith('F'))) MODES.push(railCfg('funiculars', ['funicular'], ['7']));
+// The SECOND OPERATOR: EAV's railways from their own feed (eavsrl.it/open-data)
+// on their own graph and their own extract — the network runs far outside the
+// ANM bbox (Sorrento, Sarno, Piedimonte Matese). The feed's rail half has NO
+// shapes and NO direction_id: stop sequences are the observations
+// (pseudo-matching, the Athens STASY pattern) and headsigns split directions.
+// Keys: 1 → E1, 1. → E1a, 1.. → E1b — EAV numbers its branches with dots.
+const eavKey = (sn) => {
+  const m = /^(\d+)(\.*)$/.exec((sn || '').trim());
+  if (!m || m[2].length > 2) return null;
+  return 'E' + m[1] + (m[2] ? 'ab'[m[2].length - 1] : '');
+};
+if (tramAll || metroSel.some((l) => /^E\d/.test(l))) MODES.push({
+  mode: 'tram', label: 'EAV rail', osmFile: 'data/osm/naples-eav-rail.json',
+  graphMode: 'tram', railKeep: new Set(['rail', 'light_rail', 'narrow_gauge', 'subway']),
+  color: '#d6212b', colorDark: '#7c1116',
+  all: tramAll, lines: tramAll ? [] : metroSel.filter((l) => /^E\d/.test(l)),
+  feeds: [{
+    tag: 'eav', dir: 'data/gtfs-eav', routeTypes: ['2'], titleCase: true,
+    mapKey: eavKey,
+    dirKey: (t) => (t.trip_headsign || '0').trim() || '0',
+  }],
+});
 
 // Feed coordinate fixes: poles the GTFS places on the wrong street, keyed by
 // `<feed tag>:<stop_id>` with the coordinates of that stop's node in OSM. A
@@ -395,6 +421,13 @@ async function processMode(cfg) {
         cfg.trolleySet.add(key);
         cfg.lineColors[key] = TROLLEY_GREEN;
         cfg.lineColorsDark[key] = TROLLEY_DARK;
+      } else if (feed.tag === 'eav') {
+        // EAV ships no colors; the families get theirs — Vesuviane red,
+        // Flegree (Cumana + Circumflegrea, the 5 and 9 branches) blue, the
+        // northern standard-gauge pair (Aversa, Piedimonte) violet
+        const c = /^E[59]/.test(key) ? '#0069B4' : /^E[27]$/.test(key) ? '#7d2b8b' : '#C8102E';
+        cfg.lineColors[key] = c;
+        cfg.lineColorsDark[key] = darken(c, 0.45);
       } else if ((r.route_type === '1' || r.route_type === '7') && /^[0-9A-F]{6}$/i.test(r.route_color || '')) {
         // ANM ships the official colors: L1 yellow, L2 blue, L6 light blue and
         // one orange for all three funiculars
@@ -412,7 +445,10 @@ async function processMode(cfg) {
       if (!L) continue;
       let dirs = byLineDir.get(L);
       if (!dirs) byLineDir.set(L, (dirs = new Map()));
-      const dir = t.direction_id || '0';
+      // EAV's rail half ships direction_id EMPTY on all 623 trips — the
+      // headsign is the only direction signal (family pattern: Grodzisk,
+      // Athens OSY). Feeds that fill the column keep it.
+      const dir = feed.dirKey ? feed.dirKey(t) : (t.direction_id || '0');
       let m = dirs.get(dir);
       if (!m) dirs.set(dir, (m = new Map()));
       let e = m.get(t.shape_id);

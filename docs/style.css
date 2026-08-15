@@ -132,6 +132,8 @@ body { font-family: system-ui, -apple-system, 'Segoe UI', sans-serif; }
 .mini.m2 { background: #4E78BA; }   /* L2 — Trenitalia */
 .mini.m3 { background: #179ED6; }   /* L6 */
 .mini.m4 { background: #F89329; }   /* funiculars */
+.mini.m5 { background: #C8102E; }   /* EAV Vesuviane */
+.mini.m6 { background: #0069B4; }   /* EAV Cumana & Circumflegrea */
 .sw.stop { width: 11px; height: 11px; border-radius: 50%; background: #fff; border: 2.5px solid var(--kmk); }
 .sw.terminus { width: 13px; height: 13px; border-radius: 50%; background: var(--kmk); border: 2.5px solid var(--kmk-dark); }
 details.lines { border-top: 1px solid #e3e8f0; padding-top: 8px; margin-bottom: 4px; font-size: 12.5px; color: #223; }

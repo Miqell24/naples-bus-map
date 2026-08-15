@@ -118,7 +118,7 @@ async function init() {
   map.addControl(new maplibregl.NavigationControl({ visualizePitch: false }), 'top-right');
   map.addControl(new maplibregl.GeolocateControl({ positionOptions: { enableHighAccuracy: true }, trackUserLocation: true, showUserHeading: true, fitBoundsOptions: { maxZoom: 15.5 } }), 'top-right');
   map.addControl(new maplibregl.ScaleControl({ maxWidth: 120 }), 'bottom-left');
-  map.addControl(new maplibregl.AttributionControl({ compact: true, customAttribution: 'Timetables: ANM GTFS (Naples)' }));
+  map.addControl(new maplibregl.AttributionControl({ compact: true, customAttribution: 'Timetables: ANM &amp; EAV GTFS (Naples)' }));
 
   const [meta] = await Promise.all([
     fetch('data/meta.json').then((r) => r.json()),
@@ -142,10 +142,10 @@ async function init() {
   // Panel (English, minimal): legend + mode toggles + expandable clickable line list.
   const nBus = meta.lines.filter((l) => l.mode === 'bus').length;
   // same predicate as the pipeline: L1/L2/L6 are the metro, F1/F3/F4 the funiculars
-  const isMetroLine = (l) => /^[LF]\d/.test(l);
+  const isMetroLine = (l) => /^[LFE]\d/.test(l);
   const nMetro = meta.lines.filter((l) => l.mode === 'tram' && isMetroLine(l.line)).length;
   const nTram = meta.lines.filter((l) => l.mode === 'tram').length - nMetro;
-  document.getElementById('count').textContent = `(${nBus} bus & trolleybus · ${nTram} tram · ${nMetro} metro & funicular)`;
+  document.getElementById('count').textContent = `(${nBus} bus & trolleybus · ${nTram} tram · ${nMetro} metro, funicular & EAV rail)`;
   document.getElementById('stamp').textContent = new Date(meta.generatedAt).toLocaleDateString('en-GB');
   document.getElementById('chips').innerHTML = meta.lines
     .map((l) => `<button class="chip" data-line="${esc(l.line)}" style="background:${esc(l.color)}">${esc(l.line)}</button>`)
@@ -368,6 +368,8 @@ async function init() {
     ['#4E78BA', '#2B4266'], // L2 (Trenitalia)
     ['#179ED6', '#0D5775'], // L6
     ['#F89329', '#885116'], // F1 / F3 / F4 funiculars
+    ['#C8102E', '#6E0919'], // EAV Vesuviane (E1-E8 east branches)
+    ['#0069B4', '#003A63'], // EAV Flegree — Cumana & Circumflegrea (E5, E9)
   ];
   const discIcon = (fill, rim, half) => {
     const S = 48;
@@ -1047,7 +1049,7 @@ async function init() {
       const fs = Math.max(16, Math.round(out.width / 130));
       ctx.font = `${fs}px sans-serif`;
       ctx.textBaseline = 'bottom';
-      const txt = '© OpenStreetMap contributors · OpenFreeMap · GTFS: ANM Napoli';
+      const txt = '© OpenStreetMap contributors · OpenFreeMap · GTFS: ANM Napoli, EAV';
       const tw = ctx.measureText(txt).width;
       ctx.fillStyle = 'rgba(255,255,255,0.82)';
       ctx.fillRect(out.width - tw - fs, out.height - fs * 1.7, tw + fs, fs * 1.7);
@@ -1291,7 +1293,7 @@ async function init() {
             const fs = Math.max(16, Math.round(Wf / 500));
             cx.font = `${fs}px sans-serif`;
             cx.textBaseline = 'bottom';
-            const txt = '© OpenStreetMap contributors · OpenFreeMap · GTFS: ANM Napoli';
+            const txt = '© OpenStreetMap contributors · OpenFreeMap · GTFS: ANM Napoli, EAV';
             const tw = Math.min(cx.measureText(txt).width, wpx - fs);
             cx.fillStyle = 'rgba(255,255,255,0.82)';
             cx.fillRect(wpx - tw - fs, hpx - fs * 1.7, tw + fs, fs * 1.7);
