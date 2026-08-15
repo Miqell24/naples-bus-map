@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-15T21:22:15.380Z",
+  "generatedAt": "2026-08-15T21:38:56.002Z",
   "bbox": [
     14.120652,
     40.760437,
@@ -121,7 +121,7 @@
           "variants": 1,
           "tripCount": 32,
           "stops": 39,
-          "lengthKm": 11.79,
+          "lengthKm": 11.98,
           "stats": {
             "observations": 380,
             "matched": 380,
@@ -191,7 +191,7 @@
           "variants": 1,
           "tripCount": 270,
           "stops": 43,
-          "lengthKm": 13.31,
+          "lengthKm": 13.58,
           "stats": {
             "observations": 329,
             "matched": 329,
@@ -268,7 +268,7 @@
           "variants": 1,
           "tripCount": 174,
           "stops": 21,
-          "lengthKm": 12.57,
+          "lengthKm": 12.81,
           "stats": {
             "observations": 309,
             "matched": 309,
@@ -464,7 +464,7 @@
           "variants": 1,
           "tripCount": 212,
           "stops": 33,
-          "lengthKm": 8.73,
+          "lengthKm": 8.9,
           "stats": {
             "observations": 326,
             "matched": 326,
@@ -485,7 +485,7 @@
           "variants": 1,
           "tripCount": 212,
           "stops": 37,
-          "lengthKm": 9.99,
+          "lengthKm": 10.24,
           "stats": {
             "observations": 382,
             "matched": 382,
@@ -709,7 +709,7 @@
           "variants": 1,
           "tripCount": 150,
           "stops": 26,
-          "lengthKm": 9.76,
+          "lengthKm": 9.86,
           "stats": {
             "observations": 286,
             "matched": 286,
@@ -807,7 +807,7 @@
           "variants": 1,
           "tripCount": 8,
           "stops": 30,
-          "lengthKm": 9.27,
+          "lengthKm": 9.36,
           "stats": {
             "observations": 288,
             "matched": 288,
@@ -835,7 +835,7 @@
           "variants": 1,
           "tripCount": 219,
           "stops": 42,
-          "lengthKm": 13.59,
+          "lengthKm": 13.77,
           "stats": {
             "observations": 397,
             "matched": 397,
@@ -856,7 +856,7 @@
           "variants": 1,
           "tripCount": 206,
           "stops": 52,
-          "lengthKm": 15.58,
+          "lengthKm": 15.97,
           "stats": {
             "observations": 414,
             "matched": 414,
@@ -1129,7 +1129,7 @@
           "variants": 3,
           "tripCount": 373,
           "stops": 33,
-          "lengthKm": 12.65,
+          "lengthKm": 12.89,
           "stats": {
             "observations": 297,
             "matched": 297,
@@ -1150,7 +1150,7 @@
           "variants": 3,
           "tripCount": 365,
           "stops": 39,
-          "lengthKm": 13.92,
+          "lengthKm": 14.11,
           "stats": {
             "observations": 367,
             "matched": 367,
@@ -1178,7 +1178,7 @@
           "variants": 1,
           "tripCount": 11,
           "stops": 12,
-          "lengthKm": 16.13,
+          "lengthKm": 16.74,
           "stats": {
             "observations": 183,
             "matched": 161,
@@ -1199,7 +1199,7 @@
           "variants": 1,
           "tripCount": 11,
           "stops": 12,
-          "lengthKm": 20.41,
+          "lengthKm": 20.81,
           "stats": {
             "observations": 188,
             "matched": 165,
@@ -1227,7 +1227,7 @@
           "variants": 1,
           "tripCount": 201,
           "stops": 35,
-          "lengthKm": 10.96,
+          "lengthKm": 11.12,
           "stats": {
             "observations": 309,
             "matched": 309,
@@ -1297,7 +1297,7 @@
           "variants": 1,
           "tripCount": 18,
           "stops": 55,
-          "lengthKm": 15.45,
+          "lengthKm": 15.53,
           "stats": {
             "observations": 416,
             "matched": 416,
@@ -1325,7 +1325,7 @@
           "variants": 2,
           "tripCount": 195,
           "stops": 40,
-          "lengthKm": 19.81,
+          "lengthKm": 20.13,
           "stats": {
             "observations": 537,
             "matched": 537,
@@ -1346,7 +1346,7 @@
           "variants": 1,
           "tripCount": 213,
           "stops": 32,
-          "lengthKm": 16.51,
+          "lengthKm": 16.71,
           "stats": {
             "observations": 508,
             "matched": 508,
@@ -1444,7 +1444,7 @@
           "variants": 1,
           "tripCount": 72,
           "stops": 31,
-          "lengthKm": 10.1,
+          "lengthKm": 10.38,
           "stats": {
             "observations": 316,
             "matched": 316,
@@ -1521,7 +1521,7 @@
           "variants": 1,
           "tripCount": 138,
           "stops": 48,
-          "lengthKm": 26.34,
+          "lengthKm": 26.4,
           "stats": {
             "observations": 844,
             "matched": 844,
@@ -1717,7 +1717,7 @@
           "variants": 1,
           "tripCount": 127,
           "stops": 27,
-          "lengthKm": 6.82,
+          "lengthKm": 7.11,
           "stats": {
             "observations": 306,
             "matched": 306,
@@ -1738,7 +1738,7 @@
           "variants": 1,
           "tripCount": 127,
           "stops": 15,
-          "lengthKm": 4.78,
+          "lengthKm": 4.91,
           "stats": {
             "observations": 208,
             "matched": 208,
@@ -1766,7 +1766,7 @@
           "variants": 1,
           "tripCount": 237,
           "stops": 39,
-          "lengthKm": 13.51,
+          "lengthKm": 14.18,
           "stats": {
             "observations": 435,
             "matched": 435,
@@ -1787,7 +1787,7 @@
           "variants": 1,
           "tripCount": 225,
           "stops": 45,
-          "lengthKm": 13.05,
+          "lengthKm": 13.36,
           "stats": {
             "observations": 360,
             "matched": 360,
@@ -1815,7 +1815,7 @@
           "variants": 1,
           "tripCount": 136,
           "stops": 48,
-          "lengthKm": 12.79,
+          "lengthKm": 13.28,
           "stats": {
             "observations": 403,
             "matched": 403,
@@ -1885,7 +1885,7 @@
           "variants": 1,
           "tripCount": 194,
           "stops": 63,
-          "lengthKm": 16.91,
+          "lengthKm": 16.98,
           "stats": {
             "observations": 451,
             "matched": 451,
@@ -1934,7 +1934,7 @@
           "variants": 2,
           "tripCount": 297,
           "stops": 32,
-          "lengthKm": 11.11,
+          "lengthKm": 11.6,
           "stats": {
             "observations": 262,
             "matched": 262,
@@ -1983,7 +1983,7 @@
           "variants": 1,
           "tripCount": 12,
           "stops": 14,
-          "lengthKm": 5.35,
+          "lengthKm": 5.44,
           "stats": {
             "observations": 119,
             "matched": 119,
@@ -2354,7 +2354,7 @@
           "variants": 1,
           "tripCount": 2,
           "stops": 50,
-          "lengthKm": 20.45,
+          "lengthKm": 20.55,
           "stats": {
             "observations": 547,
             "matched": 547,
@@ -2382,7 +2382,7 @@
           "variants": 1,
           "tripCount": 3,
           "stops": 84,
-          "lengthKm": 25.3,
+          "lengthKm": 25.74,
           "stats": {
             "observations": 652,
             "matched": 651,
@@ -2431,7 +2431,7 @@
           "variants": 1,
           "tripCount": 1,
           "stops": 58,
-          "lengthKm": 16.21,
+          "lengthKm": 16.53,
           "stats": {
             "observations": 477,
             "matched": 477,
@@ -2452,7 +2452,7 @@
           "variants": 1,
           "tripCount": 1,
           "stops": 64,
-          "lengthKm": 18.58,
+          "lengthKm": 18.71,
           "stats": {
             "observations": 596,
             "matched": 596,
@@ -2480,7 +2480,7 @@
           "variants": 1,
           "tripCount": 16,
           "stops": 56,
-          "lengthKm": 16.7,
+          "lengthKm": 17.17,
           "stats": {
             "observations": 574,
             "matched": 574,
@@ -2501,7 +2501,7 @@
           "variants": 1,
           "tripCount": 11,
           "stops": 73,
-          "lengthKm": 21.78,
+          "lengthKm": 22.51,
           "stats": {
             "observations": 677,
             "matched": 677,
@@ -2529,7 +2529,7 @@
           "variants": 1,
           "tripCount": 204,
           "stops": 28,
-          "lengthKm": 8.74,
+          "lengthKm": 8.86,
           "stats": {
             "observations": 217,
             "matched": 217,
@@ -2599,7 +2599,7 @@
           "variants": 1,
           "tripCount": 14,
           "stops": 20,
-          "lengthKm": 7.78,
+          "lengthKm": 7.93,
           "stats": {
             "observations": 256,
             "matched": 256,
@@ -2676,7 +2676,7 @@
           "variants": 1,
           "tripCount": 354,
           "stops": 32,
-          "lengthKm": 10.72,
+          "lengthKm": 10.88,
           "stats": {
             "observations": 321,
             "matched": 316,
@@ -2960,55 +2960,6 @@
       ]
     },
     {
-      "line": "ACTON",
-      "mode": "bus",
-      "color": "#0059a9",
-      "dirs": [
-        {
-          "dir": "0",
-          "headsign": "",
-          "variants": 1,
-          "tripCount": 660,
-          "stops": 2,
-          "lengthKm": 0.01,
-          "stats": {
-            "observations": 2,
-            "matched": 2,
-            "noCandidates": 0,
-            "viterbiBreaks": 0,
-            "bridged": 0,
-            "rawStretchCount": 0,
-            "rawMeters": 0,
-            "meanError": 1.0992426027526976,
-            "roundaboutSegs": 0,
-            "extStart": 0,
-            "extEnd": 0
-          }
-        },
-        {
-          "dir": "1",
-          "headsign": "",
-          "variants": 1,
-          "tripCount": 660,
-          "stops": 2,
-          "lengthKm": 0.01,
-          "stats": {
-            "observations": 2,
-            "matched": 2,
-            "noCandidates": 0,
-            "viterbiBreaks": 0,
-            "bridged": 0,
-            "rawStretchCount": 0,
-            "rawMeters": 0,
-            "meanError": 7.340626790173691,
-            "roundaboutSegs": 0,
-            "extStart": 0,
-            "extEnd": 0
-          }
-        }
-      ]
-    },
-    {
       "line": "ALIB",
       "mode": "bus",
       "color": "#0059a9",
@@ -3068,7 +3019,7 @@
           "variants": 1,
           "tripCount": 114,
           "stops": 30,
-          "lengthKm": 8.5,
+          "lengthKm": 8.64,
           "stats": {
             "observations": 240,
             "matched": 240,
@@ -3089,7 +3040,7 @@
           "variants": 1,
           "tripCount": 114,
           "stops": 26,
-          "lengthKm": 7.61,
+          "lengthKm": 7.77,
           "stats": {
             "observations": 216,
             "matched": 216,
@@ -3117,7 +3068,7 @@
           "variants": 1,
           "tripCount": 69,
           "stops": 34,
-          "lengthKm": 10.32,
+          "lengthKm": 10.45,
           "stats": {
             "observations": 292,
             "matched": 292,
@@ -3138,7 +3089,7 @@
           "variants": 1,
           "tripCount": 69,
           "stops": 30,
-          "lengthKm": 9.43,
+          "lengthKm": 9.58,
           "stats": {
             "observations": 268,
             "matched": 268,
@@ -3166,7 +3117,7 @@
           "variants": 1,
           "tripCount": 48,
           "stops": 41,
-          "lengthKm": 13.39,
+          "lengthKm": 13.51,
           "stats": {
             "observations": 395,
             "matched": 395,
@@ -3215,7 +3166,7 @@
           "variants": 1,
           "tripCount": 377,
           "stops": 27,
-          "lengthKm": 6.5,
+          "lengthKm": 6.61,
           "stats": {
             "observations": 272,
             "matched": 272,
@@ -3460,7 +3411,7 @@
           "variants": 1,
           "tripCount": 160,
           "stops": 17,
-          "lengthKm": 4.89,
+          "lengthKm": 5.04,
           "stats": {
             "observations": 206,
             "matched": 206,
@@ -3488,7 +3439,7 @@
           "variants": 1,
           "tripCount": 183,
           "stops": 40,
-          "lengthKm": 9.54,
+          "lengthKm": 9.71,
           "stats": {
             "observations": 351,
             "matched": 351,
@@ -3509,7 +3460,7 @@
           "variants": 1,
           "tripCount": 183,
           "stops": 30,
-          "lengthKm": 6.35,
+          "lengthKm": 6.6,
           "stats": {
             "observations": 190,
             "matched": 190,
@@ -3733,7 +3684,7 @@
           "variants": 1,
           "tripCount": 174,
           "stops": 40,
-          "lengthKm": 11.6,
+          "lengthKm": 11.75,
           "stats": {
             "observations": 370,
             "matched": 370,
@@ -3852,7 +3803,7 @@
           "variants": 1,
           "tripCount": 96,
           "stops": 23,
-          "lengthKm": 7.67,
+          "lengthKm": 7.77,
           "stats": {
             "observations": 325,
             "matched": 325,
@@ -3901,7 +3852,7 @@
           "variants": 1,
           "tripCount": 181,
           "stops": 22,
-          "lengthKm": 5.1,
+          "lengthKm": 5.25,
           "stats": {
             "observations": 168,
             "matched": 168,
@@ -3968,55 +3919,6 @@
       ]
     },
     {
-      "line": "CHIAIA",
-      "mode": "bus",
-      "color": "#0059a9",
-      "dirs": [
-        {
-          "dir": "0",
-          "headsign": "",
-          "variants": 1,
-          "tripCount": 660,
-          "stops": 2,
-          "lengthKm": 0.02,
-          "stats": {
-            "observations": 3,
-            "matched": 3,
-            "noCandidates": 0,
-            "viterbiBreaks": 0,
-            "bridged": 0,
-            "rawStretchCount": 0,
-            "rawMeters": 0,
-            "meanError": 9.660048937430739,
-            "roundaboutSegs": 0,
-            "extStart": 0,
-            "extEnd": 0
-          }
-        },
-        {
-          "dir": "1",
-          "headsign": "",
-          "variants": 1,
-          "tripCount": 660,
-          "stops": 2,
-          "lengthKm": 0.02,
-          "stats": {
-            "observations": 3,
-            "matched": 3,
-            "noCandidates": 0,
-            "viterbiBreaks": 0,
-            "bridged": 0,
-            "rawStretchCount": 0,
-            "rawMeters": 0,
-            "meanError": 9.49397768288874,
-            "roundaboutSegs": 0,
-            "extStart": 0,
-            "extEnd": 0
-          }
-        }
-      ]
-    },
-    {
       "line": "E6",
       "mode": "bus",
       "color": "#0059a9",
@@ -4066,55 +3968,6 @@
       ]
     },
     {
-      "line": "ECHIA",
-      "mode": "bus",
-      "color": "#0059a9",
-      "dirs": [
-        {
-          "dir": "0",
-          "headsign": "",
-          "variants": 1,
-          "tripCount": 900,
-          "stops": 2,
-          "lengthKm": 0.03,
-          "stats": {
-            "observations": 2,
-            "matched": 2,
-            "noCandidates": 0,
-            "viterbiBreaks": 0,
-            "bridged": 0,
-            "rawStretchCount": 0,
-            "rawMeters": 0,
-            "meanError": 18.168418360310028,
-            "roundaboutSegs": 0,
-            "extStart": 0,
-            "extEnd": 0
-          }
-        },
-        {
-          "dir": "1",
-          "headsign": "",
-          "variants": 1,
-          "tripCount": 900,
-          "stops": 2,
-          "lengthKm": 0.01,
-          "stats": {
-            "observations": 2,
-            "matched": 2,
-            "noCandidates": 0,
-            "viterbiBreaks": 0,
-            "bridged": 0,
-            "rawStretchCount": 0,
-            "rawMeters": 0,
-            "meanError": 5.641157438818323,
-            "roundaboutSegs": 0,
-            "extStart": 0,
-            "extEnd": 0
-          }
-        }
-      ]
-    },
-    {
       "line": "N1",
       "mode": "bus",
       "color": "#0059a9",
@@ -4125,7 +3978,7 @@
           "variants": 1,
           "tripCount": 2,
           "stops": 34,
-          "lengthKm": 12.06,
+          "lengthKm": 12.16,
           "stats": {
             "observations": 368,
             "matched": 368,
@@ -4223,7 +4076,7 @@
           "variants": 1,
           "tripCount": 8,
           "stops": 47,
-          "lengthKm": 11.96,
+          "lengthKm": 12.11,
           "stats": {
             "observations": 336,
             "matched": 336,
@@ -4342,7 +4195,7 @@
           "variants": 1,
           "tripCount": 37,
           "stops": 46,
-          "lengthKm": 11.35,
+          "lengthKm": 11.51,
           "stats": {
             "observations": 363,
             "matched": 363,
@@ -4468,7 +4321,7 @@
           "variants": 1,
           "tripCount": 504,
           "stops": 16,
-          "lengthKm": 4.18,
+          "lengthKm": 4.29,
           "stats": {
             "observations": 125,
             "matched": 125,
@@ -4566,7 +4419,7 @@
           "variants": 1,
           "tripCount": 538,
           "stops": 14,
-          "lengthKm": 4.18,
+          "lengthKm": 4.25,
           "stats": {
             "observations": 114,
             "matched": 114,
@@ -4615,7 +4468,7 @@
           "variants": 2,
           "tripCount": 230,
           "stops": 27,
-          "lengthKm": 10.36,
+          "lengthKm": 10.73,
           "stats": {
             "observations": 254,
             "matched": 254,
@@ -4636,7 +4489,7 @@
           "variants": 2,
           "tripCount": 186,
           "stops": 29,
-          "lengthKm": 10.64,
+          "lengthKm": 10.82,
           "stats": {
             "observations": 229,
             "matched": 229,
@@ -4713,7 +4566,7 @@
           "variants": 1,
           "tripCount": 24,
           "stops": 15,
-          "lengthKm": 8.01,
+          "lengthKm": 8.07,
           "stats": {
             "observations": 280,
             "matched": 280,
@@ -4976,104 +4829,6 @@
             "rawMeters": 100,
             "meanError": 4.67395358747099,
             "roundaboutSegs": 38,
-            "extStart": 0,
-            "extEnd": 0
-          }
-        }
-      ]
-    },
-    {
-      "line": "SANITA",
-      "mode": "bus",
-      "color": "#0059a9",
-      "dirs": [
-        {
-          "dir": "0",
-          "headsign": "",
-          "variants": 1,
-          "tripCount": 660,
-          "stops": 2,
-          "lengthKm": 0.01,
-          "stats": {
-            "observations": 2,
-            "matched": 2,
-            "noCandidates": 0,
-            "viterbiBreaks": 0,
-            "bridged": 0,
-            "rawStretchCount": 0,
-            "rawMeters": 0,
-            "meanError": 2.881597275688214,
-            "roundaboutSegs": 0,
-            "extStart": 0,
-            "extEnd": 0
-          }
-        },
-        {
-          "dir": "1",
-          "headsign": "",
-          "variants": 1,
-          "tripCount": 660,
-          "stops": 2,
-          "lengthKm": 0.01,
-          "stats": {
-            "observations": 2,
-            "matched": 2,
-            "noCandidates": 0,
-            "viterbiBreaks": 0,
-            "bridged": 0,
-            "rawStretchCount": 0,
-            "rawMeters": 0,
-            "meanError": 4.977131521085391,
-            "roundaboutSegs": 0,
-            "extStart": 0,
-            "extEnd": 0
-          }
-        }
-      ]
-    },
-    {
-      "line": "VENTA",
-      "mode": "bus",
-      "color": "#0059a9",
-      "dirs": [
-        {
-          "dir": "0",
-          "headsign": "",
-          "variants": 1,
-          "tripCount": 660,
-          "stops": 2,
-          "lengthKm": 0.13,
-          "stats": {
-            "observations": 4,
-            "matched": 4,
-            "noCandidates": 0,
-            "viterbiBreaks": 0,
-            "bridged": 0,
-            "rawStretchCount": 0,
-            "rawMeters": 0,
-            "meanError": 21.41569551509437,
-            "roundaboutSegs": 0,
-            "extStart": 0,
-            "extEnd": 0
-          }
-        },
-        {
-          "dir": "1",
-          "headsign": "",
-          "variants": 1,
-          "tripCount": 660,
-          "stops": 2,
-          "lengthKm": 0.13,
-          "stats": {
-            "observations": 4,
-            "matched": 4,
-            "noCandidates": 0,
-            "viterbiBreaks": 0,
-            "bridged": 0,
-            "rawStretchCount": 0,
-            "rawMeters": 0,
-            "meanError": 13.464607731262705,
-            "roundaboutSegs": 0,
             "extStart": 0,
             "extEnd": 0
           }

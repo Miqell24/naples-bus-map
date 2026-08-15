@@ -446,6 +446,78 @@ function chainThrough(graph, from, targets, use, opts) {
 // and chain them onto it through the graph, leg by leg, the way a pseudo match
 // would have drawn them. Guarded: a run that is far from ALL its stops is a
 // broken match, not a short shape, and is left untouched.
+// ---------- mid-route stop service ----------
+// A route must reach the stops it calls at — not only at its ends (that is
+// extendToStops' job below) but in the middle too. ANM draws a station
+// approach as three shape points that never get closer than ~90 m to the stop
+// (Napoli Afragola: the V dips to 89 m and leaves), so the matched path turns
+// around short of the pole and the disc snaps onto the turnaround instead of
+// the station forecourt (user report). Where a served stop sits off the path
+// but the road to it exists, an out-and-back excursion is spliced in: down the
+// access road to the stop, and back. Rails never get this — their stop
+// coordinates are entrance-based and chasing them is exactly the hook this
+// engine removed at Piazza Municipio.
+export function serveMidRouteStops(graph, res, stopsXY, opts = {}) {
+  const minOff = opts.minOff ?? 45;   // nearer: the disc already reads as served
+  const maxOff = opts.maxOff ?? 250;  // farther: the stop-snap rescue gives up too
+  const repaired = [];
+  for (const st of stopsXY) {
+    let bi = 0, bd = Infinity;
+    for (let i = 0; i < res.coords.length; i++) {
+      const d = Math.hypot(res.coords[i][0] - st[0], res.coords[i][1] - st[1]);
+      if (d < bd) { bd = d; bi = i; }
+    }
+    if (bd <= minOff || bd > maxOff) continue;
+    const from = candidates(graph, res.coords[bi][0], res.coords[bi][1], 25, 4);
+    const to = candidates(graph, st[0], st[1], 60, 6);
+    if (!from.length || !to.length) continue;
+    let best = null;
+    for (const a of from) {
+      for (const b of to) {
+        const conn = connectPair(graph, a, b, bd * 6 + 800, true);
+        if (conn && (!best || conn.d < best.conn.d)) best = { a, b, conn };
+      }
+    }
+    // the excursion must be a plausible access road, not a tour of the district
+    // — and it must actually BE a ride: a zero-length "spur" means the stop's
+    // road position already lies on the path (a pole set back in a courtyard)
+    if (!best || best.conn.d < 25 || best.conn.d > Math.max(bd * 3, bd + 250)) continue;
+    const out = [[best.a.x, best.a.y], ...best.conn.coords];
+    const back = out.slice(0, -1).reverse();
+    res.coords.splice(bi + 1, 0, ...out, ...back);
+    // The road ridden to the stop belongs on the streets layer, whole — the
+    // interior segments in full and the BOUNDARY segments up to the entry and
+    // stop points, exactly like the main loop's bookkeeping. Marking only the
+    // interior left the spur's stroke floating detached from the corridor
+    // (user report: the little hook beside Stazione AV hung in the void).
+    const mark = (si, t0, t1) => {
+      res.usedSegs.add(si);
+      const iv = res.usedIv.get(si);
+      if (iv) { if (t0 < iv[0]) iv[0] = t0; if (t1 > iv[1]) iv[1] = t1; }
+      else res.usedIv.set(si, [t0, t1]);
+    };
+    if (best.conn.nodesPath) {
+      const sa = graph.segs[best.a.segIdx];
+      const first = best.conn.nodesPath[0];
+      if (first === sa.b) mark(best.a.segIdx, best.a.t, 1);
+      else if (first === sa.a) mark(best.a.segIdx, 0, best.a.t);
+      for (let q = 0; q + 1 < best.conn.nodesPath.length; q++) {
+        const si = graph.segByNodes.get(best.conn.nodesPath[q] + '|' + best.conn.nodesPath[q + 1])
+          ?? graph.segByNodes.get(best.conn.nodesPath[q + 1] + '|' + best.conn.nodesPath[q]);
+        if (si !== undefined) mark(si, 0, 1);
+      }
+      const sb = graph.segs[best.b.segIdx];
+      const last = best.conn.nodesPath[best.conn.nodesPath.length - 1];
+      if (last === sb.a) mark(best.b.segIdx, 0, best.b.t);
+      else if (last === sb.b) mark(best.b.segIdx, best.b.t, 1);
+    } else {
+      mark(best.a.segIdx, Math.min(best.a.t, best.b.t), Math.max(best.a.t, best.b.t));
+    }
+    repaired.push({ off: Math.round(bd), road: Math.round(best.conn.d) });
+  }
+  return repaired;
+}
+
 export function extendToStops(graph, res, stopsXY, opts = {}) {
   const trigger = opts.trigger ?? 120;
   const radius = opts.radius ?? 160;

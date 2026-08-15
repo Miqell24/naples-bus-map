@@ -14,7 +14,7 @@ import { dirname, join } from 'node:path';
 import { iterCsv, readCsv } from './lib/csv.mjs';
 import { makeProj, resample, nearestOnPolyline, polylineLength } from './lib/geo.mjs';
 import { buildGraph } from './lib/graph.mjs';
-import { matchShape, extendToStops } from './lib/hmm.mjs';
+import { matchShape, extendToStops, serveMidRouteStops } from './lib/hmm.mjs';
 import { buildNameDict, italianTitleCase } from './lib/italian.mjs';
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
@@ -153,12 +153,19 @@ const busList = busArgs.filter((a) => a !== '--all');
 // 11 = trolleybus riding the bus network in green; 0 = tram, 1 = metro,
 // 7 = funicular, each on its own kind of rails). Without the filter `--all`
 // on the bus mode would swallow the rail lines too.
+// ANM's five public lifts (ascensori: Acton, Chiaia, Monte Echia, Sanità,
+// Ventaglieri) ride in the feed as route_type 3 — but their two stops stand
+// 12-48 m apart and the "line" between them is a vertical shaft through the
+// hill. Matched to streets they drew as absurd little stubs leading nowhere
+// (user report), and drawn straight they would be invisible dots. ANM's own
+// network map shows them as point symbols; this map leaves them out entirely.
+const LIFTS = new Set(['ACTON', 'CHIAIA', 'ECHIA', 'SANITA', 'VENTA']);
 const MODES = [{
   mode: 'bus', label: 'buses', osmFile: 'data/osm/naples.json',
   graphMode: 'road', color: '#0059a9', colorDark: '#00294f',
   all: busAll, lines: busList.length ? busList : (busAll ? [] : ['R2']),
   feeds: [
-    { tag: 'anm', dir: 'data/gtfs', mapKey: (sn) => sn, routeTypes: ['3', '11'], titleCase: true },
+    { tag: 'anm', dir: 'data/gtfs', mapKey: (sn) => (LIFTS.has(sn) ? null : sn), routeTypes: ['3', '11'], titleCase: true },
   ],
 }];
 // The rail slot splits in FOUR cfgs sharing mode 'tram', because Naples runs
@@ -666,6 +673,13 @@ async function processMode(cfg) {
         }
       }
       log(`  spur trim ${r.line}/${r.dir}: ${spurs.length} dead-end stub(s), ${dropped} segment(s) dropped`);
+    }
+    // …and the stops in the MIDDLE of the route: where a called-at stop sits
+    // off the path but its access road exists, ride the road to it and back
+    if (cfg.graphMode !== 'tram') {
+      for (const sv of serveMidRouteStops(graph, res, stopsXY)) {
+        log(`  stop reach ${r.line}/${r.dir}: +${sv.road} m road spur to a stop ${sv.off} m off the path`);
+      }
     }
     r.matchedXY = res.coords;
     r.usedSegs = res.usedSegs;
