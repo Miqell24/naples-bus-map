@@ -235,7 +235,7 @@ export function matchShape(graph, pts, opts = {}) {
   for (let i = 1; i < N; i++) {
     const A = obs[i - 1], B = obs[i];
     const a = A.cand[chosen[i - 1]];
-    const b = B.cand[chosen[i]];
+    let b = B.cand[chosen[i]];
     sumDist += b.dist;
     // length of the raw GTFS trace between observations (incl. unassigned points)
     let rawLen = 0;
@@ -256,9 +256,48 @@ export function matchShape(graph, pts, opts = {}) {
     // legitimately target a frontage street whose only graph entry lies around
     // the block (unstitched parallel ways are routine in OSM) — X499 at El
     // Kafr drew an 850 m rectangle over a 340 m straight corridor.
-    const wildDetour = conn && (
+    let wildDetour = conn && (
       ((isBreak || spansSkipped) && conn.d > Math.max(rawLen * skipDetour, rawLen + 150)) ||
       (noPen && conn.d > Math.max(rawLen * gapDetour, rawLen + gapDetourM)));
+    // ---------- anchor widening ----------
+    // No road path to the NEXT anchor does not mean no road path at all: where
+    // the trace wanders off the network, the matched points bracketing the gap
+    // are themselves suspect — an anchor snapped onto the wrong carriageway or
+    // a disconnected frontage way makes the router fail, and the fallback drew
+    // a chord across open fields (user report, 169P at Via Casalnuovo). Before
+    // surrendering to the chord, try the anchors FURTHER ahead: skip the
+    // suspect matched points and route to the first one the roads can reach.
+    // The skipped anchors leave no segment marks, so their broken little
+    // stubs disappear from the streets layer along with the chord.
+    let widened = false;
+    if (!conn || wildDetour) {
+      // Tight first choice: the trace's LENGTH is realistic even where its
+      // position is not, so the road path replacing it should stay comparable
+      // — a bridge half again as long is already a ramp loop. But when no
+      // anchor yields that, the SHORTEST real road found still beats a chord
+      // across open fields (user rule: never a fake route, never a torn line),
+      // so a second tier up to 3x is kept as the fallback of the fallback.
+      let wLen = rawLen;
+      let bestAlt = null;
+      for (let j = i + 1; j < N && j <= i + 8 && wLen < 4000; j++) {
+        for (let p = obs[j - 1].idx; p < obs[j].idx; p++) {
+          wLen += Math.hypot(pts[p + 1][0] - pts[p][0], pts[p + 1][1] - pts[p][1]);
+        }
+        const c2 = obs[j].cand[chosen[j]];
+        const conn2 = connectPair(graph, a, c2, wLen * 6 + 2000, true);
+        if (!conn2) continue;
+        if (conn2.d <= Math.max(wLen * 1.7, wLen + 400)) {
+          bestAlt = { conn: conn2, j, c2 };
+          break;
+        }
+        const ratio = conn2.d / Math.max(1, wLen);
+        if (ratio <= 3 && (!bestAlt || ratio < bestAlt.ratio)) bestAlt = { conn: conn2, j, c2, ratio };
+      }
+      if (bestAlt) {
+        conn = bestAlt.conn; wildDetour = false; widened = true;
+        b = bestAlt.c2; i = bestAlt.j;   // the loop resumes AFTER the adopted anchor
+      }
+    }
     if (conn && !wildDetour) {
       appendCoords(coords, conn.coords);
       if (conn.nodesPath) {
@@ -277,7 +316,7 @@ export function matchShape(graph, pts, opts = {}) {
       } else {
         use(a.segIdx, Math.abs(b.t - a.t) * graph.segs[a.segIdx].len, Math.min(a.t, b.t), Math.max(a.t, b.t));
       }
-      if (isBreak) bridged++;
+      if (isBreak || widened) bridged++;
     } else {
       const raw = [[a.x, a.y]];
       for (let p = A.idx + 1; p < B.idx; p++) raw.push([pts[p][0], pts[p][1]]);
