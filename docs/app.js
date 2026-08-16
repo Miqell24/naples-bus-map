@@ -148,7 +148,7 @@ async function init() {
   document.getElementById('count').textContent = `(${nBus} bus & trolleybus · ${nTram} tram · ${nMetro} metro, funicular & EAV rail)`;
   document.getElementById('stamp').textContent = new Date(meta.generatedAt).toLocaleDateString('en-GB');
   document.getElementById('chips').innerHTML = meta.lines
-    .map((l) => `<button class="chip" data-line="${esc(l.line)}" style="background:${esc(l.color)}">${esc(l.line)}</button>`)
+    .map((l) => `<button class="chip" data-line="${esc(l.line)}" data-mode="${esc(l.mode)}" style="background:${esc(l.color)}">${esc(l.line)}</button>`)
     .join(' ');
 
   // Line layers go below the base style labels (street names stay readable).
@@ -709,7 +709,10 @@ async function init() {
   // metroline category, and a stuck-true mline kept the ladder's handed-over
   // bus numbers visible in the trams-only view (numField never switched to
   // tramOnlyNumbers because (B || M) stayed true)
-  const state = { bus: true, tram: true, metro: true, mline: !!document.getElementById('toggle-mline'), selected: null, journey: null };
+  // selectedMode rides along with selected: ANM's electric minibus E6 and
+  // EAV's Napoli-Sarno railway E6 are the SAME name in different modes, so a
+  // bare name would light both networks at once
+  const state = { bus: true, tram: true, metro: true, mline: !!document.getElementById('toggle-mline'), selected: null, selectedMode: null, journey: null };
   let densityCond = true; // repeat-thinning condition, set by the Number density row below
   let densityMainCond = true; // sparsest step: one main row per same-content corridor chain
   const busOnlyNumbers = ['case', ['has', 'busLines'],
@@ -734,7 +737,8 @@ async function init() {
     // line's return run and the rest of its route were noise) — the ride is
     // drawn complete by the journey overlay: legs, via stops, numbers
     const selC = state.journey ? false
-      : state.selected ? ['in', state.selected, ['get', 'arr']] : true;
+      : state.selected ? ['all', ['in', state.selected, ['get', 'arr']],
+                                 ['==', ['get', 'mode'], state.selectedMode]] : true;
     // metrolines are an INDEPENDENT category: three bus sub-worlds — plain
     // buses (no mline flag), pure metroline runs (mline=all) and shared
     // corridors (mline=mix, part of BOTH networks, so either toggle keeps them)
@@ -789,7 +793,8 @@ async function init() {
     BADGE_LAYERS.forEach((id, b) => {
       map.setFilter(id, ['all', bandC(b), ['has', 'line'], boxModeC,
         state.journey ? false
-          : state.selected ? ['==', ['get', 'line'], state.selected] : true]);
+          : state.selected ? ['all', ['==', ['get', 'line'], state.selected],
+                                    ['==', ['get', 'mode'], state.selectedMode]] : true]);
     });
     // complex name rows follow: shown while any of the complex's modes is on
     // ('in' does substring search on the "bus,tram" string), and with a line
@@ -802,9 +807,12 @@ async function init() {
         M ? ['==', ['get', 'mall'], 1] : false,
         (B || M) ? ['all', ['==', ['get', 'msome'], 1], ['!=', ['get', 'mall'], 1]] : false]]];
     BADGE_NAME_LAYERS.forEach((id, b) => {
+      // complex rows carry no single mode, only the joined "bus,tram" string —
+      // the substring check keeps the E6-vs-E6 worlds apart well enough here
       map.setFilter(id, ['all', bandC(b), ['has', 'name'], nameModeC,
         state.journey ? false
-          : state.selected ? ['in', state.selected, ['get', 'arr']] : true]);
+          : state.selected ? ['all', ['in', state.selected, ['get', 'arr']],
+                                    ['in', state.selectedMode, ['get', 'modes']]] : true]);
     });
     let numC, numField;
     const lblModeC = ['any',
@@ -847,8 +855,11 @@ async function init() {
   document.getElementById('chips').addEventListener('click', (e) => {
     const b = e.target.closest('.chip');
     if (!b) return;
-    state.selected = state.selected === b.dataset.line ? null : b.dataset.line;
-    document.querySelectorAll('#chips .chip').forEach((c) => c.classList.toggle('active', c.dataset.line === state.selected));
+    const same = state.selected === b.dataset.line && state.selectedMode === b.dataset.mode;
+    state.selected = same ? null : b.dataset.line;
+    state.selectedMode = same ? null : b.dataset.mode;
+    document.querySelectorAll('#chips .chip').forEach((c) =>
+      c.classList.toggle('active', c.dataset.line === state.selected && c.dataset.mode === state.selectedMode));
     applyFilters();
   });
   // null-safe: this region's panel only carries the bus toggle (no metro or

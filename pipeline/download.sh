@@ -109,10 +109,15 @@ if [ ! -f data/osm/naples-eav-rail.json ]; then
     [ -s data/osm/eav-tiles/tile$i.json ] && grep -q '"elements"' data/osm/eav-tiles/tile$i.json && continue
     QE="[out:json][timeout:300];way($BB)[\"railway\"~\"^(rail|light_rail|narrow_gauge|subway)$\"];out geom;"
     got=0
-    # NEVER overpass.osm.ch here — it is a SWITZERLAND-ONLY instance and
-    # returns an empty (but valid) result for Italian bboxes
-    for EP in "https://overpass.private.coffee/api/interpreter" \
-              "https://overpass-api.de/api/interpreter" \
+    # Mirror etiquette, learned the hard way:
+    #  - NEVER overpass.osm.ch — a SWITZERLAND-ONLY instance, returns an empty
+    #    (but valid) result for Italian bboxes.
+    #  - overpass.private.coffee and kumi.systems both served a STALE database
+    #    (observed 2026-08): the Variante Napoli-Cancello (opened 2025, E7's
+    #    route into Afragola AV) was still missing/construction there, which
+    #    sent the line on a 34 km freight detour. overpass-api.de first; the
+    #    merge step below asserts the Variante made it in.
+    for EP in "https://overpass-api.de/api/interpreter" \
               "https://maps.mail.ru/osm/tools/overpass/api/interpreter" \
               "https://overpass.kumi.systems/api/interpreter"; do
       echo "-- tile$i: $EP"
@@ -134,6 +139,11 @@ if [ ! -f data/osm/naples-eav-rail.json ]; then
     }
     fs.writeFileSync("data/osm/naples-eav-rail.json", JSON.stringify({ version: 0.6, elements: els }));
     console.log(`EAV rails merged: ${els.length} ways`);
+    // freshness canary: a stale mirror lacks the 2025-opened line E7 runs on
+    if (!els.some((e) => /Variante Napoli-Cancello/.test(e.tags?.name || ""))) {
+      console.error("STALE MIRROR: Variante Napoli-Cancello missing — refetch tiles from overpass-api.de");
+      process.exit(1);
+    }
   '
 fi
 
