@@ -218,10 +218,21 @@ if (tramAll || metroSel.some((l) => l.startsWith('F'))) MODES.push(railCfg('funi
 // shapes and NO direction_id: stop sequences are the observations
 // (pseudo-matching, the Athens STASY pattern) and headsigns split directions.
 // Keys: 1 → E1, 1. → E1a, 1.. → E1b — EAV numbers its branches with dots.
+// Display labels for line keys that carry a pipeline-only disambiguator.
+// The KEY has to stay unique — it drives route merging, colour lookup and
+// selection — but the map must print what the city prints. Filled while
+// re-keying, applied to the display strings just before writing.
+const LBL = new Map();
+
 const eavKey = (sn) => {
   const m = /^(\d+)(\.*)$/.exec((sn || '').trim());
   if (!m || m[2].length > 2) return null;
-  return 'E' + m[1] + (m[2] ? 'ab'[m[2].length - 1] : '');
+  // EAV numbers its lines from 1 and collides with ANM's; the E is ours and
+  // stays in the key only. The dotted entries are short workings of the same
+  // line (1 Sorrento, 1. Torre Annunziata), so all of them print that number.
+  const k = 'E' + m[1] + (m[2] ? 'ab'[m[2].length - 1] : '');
+  LBL.set(k, m[1]);
+  return k;
 };
 if (tramAll || metroSel.some((l) => /^E\d/.test(l))) MODES.push({
   mode: 'tram', label: 'EAV rail', osmFile: 'data/osm/naples-eav-rail.json',
@@ -1764,6 +1775,31 @@ for (const f of routeFeatures) for (const [lon, lat] of f.geometry.coordinates) 
   if (lat < bLatMin) bLatMin = lat; if (lat > bLatMax) bLatMax = lat;
 }
 
+// ---------- display labels ----------
+// The keys keep their prefixes; every string the map PRINTS loses them. Two
+// keys can now print the same number — that is the point, because the street
+// prints the same number — so each colour group is deduplicated on its own
+// (the groups ride in separate properties, so a green 9 and a navy 9 both
+// survive: there the colour is the difference).
+const relabel = (s) => {
+  const out = [];
+  for (const k of s.split(', ')) {
+    const v = LBL.get(k) ?? k;
+    if (!out.includes(v)) out.push(v);
+  }
+  return out.join(', ');
+};
+for (const features of [routeFeatures, streetFeatures, labelFeatures, stopFeatures, badgeFeatures]) {
+  for (const f of features) {
+    const p = f.properties;
+    for (const k of ['lines', 'busLines', 'tLines', 'ntLines', 'mLines', 'nmLines']) {
+      if (typeof p[k] === 'string' && p[k]) p[k] = relabel(p[k]);
+    }
+    if (typeof p.line === 'string' && LBL.has(p.line)) p.lbl = LBL.get(p.line);
+  }
+}
+log(`Display labels: ${LBL.size} keys print the number the city signs`);
+
 const outDir = join(ROOT, 'data/out');
 mkdirSync(outDir, { recursive: true });
 const fc = (features) => JSON.stringify({ type: 'FeatureCollection', features });
@@ -1779,6 +1815,8 @@ writeFileSync(join(outDir, 'meta.json'), JSON.stringify({
   bbox: [bLonMin, bLatMin, bLonMax, bLatMax],
   badgeBands: BADGE_BANDS,
   modes: MODES.map((m) => ({ mode: m.mode, label: m.label, color: m.color })),
-  lines: metaLines,
+  // the chips keep `line` as their value (selection matches keys) and print
+  // `label` where the city's number differs from the pipeline's key
+  lines: metaLines.map((l) => (LBL.has(l.line) ? { ...l, label: LBL.get(l.line) } : l)),
 }, null, 2));
 log(`Wrote data/out/{route,streets,labels,street-names,stops,badges,gtfs-shape}.geojson + meta.json`);
