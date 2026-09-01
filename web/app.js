@@ -222,7 +222,30 @@ async function init() {
       `data-line="${esc(l.line)}" data-mode="${esc(l.mode)}"${tip ? ` title="${esc(tip)}"` : ''} ` +
       `style="background:${esc(bg ?? l.color)}">${esc(disp(l.line))}</button>`;
   };
-  document.getElementById('chips').innerHTML = meta.lines.map((l) => chipHtml(l)).join(' ');
+  // Grouped by the network that runs the line: ANM's buses and trams, the metro
+  // tubes, Linea 2, the funiculars and EAV's railways all share this frame and
+  // several number from 1, so a flat cloud printed "1 1 2 4 5 5" with nothing
+  // between them. Order follows the legend above. (The Rybnik panel, ported.)
+  const OPS = ['buses', 'trams', 'metro L1', 'metro L6', 'Linea 2', 'funiculars', 'EAV rail'];
+  const paintChips = () => {
+    const bucket = new Map();
+    for (const l of meta.lines) {
+      const k = l.op || 'other';
+      if (!bucket.has(k)) bucket.set(k, []);
+      bucket.get(k).push(l);
+    }
+    const section = (key) => {
+      const ls = bucket.get(key);
+      if (!ls || !ls.length) return '';
+      bucket.delete(key);
+      return `<h3 class="chip-head">${esc(key)} <span class="n">${ls.length}</span></h3>` +
+        `<div class="chip-cloud">${ls.map((l) => chipHtml(l)).join(' ')}</div>`;
+    };
+    let html = OPS.map(section).join('');
+    for (const k of [...bucket.keys()]) html += section(k);
+    document.getElementById('chips').innerHTML = html;
+  };
+  paintChips();
 
   // Line layers go below the base style labels (street names stay readable).
   const firstSymbol = map.getStyle().layers.find((l) => l.type === 'symbol')?.id;

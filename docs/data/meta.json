@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-27T08:25:41.024Z",
+  "generatedAt": "2026-09-01T15:17:15.533Z",
   "bbox": [
     14.045296,
     40.625631,
@@ -69,6 +69,7 @@
     {
       "line": "3M",
       "mode": "bus",
+      "op": "buses",
       "color": "#0059a9",
       "dirs": [
         {
@@ -118,6 +119,7 @@
     {
       "line": "5",
       "mode": "bus",
+      "op": "buses",
       "color": "#0059a9",
       "dirs": [
         {
@@ -167,6 +169,7 @@
     {
       "line": "116",
       "mode": "bus",
+      "op": "buses",
       "color": "#0059a9",
       "dirs": [
         {
@@ -216,6 +219,7 @@
     {
       "line": "128",
       "mode": "bus",
+      "op": "buses",
       "color": "#0059a9",
       "dirs": [
         {
@@ -265,6 +269,7 @@
     {
       "line": "130",
       "mode": "bus",
+      "op": "buses",
       "color": "#0059a9",
       "dirs": [
         {
@@ -314,6 +319,7 @@
     {
       "line": "132",
       "mode": "bus",
+      "op": "buses",
       "color": "#0059a9",
       "dirs": [
         {
@@ -363,6 +369,7 @@
     {
       "line": "139",
       "mode": "bus",
+      "op": "buses",
       "color": "#0059a9",
       "dirs": [
         {
@@ -412,6 +419,7 @@
     {
       "line": "140",
       "mode": "bus",
+      "op": "buses",
       "color": "#0059a9",
       "dirs": [
         {
@@ -461,6 +469,7 @@
     {
       "line": "143",
       "mode": "bus",
+      "op": "buses",
       "color": "#0059a9",
       "dirs": [
         {
@@ -510,6 +519,7 @@
     {
       "line": "144",
       "mode": "bus",
+      "op": "buses",
       "color": "#0059a9",
       "dirs": [
         {
@@ -559,6 +569,7 @@
     {
       "line": "144A",
       "mode": "bus",
+      "op": "buses",
       "color": "#0059a9",
       "dirs": [
         {
@@ -608,6 +619,7 @@
     {
       "line": "144B",
       "mode": "bus",
+      "op": "buses",
       "color": "#0059a9",
       "dirs": [
         {
@@ -657,6 +669,7 @@
     {
       "line": "147",
       "mode": "bus",
+      "op": "buses",
       "color": "#0059a9",
       "dirs": [
         {
@@ -706,6 +719,7 @@
     {
       "line": "151",
       "mode": "bus",
+      "op": "buses",
       "color": "#0059a9",
       "dirs": [
         {
@@ -755,6 +769,7 @@
     {
       "line": "154",
       "mode": "bus",
+      "op": "buses",
       "color": "#0059a9",
       "dirs": [
         {
@@ -804,6 +819,7 @@
     {
       "line": "156",
       "mode": "bus",
+      "op": "buses",
       "color": "#0059a9",
       "dirs": [
         {
@@ -832,6 +848,7 @@
     {
       "line": "158",
       "mode": "bus",
+      "op": "buses",
       "color": "#0059a9",
       "dirs": [
         {
@@ -881,6 +898,7 @@
     {
       "line": "162",
       "mode": "bus",
+      "op": "buses",
       "color": "#0059a9",
       "dirs": [
         {
@@ -930,6 +948,7 @@
     {
       "line": "165",
       "mode": "bus",
+      "op": "buses",
       "color": "#0059a9",
       "dirs": [
         {
@@ -979,6 +998,7 @@
     {
       "line": "165Q",
       "mode": "bus",
+      "op": "buses",
       "color": "#0059a9",
       "dirs": [
         {
@@ -1028,6 +1048,7 @@
     {
       "line": "167",
       "mode": "bus",
+      "op": "buses",
       "color": "#0059a9",
       "dirs": [
         {
@@ -1077,6 +1098,7 @@
     {
       "line": "168",
       "mode": "bus",
+      "op": "buses",
       "color": "#0059a9",
       "dirs": [
         {
@@ -1126,6 +1148,7 @@
     {
       "line": "169",
       "mode": "bus",
+      "op": "buses",
       "color": "#0059a9",
       "dirs": [
         {
@@ -1175,6 +1198,7 @@
     {
       "line": "169P",
       "mode": "bus",
+      "op": "buses",
       "color": "#0059a9",
       "dirs": [
         {
@@ -1224,6 +1248,7 @@
     {
       "line": "173",
       "mode": "bus",
+      "op": "buses",
       "color": "#0059a9",
       "dirs": [
         {
@@ -1273,6 +1298,7 @@
     {
       "line": "173A",
       "mode": "bus",
+      "op": "buses",
       "color": "#0059a9",
       "dirs": [
         {
@@ -1322,6 +1348,7 @@
     {
       "line": "175",
       "mode": "bus",
+      "op": "buses",
       "color": "#0059a9",
       "dirs": [
         {
@@ -1371,6 +1398,7 @@
     {
       "line": "176",
       "mode": "bus",
+      "op": "buses",
       "color": "#0059a9",
       "dirs": [
         {
@@ -1420,6 +1448,7 @@
     {
       "line": "177",
       "mode": "bus",
+      "op": "buses",
       "color": "#0059a9",
       "dirs": [
         {
@@ -1469,6 +1498,7 @@
     {
       "line": "178",
       "mode": "bus",
+      "op": "buses",
       "color": "#0059a9",
       "dirs": [
         {
@@ -1518,6 +1548,7 @@
     {
       "line": "180",
       "mode": "bus",
+      "op": "buses",
       "color": "#0059a9",
       "dirs": [
         {
@@ -1567,6 +1598,7 @@
     {
       "line": "181",
       "mode": "bus",
+      "op": "buses",
       "color": "#0059a9",
       "dirs": [
         {
@@ -1616,6 +1648,7 @@
     {
       "line": "182",
       "mode": "bus",
+      "op": "buses",
       "color": "#0059a9",
       "dirs": [
         {
@@ -1665,6 +1698,7 @@
     {
       "line": "184",
       "mode": "bus",
+      "op": "buses",
       "color": "#0059a9",
       "dirs": [
         {
@@ -1714,6 +1748,7 @@
     {
       "line": "185",
       "mode": "bus",
+      "op": "buses",
       "color": "#0059a9",
       "dirs": [
         {
@@ -1763,6 +1798,7 @@
     {
       "line": "191",
       "mode": "bus",
+      "op": "buses",
       "color": "#0059a9",
       "dirs": [
         {
@@ -1812,6 +1848,7 @@
     {
       "line": "194",
       "mode": "bus",
+      "op": "buses",
       "color": "#0059a9",
       "dirs": [
         {
@@ -1861,6 +1898,7 @@
     {
       "line": "195",
       "mode": "bus",
+      "op": "buses",
       "color": "#0059a9",
       "dirs": [
         {
@@ -1910,6 +1948,7 @@
     {
       "line": "196",
       "mode": "bus",
+      "op": "buses",
       "color": "#0059a9",
       "dirs": [
         {
@@ -1959,6 +1998,7 @@
     {
       "line": "196BR",
       "mode": "bus",
+      "op": "buses",
       "color": "#0059a9",
       "dirs": [
         {
@@ -2008,6 +2048,7 @@
     {
       "line": "201",
       "mode": "bus",
+      "op": "buses",
       "color": "#149a3f",
       "dirs": [
         {
@@ -2057,6 +2098,7 @@
     {
       "line": "201BR",
       "mode": "bus",
+      "op": "buses",
       "color": "#0059a9",
       "dirs": [
         {
@@ -2106,6 +2148,7 @@
     {
       "line": "202",
       "mode": "bus",
+      "op": "buses",
       "color": "#149a3f",
       "dirs": [
         {
@@ -2155,6 +2198,7 @@
     {
       "line": "204",
       "mode": "bus",
+      "op": "buses",
       "color": "#149a3f",
       "dirs": [
         {
@@ -2204,6 +2248,7 @@
     {
       "line": "254",
       "mode": "bus",
+      "op": "buses",
       "color": "#149a3f",
       "dirs": [
         {
@@ -2253,6 +2298,7 @@
     {
       "line": "302",
       "mode": "bus",
+      "op": "buses",
       "color": "#0059a9",
       "dirs": [
         {
@@ -2302,6 +2348,7 @@
     {
       "line": "421A",
       "mode": "bus",
+      "op": "buses",
       "color": "#0059a9",
       "dirs": [
         {
@@ -2351,6 +2398,7 @@
     {
       "line": "455",
       "mode": "bus",
+      "op": "buses",
       "color": "#0059a9",
       "dirs": [
         {
@@ -2379,6 +2427,7 @@
     {
       "line": "460",
       "mode": "bus",
+      "op": "buses",
       "color": "#0059a9",
       "dirs": [
         {
@@ -2428,6 +2477,7 @@
     {
       "line": "472",
       "mode": "bus",
+      "op": "buses",
       "color": "#0059a9",
       "dirs": [
         {
@@ -2477,6 +2527,7 @@
     {
       "line": "475",
       "mode": "bus",
+      "op": "buses",
       "color": "#0059a9",
       "dirs": [
         {
@@ -2526,6 +2577,7 @@
     {
       "line": "502",
       "mode": "bus",
+      "op": "buses",
       "color": "#0059a9",
       "dirs": [
         {
@@ -2575,6 +2627,7 @@
     {
       "line": "572",
       "mode": "bus",
+      "op": "buses",
       "color": "#0059a9",
       "dirs": [
         {
@@ -2624,6 +2677,7 @@
     {
       "line": "584",
       "mode": "bus",
+      "op": "buses",
       "color": "#0059a9",
       "dirs": [
         {
@@ -2673,6 +2727,7 @@
     {
       "line": "612",
       "mode": "bus",
+      "op": "buses",
       "color": "#0059a9",
       "dirs": [
         {
@@ -2722,6 +2777,7 @@
     {
       "line": "618",
       "mode": "bus",
+      "op": "buses",
       "color": "#0059a9",
       "dirs": [
         {
@@ -2771,6 +2827,7 @@
     {
       "line": "622",
       "mode": "bus",
+      "op": "buses",
       "color": "#0059a9",
       "dirs": [
         {
@@ -2820,6 +2877,7 @@
     {
       "line": "633",
       "mode": "bus",
+      "op": "buses",
       "color": "#0059a9",
       "dirs": [
         {
@@ -2869,6 +2927,7 @@
     {
       "line": "654",
       "mode": "bus",
+      "op": "buses",
       "color": "#0059a9",
       "dirs": [
         {
@@ -2918,6 +2977,7 @@
     {
       "line": "663",
       "mode": "bus",
+      "op": "buses",
       "color": "#0059a9",
       "dirs": [
         {
@@ -2967,6 +3027,7 @@
     {
       "line": "ALIB",
       "mode": "bus",
+      "op": "buses",
       "color": "#0059a9",
       "dirs": [
         {
@@ -3016,6 +3077,7 @@
     {
       "line": "C1",
       "mode": "bus",
+      "op": "buses",
       "color": "#0059a9",
       "dirs": [
         {
@@ -3065,6 +3127,7 @@
     {
       "line": "C1E",
       "mode": "bus",
+      "op": "buses",
       "color": "#0059a9",
       "dirs": [
         {
@@ -3114,6 +3177,7 @@
     {
       "line": "C3",
       "mode": "bus",
+      "op": "buses",
       "color": "#0059a9",
       "dirs": [
         {
@@ -3163,6 +3227,7 @@
     {
       "line": "C16",
       "mode": "bus",
+      "op": "buses",
       "color": "#0059a9",
       "dirs": [
         {
@@ -3212,6 +3277,7 @@
     {
       "line": "C21",
       "mode": "bus",
+      "op": "buses",
       "color": "#0059a9",
       "dirs": [
         {
@@ -3261,6 +3327,7 @@
     {
       "line": "C31",
       "mode": "bus",
+      "op": "buses",
       "color": "#0059a9",
       "dirs": [
         {
@@ -3310,6 +3377,7 @@
     {
       "line": "C36",
       "mode": "bus",
+      "op": "buses",
       "color": "#0059a9",
       "dirs": [
         {
@@ -3359,6 +3427,7 @@
     {
       "line": "C37",
       "mode": "bus",
+      "op": "buses",
       "color": "#0059a9",
       "dirs": [
         {
@@ -3408,6 +3477,7 @@
     {
       "line": "C42",
       "mode": "bus",
+      "op": "buses",
       "color": "#0059a9",
       "dirs": [
         {
@@ -3436,6 +3506,7 @@
     {
       "line": "C44",
       "mode": "bus",
+      "op": "buses",
       "color": "#0059a9",
       "dirs": [
         {
@@ -3485,6 +3556,7 @@
     {
       "line": "C52",
       "mode": "bus",
+      "op": "buses",
       "color": "#0059a9",
       "dirs": [
         {
@@ -3534,6 +3606,7 @@
     {
       "line": "C56",
       "mode": "bus",
+      "op": "buses",
       "color": "#0059a9",
       "dirs": [
         {
@@ -3583,6 +3656,7 @@
     {
       "line": "C63",
       "mode": "bus",
+      "op": "buses",
       "color": "#0059a9",
       "dirs": [
         {
@@ -3632,6 +3706,7 @@
     {
       "line": "C65",
       "mode": "bus",
+      "op": "buses",
       "color": "#0059a9",
       "dirs": [
         {
@@ -3681,6 +3756,7 @@
     {
       "line": "C67",
       "mode": "bus",
+      "op": "buses",
       "color": "#0059a9",
       "dirs": [
         {
@@ -3730,6 +3806,7 @@
     {
       "line": "C68",
       "mode": "bus",
+      "op": "buses",
       "color": "#0059a9",
       "dirs": [
         {
@@ -3779,6 +3856,7 @@
     {
       "line": "C76",
       "mode": "bus",
+      "op": "buses",
       "color": "#0059a9",
       "dirs": [
         {
@@ -3828,6 +3906,7 @@
     {
       "line": "C78",
       "mode": "bus",
+      "op": "buses",
       "color": "#0059a9",
       "dirs": [
         {
@@ -3877,6 +3956,7 @@
     {
       "line": "C90",
       "mode": "bus",
+      "op": "buses",
       "color": "#0059a9",
       "dirs": [
         {
@@ -3926,6 +4006,7 @@
     {
       "line": "E6",
       "mode": "bus",
+      "op": "buses",
       "color": "#0059a9",
       "dirs": [
         {
@@ -3976,6 +4057,7 @@
     {
       "line": "N1",
       "mode": "bus",
+      "op": "buses",
       "color": "#0059a9",
       "dirs": [
         {
@@ -4025,6 +4107,7 @@
     {
       "line": "N3",
       "mode": "bus",
+      "op": "buses",
       "color": "#0059a9",
       "dirs": [
         {
@@ -4074,6 +4157,7 @@
     {
       "line": "N5",
       "mode": "bus",
+      "op": "buses",
       "color": "#0059a9",
       "dirs": [
         {
@@ -4123,6 +4207,7 @@
     {
       "line": "N6",
       "mode": "bus",
+      "op": "buses",
       "color": "#0059a9",
       "dirs": [
         {
@@ -4172,6 +4257,7 @@
     {
       "line": "N7",
       "mode": "bus",
+      "op": "buses",
       "color": "#0059a9",
       "dirs": [
         {
@@ -4221,6 +4307,7 @@
     {
       "line": "NAVF2",
       "mode": "bus",
+      "op": "buses",
       "color": "#0059a9",
       "dirs": [
         {
@@ -4270,6 +4357,7 @@
     {
       "line": "NL1",
       "mode": "bus",
+      "op": "buses",
       "color": "#0059a9",
       "dirs": [
         {
@@ -4319,6 +4407,7 @@
     {
       "line": "R2",
       "mode": "bus",
+      "op": "buses",
       "color": "#0059a9",
       "dirs": [
         {
@@ -4368,6 +4457,7 @@
     {
       "line": "R5",
       "mode": "bus",
+      "op": "buses",
       "color": "#0059a9",
       "dirs": [
         {
@@ -4417,6 +4507,7 @@
     {
       "line": "R6",
       "mode": "bus",
+      "op": "buses",
       "color": "#0059a9",
       "dirs": [
         {
@@ -4466,6 +4557,7 @@
     {
       "line": "R7",
       "mode": "bus",
+      "op": "buses",
       "color": "#0059a9",
       "dirs": [
         {
@@ -4515,6 +4607,7 @@
     {
       "line": "S1",
       "mode": "bus",
+      "op": "buses",
       "color": "#0059a9",
       "dirs": [
         {
@@ -4564,6 +4657,7 @@
     {
       "line": "S2",
       "mode": "bus",
+      "op": "buses",
       "color": "#0059a9",
       "dirs": [
         {
@@ -4613,6 +4707,7 @@
     {
       "line": "S3",
       "mode": "bus",
+      "op": "buses",
       "color": "#0059a9",
       "dirs": [
         {
@@ -4641,6 +4736,7 @@
     {
       "line": "S3A",
       "mode": "bus",
+      "op": "buses",
       "color": "#0059a9",
       "dirs": [
         {
@@ -4690,6 +4786,7 @@
     {
       "line": "S4",
       "mode": "bus",
+      "op": "buses",
       "color": "#0059a9",
       "dirs": [
         {
@@ -4718,6 +4815,7 @@
     {
       "line": "S4A",
       "mode": "bus",
+      "op": "buses",
       "color": "#0059a9",
       "dirs": [
         {
@@ -4746,6 +4844,7 @@
     {
       "line": "S4B",
       "mode": "bus",
+      "op": "buses",
       "color": "#0059a9",
       "dirs": [
         {
@@ -4795,6 +4894,7 @@
     {
       "line": "S5",
       "mode": "bus",
+      "op": "buses",
       "color": "#0059a9",
       "dirs": [
         {
@@ -4844,6 +4944,7 @@
     {
       "line": "412",
       "mode": "tram",
+      "op": "trams",
       "color": "#d6212b",
       "dirs": [
         {
@@ -4893,6 +4994,7 @@
     {
       "line": "421",
       "mode": "tram",
+      "op": "trams",
       "color": "#d6212b",
       "dirs": [
         {
@@ -4942,6 +5044,7 @@
     {
       "line": "422",
       "mode": "tram",
+      "op": "trams",
       "color": "#d6212b",
       "dirs": [
         {
@@ -4991,6 +5094,7 @@
     {
       "line": "L1",
       "mode": "tram",
+      "op": "metro L1",
       "color": "#F8E414",
       "dirs": [
         {
@@ -5019,6 +5123,7 @@
     {
       "line": "L6",
       "mode": "tram",
+      "op": "metro L6",
       "color": "#179ED6",
       "dirs": [
         {
@@ -5068,6 +5173,7 @@
     {
       "line": "L2",
       "mode": "tram",
+      "op": "Linea 2",
       "color": "#4E78BA",
       "dirs": [
         {
@@ -5117,6 +5223,7 @@
     {
       "line": "F1",
       "mode": "tram",
+      "op": "funiculars",
       "color": "#F89329",
       "dirs": [
         {
@@ -5166,6 +5273,7 @@
     {
       "line": "F3",
       "mode": "tram",
+      "op": "funiculars",
       "color": "#F89329",
       "dirs": [
         {
@@ -5215,6 +5323,7 @@
     {
       "line": "F4",
       "mode": "tram",
+      "op": "funiculars",
       "color": "#F89329",
       "dirs": [
         {
@@ -5264,6 +5373,7 @@
     {
       "line": "E1",
       "mode": "tram",
+      "op": "EAV rail",
       "color": "#C8102E",
       "dirs": [
         {
@@ -5314,6 +5424,7 @@
     {
       "line": "E1a",
       "mode": "tram",
+      "op": "EAV rail",
       "color": "#C8102E",
       "dirs": [
         {
@@ -5364,6 +5475,7 @@
     {
       "line": "E2",
       "mode": "tram",
+      "op": "EAV rail",
       "color": "#7d2b8b",
       "dirs": [
         {
@@ -5414,6 +5526,7 @@
     {
       "line": "E4",
       "mode": "tram",
+      "op": "EAV rail",
       "color": "#C8102E",
       "dirs": [
         {
@@ -5464,6 +5577,7 @@
     {
       "line": "E5",
       "mode": "tram",
+      "op": "EAV rail",
       "color": "#0069B4",
       "dirs": [
         {
@@ -5535,6 +5649,7 @@
     {
       "line": "E5a",
       "mode": "tram",
+      "op": "EAV rail",
       "color": "#0069B4",
       "dirs": [
         {
@@ -5585,6 +5700,7 @@
     {
       "line": "E6",
       "mode": "tram",
+      "op": "EAV rail",
       "color": "#C8102E",
       "dirs": [
         {
@@ -5656,6 +5772,7 @@
     {
       "line": "E7",
       "mode": "tram",
+      "op": "EAV rail",
       "color": "#7d2b8b",
       "dirs": [
         {
@@ -5727,6 +5844,7 @@
     {
       "line": "E8",
       "mode": "tram",
+      "op": "EAV rail",
       "color": "#C8102E",
       "dirs": [
         {
@@ -5777,6 +5895,7 @@
     {
       "line": "E9",
       "mode": "tram",
+      "op": "EAV rail",
       "color": "#0069B4",
       "dirs": [
         {
@@ -5848,6 +5967,7 @@
     {
       "line": "E9a",
       "mode": "tram",
+      "op": "EAV rail",
       "color": "#0069B4",
       "dirs": [
         {
