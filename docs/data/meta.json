@@ -4790,7 +4790,7 @@
       "line": "N1",
       "mode": "bus",
       "op": "buses",
-      "color": "#0059a9",
+      "color": "#000000",
       "dirs": [
         {
           "dir": "0",
@@ -4841,7 +4841,7 @@
       "line": "N3",
       "mode": "bus",
       "op": "buses",
-      "color": "#0059a9",
+      "color": "#000000",
       "dirs": [
         {
           "dir": "0",
@@ -4892,7 +4892,7 @@
       "line": "N5",
       "mode": "bus",
       "op": "buses",
-      "color": "#0059a9",
+      "color": "#000000",
       "dirs": [
         {
           "dir": "0",
@@ -4943,7 +4943,7 @@
       "line": "N6",
       "mode": "bus",
       "op": "buses",
-      "color": "#0059a9",
+      "color": "#000000",
       "dirs": [
         {
           "dir": "0",
@@ -4994,7 +4994,7 @@
       "line": "N7",
       "mode": "bus",
       "op": "buses",
-      "color": "#0059a9",
+      "color": "#000000",
       "dirs": [
         {
           "dir": "0",
