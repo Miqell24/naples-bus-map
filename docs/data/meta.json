@@ -74,7 +74,7 @@
       "dirs": [
         {
           "dir": "0",
-          "headsign": "",
+          "headsign": "Medina - Municipio",
           "variants": 1,
           "tripCount": 304,
           "stops": 18,
@@ -95,7 +95,7 @@
         },
         {
           "dir": "1",
-          "headsign": "",
+          "headsign": "Carlo III",
           "variants": 1,
           "tripCount": 304,
           "stops": 13,
@@ -125,7 +125,7 @@
       "dirs": [
         {
           "dir": "0",
-          "headsign": "",
+          "headsign": "Medina - Municipio",
           "variants": 1,
           "tripCount": 278,
           "stops": 17,
@@ -146,7 +146,7 @@
         },
         {
           "dir": "1",
-          "headsign": "",
+          "headsign": "Giovan Battista Vico",
           "variants": 1,
           "tripCount": 278,
           "stops": 15,
@@ -176,7 +176,7 @@
       "dirs": [
         {
           "dir": "0",
-          "headsign": "",
+          "headsign": "Medina - Municipio",
           "variants": 3,
           "tripCount": 483,
           "stops": 29,
@@ -197,7 +197,7 @@
         },
         {
           "dir": "1",
-          "headsign": "",
+          "headsign": "Cardarelli-Ospedale",
           "variants": 2,
           "tripCount": 520,
           "stops": 36,
@@ -227,7 +227,7 @@
       "dirs": [
         {
           "dir": "0",
-          "headsign": "",
+          "headsign": "Nicolini",
           "variants": 2,
           "tripCount": 273,
           "stops": 43,
@@ -248,7 +248,7 @@
         },
         {
           "dir": "1",
-          "headsign": "",
+          "headsign": "Piazza Poli",
           "variants": 2,
           "tripCount": 266,
           "stops": 48,
@@ -278,7 +278,7 @@
       "dirs": [
         {
           "dir": "0",
-          "headsign": "",
+          "headsign": "Museo Nazionale",
           "variants": 2,
           "tripCount": 177,
           "stops": 20,
@@ -299,7 +299,7 @@
         },
         {
           "dir": "1",
-          "headsign": "",
+          "headsign": "Porta Miano",
           "variants": 1,
           "tripCount": 196,
           "stops": 16,
@@ -329,7 +329,7 @@
       "dirs": [
         {
           "dir": "0",
-          "headsign": "",
+          "headsign": "Vesuvio",
           "variants": 1,
           "tripCount": 32,
           "stops": 39,
@@ -350,7 +350,7 @@
         },
         {
           "dir": "1",
-          "headsign": "",
+          "headsign": "Gianturco",
           "variants": 1,
           "tripCount": 32,
           "stops": 32,
@@ -380,7 +380,7 @@
       "dirs": [
         {
           "dir": "0",
-          "headsign": "",
+          "headsign": "Piazza dei Martiri",
           "variants": 1,
           "tripCount": 53,
           "stops": 14,
@@ -401,7 +401,7 @@
         },
         {
           "dir": "1",
-          "headsign": "",
+          "headsign": "Trieste e Trento",
           "variants": 1,
           "tripCount": 53,
           "stops": 12,
@@ -432,7 +432,7 @@
       "dirs": [
         {
           "dir": "0",
-          "headsign": "",
+          "headsign": "Serao - Attestamento",
           "variants": 1,
           "tripCount": 263,
           "stops": 58,
@@ -453,7 +453,7 @@
         },
         {
           "dir": "1",
-          "headsign": "",
+          "headsign": "Brin - Attestamento",
           "variants": 1,
           "tripCount": 270,
           "stops": 43,
@@ -483,7 +483,7 @@
       "dirs": [
         {
           "dir": "0",
-          "headsign": "",
+          "headsign": "Scarlatti",
           "variants": 1,
           "tripCount": 9,
           "stops": 37,
@@ -504,7 +504,7 @@
         },
         {
           "dir": "1",
-          "headsign": "",
+          "headsign": "Cesario Console - Plebiscito",
           "variants": 1,
           "tripCount": 12,
           "stops": 34,
@@ -534,7 +534,7 @@
       "dirs": [
         {
           "dir": "0",
-          "headsign": "",
+          "headsign": "Acitillo",
           "variants": 1,
           "tripCount": 174,
           "stops": 21,
@@ -555,7 +555,7 @@
         },
         {
           "dir": "1",
-          "headsign": "",
+          "headsign": "Garibaldi - Attestamento",
           "variants": 1,
           "tripCount": 174,
           "stops": 26,
@@ -585,7 +585,7 @@
       "dirs": [
         {
           "dir": "0",
-          "headsign": "",
+          "headsign": "Scarlatti",
           "variants": 1,
           "tripCount": 170,
           "stops": 27,
@@ -606,7 +606,7 @@
         },
         {
           "dir": "1",
-          "headsign": "",
+          "headsign": "Largo Giustiniano",
           "variants": 1,
           "tripCount": 171,
           "stops": 23,
@@ -636,7 +636,7 @@
       "dirs": [
         {
           "dir": "0",
-          "headsign": "",
+          "headsign": "Monteoliveto - Federico II - Architettura",
           "variants": 1,
           "tripCount": 270,
           "stops": 28,
@@ -657,7 +657,7 @@
         },
         {
           "dir": "1",
-          "headsign": "",
+          "headsign": "Ospedale Cardarelli",
           "variants": 1,
           "tripCount": 270,
           "stops": 29,
@@ -687,7 +687,7 @@
       "dirs": [
         {
           "dir": "0",
-          "headsign": "",
+          "headsign": "Santa Lucia - Plebiscito",
           "variants": 1,
           "tripCount": 470,
           "stops": 32,
@@ -708,7 +708,7 @@
         },
         {
           "dir": "1",
-          "headsign": "",
+          "headsign": "Posillipo Capo - Attestamento",
           "variants": 1,
           "tripCount": 415,
           "stops": 32,
@@ -738,7 +738,7 @@
       "dirs": [
         {
           "dir": "0",
-          "headsign": "",
+          "headsign": "Marano Quarto",
           "variants": 1,
           "tripCount": 212,
           "stops": 33,
@@ -759,7 +759,7 @@
         },
         {
           "dir": "1",
-          "headsign": "",
+          "headsign": "Ospedale Cardarelli",
           "variants": 1,
           "tripCount": 212,
           "stops": 37,
@@ -789,7 +789,7 @@
       "dirs": [
         {
           "dir": "0",
-          "headsign": "",
+          "headsign": "Romano-Marano Pianura",
           "variants": 1,
           "tripCount": 168,
           "stops": 31,
@@ -810,7 +810,7 @@
         },
         {
           "dir": "1",
-          "headsign": "",
+          "headsign": "Ospedale Cardarelli",
           "variants": 1,
           "tripCount": 168,
           "stops": 27,
@@ -840,7 +840,7 @@
       "dirs": [
         {
           "dir": "0",
-          "headsign": "",
+          "headsign": "Dell'Eremo-Parco Pubblico",
           "variants": 1,
           "tripCount": 15,
           "stops": 45,
@@ -861,7 +861,7 @@
         },
         {
           "dir": "1",
-          "headsign": "",
+          "headsign": "Ospedale Cardarelli",
           "variants": 1,
           "tripCount": 15,
           "stops": 18,
@@ -891,7 +891,7 @@
       "dirs": [
         {
           "dir": "0",
-          "headsign": "",
+          "headsign": "Dell'Eremo-Parco Pubblico",
           "variants": 1,
           "tripCount": 15,
           "stops": 22,
@@ -912,7 +912,7 @@
         },
         {
           "dir": "1",
-          "headsign": "",
+          "headsign": "Ospedale Cardarelli",
           "variants": 1,
           "tripCount": 15,
           "stops": 43,
@@ -942,7 +942,7 @@
       "dirs": [
         {
           "dir": "0",
-          "headsign": "",
+          "headsign": "Tanucci",
           "variants": 1,
           "tripCount": 311,
           "stops": 26,
@@ -963,7 +963,7 @@
         },
         {
           "dir": "1",
-          "headsign": "",
+          "headsign": "Suarez-Immacolata",
           "variants": 1,
           "tripCount": 311,
           "stops": 29,
@@ -993,7 +993,7 @@
       "dirs": [
         {
           "dir": "0",
-          "headsign": "",
+          "headsign": "Giulio Cesare - Tecchio",
           "variants": 1,
           "tripCount": 150,
           "stops": 26,
@@ -1014,7 +1014,7 @@
         },
         {
           "dir": "1",
-          "headsign": "",
+          "headsign": "Garibaldi - Attestamento",
           "variants": 1,
           "tripCount": 442,
           "stops": 22,
@@ -1044,7 +1044,7 @@
       "dirs": [
         {
           "dir": "0",
-          "headsign": "",
+          "headsign": "Vittoria - Villa Comunale",
           "variants": 1,
           "tripCount": 166,
           "stops": 17,
@@ -1065,7 +1065,7 @@
         },
         {
           "dir": "1",
-          "headsign": "",
+          "headsign": "Brin - Attestamento",
           "variants": 1,
           "tripCount": 166,
           "stops": 20,
@@ -1095,7 +1095,7 @@
       "dirs": [
         {
           "dir": "1",
-          "headsign": "",
+          "headsign": "Brin",
           "variants": 1,
           "tripCount": 8,
           "stops": 30,
@@ -1125,7 +1125,7 @@
       "dirs": [
         {
           "dir": "0",
-          "headsign": "",
+          "headsign": "Serao - Attestamento",
           "variants": 1,
           "tripCount": 219,
           "stops": 42,
@@ -1146,7 +1146,7 @@
         },
         {
           "dir": "1",
-          "headsign": "",
+          "headsign": "Gianturco",
           "variants": 1,
           "tripCount": 206,
           "stops": 52,
@@ -1176,7 +1176,7 @@
       "dirs": [
         {
           "dir": "0",
-          "headsign": "",
+          "headsign": "Colonne Signorelli-Metronordest",
           "variants": 1,
           "tripCount": 248,
           "stops": 39,
@@ -1197,7 +1197,7 @@
         },
         {
           "dir": "1",
-          "headsign": "",
+          "headsign": "Frullone - M1",
           "variants": 1,
           "tripCount": 256,
           "stops": 36,
@@ -1227,7 +1227,7 @@
       "dirs": [
         {
           "dir": "0",
-          "headsign": "",
+          "headsign": "Ospedale Cardarelli",
           "variants": 1,
           "tripCount": 197,
           "stops": 45,
@@ -1248,7 +1248,7 @@
         },
         {
           "dir": "1",
-          "headsign": "",
+          "headsign": "Castel Belvedere 303",
           "variants": 1,
           "tripCount": 197,
           "stops": 47,
@@ -1278,7 +1278,7 @@
       "dirs": [
         {
           "dir": "0",
-          "headsign": "",
+          "headsign": "Di Vittorio - Piazza Apicella",
           "variants": 1,
           "tripCount": 16,
           "stops": 50,
@@ -1299,7 +1299,7 @@
         },
         {
           "dir": "1",
-          "headsign": "",
+          "headsign": "Ospedale Cardarelli",
           "variants": 1,
           "tripCount": 16,
           "stops": 48,
@@ -1329,7 +1329,7 @@
       "dirs": [
         {
           "dir": "0",
-          "headsign": "",
+          "headsign": "Maristi",
           "variants": 1,
           "tripCount": 78,
           "stops": 41,
@@ -1350,7 +1350,7 @@
         },
         {
           "dir": "1",
-          "headsign": "",
+          "headsign": "Frullone - M1",
           "variants": 1,
           "tripCount": 78,
           "stops": 38,
@@ -1380,7 +1380,7 @@
       "dirs": [
         {
           "dir": "0",
-          "headsign": "",
+          "headsign": "Monteoliveto - Federico II - Architettura",
           "variants": 1,
           "tripCount": 293,
           "stops": 25,
@@ -1401,7 +1401,7 @@
         },
         {
           "dir": "1",
-          "headsign": "",
+          "headsign": "Frullone - M1",
           "variants": 1,
           "tripCount": 293,
           "stops": 25,
@@ -1431,7 +1431,7 @@
       "dirs": [
         {
           "dir": "0",
-          "headsign": "",
+          "headsign": "Garibaldi",
           "variants": 3,
           "tripCount": 373,
           "stops": 33,
@@ -1452,7 +1452,7 @@
         },
         {
           "dir": "1",
-          "headsign": "",
+          "headsign": "Don Luigi Puglisi - Traversa IV Pigna",
           "variants": 3,
           "tripCount": 365,
           "stops": 39,
@@ -1482,7 +1482,7 @@
       "dirs": [
         {
           "dir": "0",
-          "headsign": "",
+          "headsign": "Circumvallazione Ovest - IACP",
           "variants": 1,
           "tripCount": 11,
           "stops": 12,
@@ -1503,7 +1503,7 @@
         },
         {
           "dir": "1",
-          "headsign": "",
+          "headsign": "Don Luigi Puglisi - Traversa IV Pigna",
           "variants": 1,
           "tripCount": 11,
           "stops": 12,
@@ -1533,7 +1533,7 @@
       "dirs": [
         {
           "dir": "0",
-          "headsign": "",
+          "headsign": "Petrarca",
           "variants": 1,
           "tripCount": 201,
           "stops": 35,
@@ -1554,7 +1554,7 @@
         },
         {
           "dir": "1",
-          "headsign": "",
+          "headsign": "Argine - Stazionamento",
           "variants": 1,
           "tripCount": 211,
           "stops": 22,
@@ -1584,7 +1584,7 @@
       "dirs": [
         {
           "dir": "0",
-          "headsign": "",
+          "headsign": "Brin - Attestamento",
           "variants": 1,
           "tripCount": 25,
           "stops": 33,
@@ -1605,7 +1605,7 @@
         },
         {
           "dir": "1",
-          "headsign": "",
+          "headsign": "Argine - Stazionamento",
           "variants": 1,
           "tripCount": 18,
           "stops": 55,
@@ -1635,7 +1635,7 @@
       "dirs": [
         {
           "dir": "0",
-          "headsign": "",
+          "headsign": "Brin - Attestamento",
           "variants": 2,
           "tripCount": 195,
           "stops": 40,
@@ -1656,7 +1656,7 @@
         },
         {
           "dir": "1",
-          "headsign": "",
+          "headsign": "Cavour - Istituto Case Popolari",
           "variants": 1,
           "tripCount": 213,
           "stops": 32,
@@ -1686,7 +1686,7 @@
       "dirs": [
         {
           "dir": "0",
-          "headsign": "",
+          "headsign": "Cook",
           "variants": 1,
           "tripCount": 40,
           "stops": 28,
@@ -1707,7 +1707,7 @@
         },
         {
           "dir": "1",
-          "headsign": "",
+          "headsign": "Gianturco",
           "variants": 1,
           "tripCount": 40,
           "stops": 19,
@@ -1737,7 +1737,7 @@
       "dirs": [
         {
           "dir": "0",
-          "headsign": "",
+          "headsign": "Roma - Belvedere",
           "variants": 1,
           "tripCount": 62,
           "stops": 34,
@@ -1758,7 +1758,7 @@
         },
         {
           "dir": "1",
-          "headsign": "",
+          "headsign": "Gianturco",
           "variants": 1,
           "tripCount": 72,
           "stops": 31,
@@ -1788,7 +1788,7 @@
       "dirs": [
         {
           "dir": "0",
-          "headsign": "",
+          "headsign": "Dante - M1",
           "variants": 1,
           "tripCount": 148,
           "stops": 31,
@@ -1809,7 +1809,7 @@
         },
         {
           "dir": "1",
-          "headsign": "",
+          "headsign": "Tafuri - Plebiscito",
           "variants": 1,
           "tripCount": 148,
           "stops": 29,
@@ -1839,7 +1839,7 @@
       "dirs": [
         {
           "dir": "0",
-          "headsign": "",
+          "headsign": "Zuccarini - M1 - Piscinola",
           "variants": 1,
           "tripCount": 138,
           "stops": 48,
@@ -1860,7 +1860,7 @@
         },
         {
           "dir": "1",
-          "headsign": "",
+          "headsign": "Piazzale Tecchio",
           "variants": 1,
           "tripCount": 137,
           "stops": 50,
@@ -1890,7 +1890,7 @@
       "dirs": [
         {
           "dir": "0",
-          "headsign": "",
+          "headsign": "Scarlatti",
           "variants": 2,
           "tripCount": 342,
           "stops": 27,
@@ -1911,7 +1911,7 @@
         },
         {
           "dir": "1",
-          "headsign": "",
+          "headsign": "Piazzale Tecchio",
           "variants": 2,
           "tripCount": 342,
           "stops": 25,
@@ -1941,7 +1941,7 @@
       "dirs": [
         {
           "dir": "0",
-          "headsign": "",
+          "headsign": "Monteoliveto - Federico II - Architettura",
           "variants": 2,
           "tripCount": 349,
           "stops": 39,
@@ -1962,7 +1962,7 @@
         },
         {
           "dir": "1",
-          "headsign": "",
+          "headsign": "Deposito Via Puglie",
           "variants": 1,
           "tripCount": 301,
           "stops": 38,
@@ -1992,7 +1992,7 @@
       "dirs": [
         {
           "dir": "0",
-          "headsign": "",
+          "headsign": "Monteoliveto - Federico II - Architettura",
           "variants": 1,
           "tripCount": 303,
           "stops": 35,
@@ -2013,7 +2013,7 @@
         },
         {
           "dir": "1",
-          "headsign": "",
+          "headsign": "Delle Galassie Stazionamento",
           "variants": 1,
           "tripCount": 303,
           "stops": 30,
@@ -2043,7 +2043,7 @@
       "dirs": [
         {
           "dir": "0",
-          "headsign": "",
+          "headsign": "Zanotti Bianco",
           "variants": 1,
           "tripCount": 127,
           "stops": 27,
@@ -2064,7 +2064,7 @@
         },
         {
           "dir": "1",
-          "headsign": "",
+          "headsign": "Carlo III",
           "variants": 1,
           "tripCount": 127,
           "stops": 15,
@@ -2094,7 +2094,7 @@
       "dirs": [
         {
           "dir": "0",
-          "headsign": "",
+          "headsign": "Casanova - Nazionale",
           "variants": 1,
           "tripCount": 237,
           "stops": 39,
@@ -2115,7 +2115,7 @@
         },
         {
           "dir": "1",
-          "headsign": "",
+          "headsign": "Argine - Stazionamento",
           "variants": 1,
           "tripCount": 225,
           "stops": 45,
@@ -2145,7 +2145,7 @@
       "dirs": [
         {
           "dir": "0",
-          "headsign": "",
+          "headsign": "Chiaromonte - Day Hospital",
           "variants": 1,
           "tripCount": 136,
           "stops": 48,
@@ -2166,7 +2166,7 @@
         },
         {
           "dir": "1",
-          "headsign": "",
+          "headsign": "Brin - Attestamento",
           "variants": 1,
           "tripCount": 136,
           "stops": 21,
@@ -2196,7 +2196,7 @@
       "dirs": [
         {
           "dir": "0",
-          "headsign": "",
+          "headsign": "Garibaldi - Circumvesuviana",
           "variants": 1,
           "tripCount": 215,
           "stops": 44,
@@ -2217,7 +2217,7 @@
         },
         {
           "dir": "1",
-          "headsign": "",
+          "headsign": "Argine - Stazionamento",
           "variants": 1,
           "tripCount": 194,
           "stops": 63,
@@ -2247,7 +2247,7 @@
       "dirs": [
         {
           "dir": "0",
-          "headsign": "",
+          "headsign": "Callas",
           "variants": 2,
           "tripCount": 281,
           "stops": 36,
@@ -2268,7 +2268,7 @@
         },
         {
           "dir": "1",
-          "headsign": "",
+          "headsign": "Brin - Attestamento",
           "variants": 2,
           "tripCount": 297,
           "stops": 32,
@@ -2298,7 +2298,7 @@
       "dirs": [
         {
           "dir": "0",
-          "headsign": "",
+          "headsign": "Argine - Hitachi",
           "variants": 1,
           "tripCount": 12,
           "stops": 13,
@@ -2319,7 +2319,7 @@
         },
         {
           "dir": "1",
-          "headsign": "",
+          "headsign": "Brin - Attestamento",
           "variants": 1,
           "tripCount": 12,
           "stops": 14,
@@ -2349,7 +2349,7 @@
       "dirs": [
         {
           "dir": "0",
-          "headsign": "",
+          "headsign": "Costantinopoli",
           "variants": 2,
           "tripCount": 46,
           "stops": 13,
@@ -2370,7 +2370,7 @@
         },
         {
           "dir": "1",
-          "headsign": "",
+          "headsign": "Tanucci",
           "variants": 2,
           "tripCount": 46,
           "stops": 10,
@@ -2400,7 +2400,7 @@
       "dirs": [
         {
           "dir": "0",
-          "headsign": "",
+          "headsign": "Medina - Municipio",
           "variants": 1,
           "tripCount": 37,
           "stops": 17,
@@ -2421,7 +2421,7 @@
         },
         {
           "dir": "1",
-          "headsign": "",
+          "headsign": "Deposito Carlo III",
           "variants": 1,
           "tripCount": 17,
           "stops": 14,
@@ -2451,7 +2451,7 @@
       "dirs": [
         {
           "dir": "0",
-          "headsign": "",
+          "headsign": "Colombo-Porto (Capolinea Linea 1-4)",
           "variants": 1,
           "tripCount": 101,
           "stops": 17,
@@ -2472,7 +2472,7 @@
         },
         {
           "dir": "1",
-          "headsign": "",
+          "headsign": "San Giovanni a Teduccio - Deposito A.N.M.",
           "variants": 1,
           "tripCount": 101,
           "stops": 16,
@@ -2502,7 +2502,7 @@
       "dirs": [
         {
           "dir": "0",
-          "headsign": "",
+          "headsign": "Palazzone",
           "variants": 1,
           "tripCount": 2,
           "stops": 50,
@@ -2532,7 +2532,7 @@
       "dirs": [
         {
           "dir": "0",
-          "headsign": "",
+          "headsign": "Colonne Signorelli-Metronordest",
           "variants": 1,
           "tripCount": 3,
           "stops": 84,
@@ -2553,7 +2553,7 @@
         },
         {
           "dir": "1",
-          "headsign": "",
+          "headsign": "Garibaldi - Principe Umberto",
           "variants": 2,
           "tripCount": 8,
           "stops": 71,
@@ -2583,7 +2583,7 @@
       "dirs": [
         {
           "dir": "0",
-          "headsign": "",
+          "headsign": "Riccardi - Piazza della Libertà",
           "variants": 1,
           "tripCount": 1,
           "stops": 58,
@@ -2604,7 +2604,7 @@
         },
         {
           "dir": "1",
-          "headsign": "",
+          "headsign": "Brin - Attestamento",
           "variants": 1,
           "tripCount": 1,
           "stops": 64,
@@ -2634,7 +2634,7 @@
       "dirs": [
         {
           "dir": "0",
-          "headsign": "",
+          "headsign": "Cavour - Istituto Case Popolari",
           "variants": 1,
           "tripCount": 16,
           "stops": 56,
@@ -2655,7 +2655,7 @@
         },
         {
           "dir": "1",
-          "headsign": "",
+          "headsign": "Brin - Attestamento",
           "variants": 1,
           "tripCount": 11,
           "stops": 73,
@@ -2685,7 +2685,7 @@
       "dirs": [
         {
           "dir": "0",
-          "headsign": "",
+          "headsign": "Pisciarelli - Tribunale",
           "variants": 1,
           "tripCount": 204,
           "stops": 28,
@@ -2706,7 +2706,7 @@
         },
         {
           "dir": "1",
-          "headsign": "",
+          "headsign": "Piazzale Tecchio",
           "variants": 1,
           "tripCount": 204,
           "stops": 28,
@@ -2736,7 +2736,7 @@
       "dirs": [
         {
           "dir": "0",
-          "headsign": "",
+          "headsign": "Corso Campano 116",
           "variants": 1,
           "tripCount": 14,
           "stops": 22,
@@ -2757,7 +2757,7 @@
         },
         {
           "dir": "1",
-          "headsign": "",
+          "headsign": "Ruggieri - Ospedale Monaldi",
           "variants": 1,
           "tripCount": 14,
           "stops": 20,
@@ -2787,7 +2787,7 @@
       "dirs": [
         {
           "dir": "0",
-          "headsign": "",
+          "headsign": "Sant'Anna dei Lombardi",
           "variants": 2,
           "tripCount": 49,
           "stops": 29,
@@ -2808,7 +2808,7 @@
         },
         {
           "dir": "1",
-          "headsign": "",
+          "headsign": "S.Maria del Pianto-Stazionamento",
           "variants": 1,
           "tripCount": 65,
           "stops": 23,
@@ -2838,7 +2838,7 @@
       "dirs": [
         {
           "dir": "0",
-          "headsign": "",
+          "headsign": "Piedigrotta",
           "variants": 1,
           "tripCount": 354,
           "stops": 32,
@@ -2859,7 +2859,7 @@
         },
         {
           "dir": "1",
-          "headsign": "",
+          "headsign": "Picasso Ex Area Mercatale",
           "variants": 1,
           "tripCount": 354,
           "stops": 30,
@@ -2889,7 +2889,7 @@
       "dirs": [
         {
           "dir": "0",
-          "headsign": "",
+          "headsign": "Adriano - Poste",
           "variants": 1,
           "tripCount": 195,
           "stops": 34,
@@ -2910,7 +2910,7 @@
         },
         {
           "dir": "1",
-          "headsign": "",
+          "headsign": "Piazzale Tecchio",
           "variants": 1,
           "tripCount": 193,
           "stops": 19,
@@ -2940,7 +2940,7 @@
       "dirs": [
         {
           "dir": "0",
-          "headsign": "",
+          "headsign": "Marechiaro",
           "variants": 1,
           "tripCount": 25,
           "stops": 8,
@@ -2961,7 +2961,7 @@
         },
         {
           "dir": "1",
-          "headsign": "",
+          "headsign": "Posillipo Capo - Attestamento",
           "variants": 1,
           "tripCount": 25,
           "stops": 7,
@@ -2991,7 +2991,7 @@
       "dirs": [
         {
           "dir": "0",
-          "headsign": "",
+          "headsign": "Gemito-Rossini",
           "variants": 1,
           "tripCount": 324,
           "stops": 32,
@@ -3012,7 +3012,7 @@
         },
         {
           "dir": "1",
-          "headsign": "",
+          "headsign": "Picasso Ex Area Mercatale",
           "variants": 1,
           "tripCount": 326,
           "stops": 35,
@@ -3042,7 +3042,7 @@
       "dirs": [
         {
           "dir": "0",
-          "headsign": "",
+          "headsign": "De Marco",
           "variants": 1,
           "tripCount": 177,
           "stops": 16,
@@ -3063,7 +3063,7 @@
         },
         {
           "dir": "1",
-          "headsign": "",
+          "headsign": "Carlo III",
           "variants": 2,
           "tripCount": 177,
           "stops": 14,
@@ -3093,7 +3093,7 @@
       "dirs": [
         {
           "dir": "0",
-          "headsign": "",
+          "headsign": "Frullone - M1",
           "variants": 1,
           "tripCount": 24,
           "stops": 27,
@@ -3114,7 +3114,7 @@
         },
         {
           "dir": "1",
-          "headsign": "",
+          "headsign": "Giovan Battista Vico",
           "variants": 1,
           "tripCount": 36,
           "stops": 23,
@@ -3144,7 +3144,7 @@
       "dirs": [
         {
           "dir": "0",
-          "headsign": "",
+          "headsign": "Beverello - Angioino",
           "variants": 1,
           "tripCount": 104,
           "stops": 4,
@@ -3165,7 +3165,7 @@
         },
         {
           "dir": "1",
-          "headsign": "",
+          "headsign": "Aeroporto",
           "variants": 3,
           "tripCount": 103,
           "stops": 6,
@@ -3195,7 +3195,7 @@
       "dirs": [
         {
           "dir": "0",
-          "headsign": "",
+          "headsign": "Padula - Manzoni",
           "variants": 1,
           "tripCount": 114,
           "stops": 30,
@@ -3216,7 +3216,7 @@
         },
         {
           "dir": "1",
-          "headsign": "",
+          "headsign": "Piazzale Tecchio",
           "variants": 1,
           "tripCount": 114,
           "stops": 26,
@@ -3246,7 +3246,7 @@
       "dirs": [
         {
           "dir": "0",
-          "headsign": "",
+          "headsign": "Padula - Manzoni",
           "variants": 1,
           "tripCount": 69,
           "stops": 34,
@@ -3267,7 +3267,7 @@
         },
         {
           "dir": "1",
-          "headsign": "",
+          "headsign": "Piazzale Tecchio",
           "variants": 1,
           "tripCount": 69,
           "stops": 30,
@@ -3297,7 +3297,7 @@
       "dirs": [
         {
           "dir": "0",
-          "headsign": "",
+          "headsign": "Piazza Salvemini",
           "variants": 1,
           "tripCount": 48,
           "stops": 41,
@@ -3318,7 +3318,7 @@
         },
         {
           "dir": "1",
-          "headsign": "",
+          "headsign": "Piazzale Tecchio",
           "variants": 1,
           "tripCount": 48,
           "stops": 23,
@@ -3348,7 +3348,7 @@
       "dirs": [
         {
           "dir": "0",
-          "headsign": "",
+          "headsign": "Caracciolo Poggio",
           "variants": 1,
           "tripCount": 377,
           "stops": 27,
@@ -3369,7 +3369,7 @@
         },
         {
           "dir": "1",
-          "headsign": "",
+          "headsign": "Capolinea Mergellina",
           "variants": 1,
           "tripCount": 377,
           "stops": 27,
@@ -3399,7 +3399,7 @@
       "dirs": [
         {
           "dir": "0",
-          "headsign": "",
+          "headsign": "Posillipo Capo - Attestamento",
           "variants": 1,
           "tripCount": 252,
           "stops": 26,
@@ -3420,7 +3420,7 @@
         },
         {
           "dir": "1",
-          "headsign": "",
+          "headsign": "Capolinea Mergellina",
           "variants": 1,
           "tripCount": 254,
           "stops": 27,
@@ -3450,7 +3450,7 @@
       "dirs": [
         {
           "dir": "0",
-          "headsign": "",
+          "headsign": "Scarlatti",
           "variants": 1,
           "tripCount": 333,
           "stops": 36,
@@ -3471,7 +3471,7 @@
         },
         {
           "dir": "1",
-          "headsign": "",
+          "headsign": "Posillipo Capo - Attestamento",
           "variants": 1,
           "tripCount": 333,
           "stops": 32,
@@ -3501,7 +3501,7 @@
       "dirs": [
         {
           "dir": "0",
-          "headsign": "",
+          "headsign": "San Domenico",
           "variants": 1,
           "tripCount": 136,
           "stops": 15,
@@ -3522,7 +3522,7 @@
         },
         {
           "dir": "1",
-          "headsign": "",
+          "headsign": "Vanvitelli",
           "variants": 1,
           "tripCount": 136,
           "stops": 16,
@@ -3552,7 +3552,7 @@
       "dirs": [
         {
           "dir": "0",
-          "headsign": "",
+          "headsign": "Cilea",
           "variants": 1,
           "tripCount": 229,
           "stops": 11,
@@ -3573,7 +3573,7 @@
         },
         {
           "dir": "1",
-          "headsign": "",
+          "headsign": "San Martino-Certosa",
           "variants": 1,
           "tripCount": 229,
           "stops": 11,
@@ -3603,7 +3603,7 @@
       "dirs": [
         {
           "dir": "0",
-          "headsign": "",
+          "headsign": "Tino da Camaino-Giardini Ruoppolo",
           "variants": 1,
           "tripCount": 160,
           "stops": 17,
@@ -3633,7 +3633,7 @@
       "dirs": [
         {
           "dir": "0",
-          "headsign": "",
+          "headsign": "Dell'Eremo-Parco Pubblico",
           "variants": 1,
           "tripCount": 183,
           "stops": 40,
@@ -3654,7 +3654,7 @@
         },
         {
           "dir": "1",
-          "headsign": "",
+          "headsign": "Via Suarez",
           "variants": 1,
           "tripCount": 183,
           "stops": 30,
@@ -3684,7 +3684,7 @@
       "dirs": [
         {
           "dir": "0",
-          "headsign": "",
+          "headsign": "San Gennaro dei Poveri",
           "variants": 1,
           "tripCount": 126,
           "stops": 9,
@@ -3705,7 +3705,7 @@
         },
         {
           "dir": "1",
-          "headsign": "",
+          "headsign": "Piazza Cavour",
           "variants": 1,
           "tripCount": 126,
           "stops": 14,
@@ -3735,7 +3735,7 @@
       "dirs": [
         {
           "dir": "0",
-          "headsign": "",
+          "headsign": "Costantinopoli",
           "variants": 1,
           "tripCount": 224,
           "stops": 12,
@@ -3756,7 +3756,7 @@
         },
         {
           "dir": "1",
-          "headsign": "",
+          "headsign": "Garibaldi - Attestamento",
           "variants": 1,
           "tripCount": 224,
           "stops": 10,
@@ -3786,7 +3786,7 @@
       "dirs": [
         {
           "dir": "0",
-          "headsign": "",
+          "headsign": "Dante - M1",
           "variants": 1,
           "tripCount": 289,
           "stops": 25,
@@ -3807,7 +3807,7 @@
         },
         {
           "dir": "1",
-          "headsign": "",
+          "headsign": "Giovan Battista Vico",
           "variants": 1,
           "tripCount": 289,
           "stops": 25,
@@ -3837,7 +3837,7 @@
       "dirs": [
         {
           "dir": "0",
-          "headsign": "",
+          "headsign": "Lieti",
           "variants": 1,
           "tripCount": 83,
           "stops": 15,
@@ -3858,7 +3858,7 @@
         },
         {
           "dir": "1",
-          "headsign": "",
+          "headsign": "S.Gatto - M1 Colli Aminei",
           "variants": 1,
           "tripCount": 83,
           "stops": 13,
@@ -3888,7 +3888,7 @@
       "dirs": [
         {
           "dir": "0",
-          "headsign": "",
+          "headsign": "Capodimonte",
           "variants": 1,
           "tripCount": 174,
           "stops": 40,
@@ -3909,7 +3909,7 @@
         },
         {
           "dir": "1",
-          "headsign": "",
+          "headsign": "Zuccarini - M1 - Piscinola",
           "variants": 1,
           "tripCount": 174,
           "stops": 41,
@@ -3939,7 +3939,7 @@
       "dirs": [
         {
           "dir": "0",
-          "headsign": "",
+          "headsign": "Ruffo di Calabria - Carbone",
           "variants": 1,
           "tripCount": 130,
           "stops": 16,
@@ -3960,7 +3960,7 @@
         },
         {
           "dir": "1",
-          "headsign": "",
+          "headsign": "Carlo III",
           "variants": 1,
           "tripCount": 130,
           "stops": 18,
@@ -3990,7 +3990,7 @@
       "dirs": [
         {
           "dir": "0",
-          "headsign": "",
+          "headsign": "Camaldoli Hospital",
           "variants": 1,
           "tripCount": 96,
           "stops": 16,
@@ -4011,7 +4011,7 @@
         },
         {
           "dir": "1",
-          "headsign": "",
+          "headsign": "Ospedale Cardarelli",
           "variants": 1,
           "tripCount": 96,
           "stops": 23,
@@ -4041,7 +4041,7 @@
       "dirs": [
         {
           "dir": "0",
-          "headsign": "",
+          "headsign": "Rione dei Fiori",
           "variants": 1,
           "tripCount": 169,
           "stops": 29,
@@ -4062,7 +4062,7 @@
         },
         {
           "dir": "1",
-          "headsign": "",
+          "headsign": "Frullone - M1",
           "variants": 1,
           "tripCount": 181,
           "stops": 22,
@@ -4092,7 +4092,7 @@
       "dirs": [
         {
           "dir": "0",
-          "headsign": "",
+          "headsign": "La Certosa di Parma",
           "variants": 1,
           "tripCount": 157,
           "stops": 36,
@@ -4113,7 +4113,7 @@
         },
         {
           "dir": "1",
-          "headsign": "",
+          "headsign": "Miraglia - Parise",
           "variants": 1,
           "tripCount": 101,
           "stops": 34,
@@ -4143,7 +4143,7 @@
       "dirs": [
         {
           "dir": "0",
-          "headsign": "",
+          "headsign": "Battisti",
           "variants": 1,
           "tripCount": 63,
           "stops": 5,
@@ -4164,7 +4164,7 @@
         },
         {
           "dir": "1",
-          "headsign": "",
+          "headsign": "Vanvitelli",
           "variants": 1,
           "tripCount": 63,
           "stops": 5,
@@ -4194,7 +4194,7 @@
       "dirs": [
         {
           "dir": "0",
-          "headsign": "",
+          "headsign": "Pansini",
           "variants": 1,
           "tripCount": 136,
           "stops": 5,
@@ -4215,7 +4215,7 @@
         },
         {
           "dir": "1",
-          "headsign": "",
+          "headsign": "Zuccarini - M1 - Piscinola",
           "variants": 1,
           "tripCount": 143,
           "stops": 6,
@@ -4245,7 +4245,7 @@
       "dirs": [
         {
           "dir": "0",
-          "headsign": "",
+          "headsign": "San Carlo - Trieste e Trento",
           "variants": 1,
           "tripCount": 504,
           "stops": 16,
@@ -4266,7 +4266,7 @@
         },
         {
           "dir": "1",
-          "headsign": "",
+          "headsign": "Volta - Brin",
           "variants": 1,
           "tripCount": 506,
           "stops": 16,
@@ -4296,7 +4296,7 @@
       "dirs": [
         {
           "dir": "0",
-          "headsign": "",
+          "headsign": "Zuccarini - M1 - Piscinola",
           "variants": 1,
           "tripCount": 353,
           "stops": 47,
@@ -4317,7 +4317,7 @@
         },
         {
           "dir": "1",
-          "headsign": "",
+          "headsign": "Garibaldi - Attestamento",
           "variants": 1,
           "tripCount": 359,
           "stops": 42,
@@ -4347,7 +4347,7 @@
       "dirs": [
         {
           "dir": "0",
-          "headsign": "",
+          "headsign": "Padula - Montagna Spaccata",
           "variants": 1,
           "tripCount": 538,
           "stops": 14,
@@ -4368,7 +4368,7 @@
         },
         {
           "dir": "1",
-          "headsign": "",
+          "headsign": "Piazzale Tecchio",
           "variants": 1,
           "tripCount": 536,
           "stops": 33,
@@ -4398,7 +4398,7 @@
       "dirs": [
         {
           "dir": "0",
-          "headsign": "",
+          "headsign": "Vittoria",
           "variants": 2,
           "tripCount": 230,
           "stops": 27,
@@ -4419,7 +4419,7 @@
         },
         {
           "dir": "1",
-          "headsign": "",
+          "headsign": "Bagnoli - la Pietra",
           "variants": 2,
           "tripCount": 186,
           "stops": 29,
@@ -4449,7 +4449,7 @@
       "dirs": [
         {
           "dir": "0",
-          "headsign": "",
+          "headsign": "Cintia - Monte Sant'Angelo",
           "variants": 1,
           "tripCount": 78,
           "stops": 4,
@@ -4470,7 +4470,7 @@
         },
         {
           "dir": "1",
-          "headsign": "",
+          "headsign": "Piazzale Tecchio",
           "variants": 1,
           "tripCount": 78,
           "stops": 6,
@@ -4500,7 +4500,7 @@
       "dirs": [
         {
           "dir": "0",
-          "headsign": "",
+          "headsign": "Quattro Giornate - Stadio Collana",
           "variants": 1,
           "tripCount": 24,
           "stops": 15,
@@ -4521,7 +4521,7 @@
         },
         {
           "dir": "1",
-          "headsign": "",
+          "headsign": "Piazzale Tecchio",
           "variants": 1,
           "tripCount": 28,
           "stops": 17,
@@ -4551,7 +4551,7 @@
       "dirs": [
         {
           "dir": "0",
-          "headsign": "",
+          "headsign": "Caravaggio",
           "variants": 1,
           "tripCount": 2,
           "stops": 40,
@@ -4581,7 +4581,7 @@
       "dirs": [
         {
           "dir": "0",
-          "headsign": "",
+          "headsign": "Modigliani",
           "variants": 1,
           "tripCount": 4,
           "stops": 43,
@@ -4602,7 +4602,7 @@
         },
         {
           "dir": "1",
-          "headsign": "",
+          "headsign": "Largo Giustiniano",
           "variants": 1,
           "tripCount": 4,
           "stops": 17,
@@ -4632,7 +4632,7 @@
       "dirs": [
         {
           "dir": "0",
-          "headsign": "",
+          "headsign": "Kennedy - ITIS Righi",
           "variants": 1,
           "tripCount": 1,
           "stops": 24,
@@ -4662,7 +4662,7 @@
       "dirs": [
         {
           "dir": "1",
-          "headsign": "",
+          "headsign": "Picasso Ex Area Mercatale",
           "variants": 1,
           "tripCount": 1,
           "stops": 30,
@@ -4692,7 +4692,7 @@
       "dirs": [
         {
           "dir": "0",
-          "headsign": "",
+          "headsign": "Kennedy - ITIS Righi",
           "variants": 1,
           "tripCount": 3,
           "stops": 36,
@@ -4713,7 +4713,7 @@
         },
         {
           "dir": "1",
-          "headsign": "",
+          "headsign": "Padula - Montagna Spaccata",
           "variants": 1,
           "tripCount": 4,
           "stops": 16,
@@ -4743,7 +4743,7 @@
       "dirs": [
         {
           "dir": "0",
-          "headsign": "",
+          "headsign": "Gemito-Rossini",
           "variants": 1,
           "tripCount": 22,
           "stops": 14,
@@ -4764,7 +4764,7 @@
         },
         {
           "dir": "1",
-          "headsign": "",
+          "headsign": "Picasso Ex Area Mercatale",
           "variants": 1,
           "tripCount": 20,
           "stops": 17,
@@ -5450,7 +5450,7 @@
       "dirs": [
         {
           "dir": "0",
-          "headsign": "",
+          "headsign": "Poggioreale",
           "variants": 1,
           "tripCount": 356,
           "stops": 22,
@@ -5471,7 +5471,7 @@
         },
         {
           "dir": "1",
-          "headsign": "",
+          "headsign": "San Giovanni a Teduccio - Deposito A.N.M.",
           "variants": 1,
           "tripCount": 356,
           "stops": 31,
@@ -5501,7 +5501,7 @@
       "dirs": [
         {
           "dir": "0",
-          "headsign": "",
+          "headsign": "Poggioreale",
           "variants": 1,
           "tripCount": 353,
           "stops": 32,
@@ -5522,7 +5522,7 @@
         },
         {
           "dir": "1",
-          "headsign": "",
+          "headsign": "San Giovanni a Teduccio - Deposito A.N.M.",
           "variants": 1,
           "tripCount": 353,
           "stops": 22,
@@ -5552,7 +5552,7 @@
       "dirs": [
         {
           "dir": "0",
-          "headsign": "",
+          "headsign": "Nazionale",
           "variants": 1,
           "tripCount": 180,
           "stops": 17,
@@ -5573,7 +5573,7 @@
         },
         {
           "dir": "1",
-          "headsign": "",
+          "headsign": "San Giovanni a Teduccio - Deposito A.N.M.",
           "variants": 1,
           "tripCount": 180,
           "stops": 16,
@@ -5603,7 +5603,7 @@
       "dirs": [
         {
           "dir": "0",
-          "headsign": "",
+          "headsign": "Cimarosa",
           "variants": 1,
           "tripCount": 91,
           "stops": 4,
@@ -5624,7 +5624,7 @@
         },
         {
           "dir": "1",
-          "headsign": "",
+          "headsign": "Parco Margherita",
           "variants": 1,
           "tripCount": 91,
           "stops": 4,
@@ -5654,7 +5654,7 @@
       "dirs": [
         {
           "dir": "0",
-          "headsign": "",
+          "headsign": "P. Fuga",
           "variants": 2,
           "tripCount": 64,
           "stops": 4,
@@ -5675,7 +5675,7 @@
         },
         {
           "dir": "1",
-          "headsign": "",
+          "headsign": "Augusteo",
           "variants": 2,
           "tripCount": 64,
           "stops": 4,
@@ -5705,7 +5705,7 @@
       "dirs": [
         {
           "dir": "0",
-          "headsign": "",
+          "headsign": "Manzoni",
           "variants": 2,
           "tripCount": 66,
           "stops": 5,
@@ -5726,7 +5726,7 @@
         },
         {
           "dir": "1",
-          "headsign": "",
+          "headsign": "Mergellina",
           "variants": 2,
           "tripCount": 66,
           "stops": 5,
@@ -5756,7 +5756,7 @@
       "dirs": [
         {
           "dir": "0",
-          "headsign": "",
+          "headsign": "Tribunale",
           "variants": 1,
           "tripCount": 353,
           "stops": 21,
@@ -5786,7 +5786,7 @@
       "dirs": [
         {
           "dir": "0",
-          "headsign": "",
+          "headsign": "Pozzuoli",
           "variants": 1,
           "tripCount": 313,
           "stops": 12,
@@ -5807,7 +5807,7 @@
         },
         {
           "dir": "1",
-          "headsign": "",
+          "headsign": "San Giovanni - Barra",
           "variants": 1,
           "tripCount": 337,
           "stops": 12,
@@ -5837,7 +5837,7 @@
       "dirs": [
         {
           "dir": "0",
-          "headsign": "",
+          "headsign": "Municipio",
           "variants": 1,
           "tripCount": 38,
           "stops": 8,
@@ -5858,7 +5858,7 @@
         },
         {
           "dir": "1",
-          "headsign": "",
+          "headsign": "Mostra",
           "variants": 1,
           "tripCount": 40,
           "stops": 8,
@@ -5888,7 +5888,7 @@
       "dirs": [
         {
           "dir": "0",
-          "headsign": "",
+          "headsign": "Giulio Cesare - Tecchio",
           "variants": 1,
           "tripCount": 2,
           "stops": 34,
@@ -5909,7 +5909,7 @@
         },
         {
           "dir": "1",
-          "headsign": "",
+          "headsign": "Brin - Attestamento",
           "variants": 1,
           "tripCount": 26,
           "stops": 35,
@@ -5939,7 +5939,7 @@
       "dirs": [
         {
           "dir": "0",
-          "headsign": "",
+          "headsign": "Quattro Giornate - Stadio Collana",
           "variants": 1,
           "tripCount": 24,
           "stops": 59,
@@ -5960,7 +5960,7 @@
         },
         {
           "dir": "1",
-          "headsign": "",
+          "headsign": "Brin - Attestamento",
           "variants": 1,
           "tripCount": 24,
           "stops": 37,
@@ -5990,7 +5990,7 @@
       "dirs": [
         {
           "dir": "0",
-          "headsign": "",
+          "headsign": "Della Resistenza",
           "variants": 1,
           "tripCount": 8,
           "stops": 47,
@@ -6011,7 +6011,7 @@
         },
         {
           "dir": "1",
-          "headsign": "",
+          "headsign": "Brin - Attestamento",
           "variants": 1,
           "tripCount": 16,
           "stops": 39,
@@ -6041,7 +6041,7 @@
       "dirs": [
         {
           "dir": "0",
-          "headsign": "",
+          "headsign": "Montagna Spaccata",
           "variants": 1,
           "tripCount": 24,
           "stops": 40,
@@ -6062,7 +6062,7 @@
         },
         {
           "dir": "1",
-          "headsign": "",
+          "headsign": "Piazzale Tecchio",
           "variants": 1,
           "tripCount": 24,
           "stops": 28,
@@ -6092,7 +6092,7 @@
       "dirs": [
         {
           "dir": "0",
-          "headsign": "",
+          "headsign": "Cardarelli - Ospedale Cardarelli",
           "variants": 1,
           "tripCount": 40,
           "stops": 42,
@@ -6113,7 +6113,7 @@
         },
         {
           "dir": "1",
-          "headsign": "",
+          "headsign": "Piazzale Tecchio",
           "variants": 1,
           "tripCount": 37,
           "stops": 46,
