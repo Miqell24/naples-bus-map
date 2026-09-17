@@ -232,6 +232,9 @@ if (tramAll || metroSel.some((l) => l.startsWith('F'))) MODES.push(railCfg('funi
 // selection — but the map must print what the city prints. Filled while
 // re-keying, applied to the display strings just before writing.
 const LBL = new Map();
+// ANM files the airport shuttle as "ALIB"; the bus, the stops and the city
+// all say Alibus (user 17.09.2026). The key stays, the print changes.
+LBL.set('ALIB', 'Alibus');
 
 const eavKey = (sn) => {
   const m = /^(\d+)(\.*)$/.exec((sn || '').trim());

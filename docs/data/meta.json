@@ -373,58 +373,6 @@
       "rank": 1
     },
     {
-      "line": "E6",
-      "mode": "bus",
-      "op": "buses",
-      "color": "#0059a9",
-      "dirs": [
-        {
-          "dir": "0",
-          "headsign": "Piazza dei Martiri",
-          "variants": 1,
-          "tripCount": 53,
-          "stops": 14,
-          "lengthKm": 3.72,
-          "stats": {
-            "observations": 141,
-            "matched": 141,
-            "noCandidates": 0,
-            "viterbiBreaks": 0,
-            "bridged": 0,
-            "rawStretchCount": 0,
-            "rawMeters": 0,
-            "meanError": 2.7029921225971845,
-            "roundaboutSegs": 15,
-            "extStart": 0,
-            "extEnd": 0
-          }
-        },
-        {
-          "dir": "1",
-          "headsign": "Trieste e Trento",
-          "variants": 1,
-          "tripCount": 53,
-          "stops": 12,
-          "lengthKm": 2.14,
-          "stats": {
-            "observations": 74,
-            "matched": 74,
-            "noCandidates": 0,
-            "viterbiBreaks": 0,
-            "bridged": 0,
-            "rawStretchCount": 0,
-            "rawMeters": 0,
-            "meanError": 2.9038208688414913,
-            "roundaboutSegs": 0,
-            "extStart": 0,
-            "extEnd": 0
-          }
-        }
-      ],
-      "label": "6",
-      "rank": 1
-    },
-    {
       "line": "116",
       "mode": "bus",
       "op": "buses",
@@ -3185,7 +3133,8 @@
           }
         }
       ],
-      "rank": 1
+      "rank": 1,
+      "label": "Alibus"
     },
     {
       "line": "C1",
@@ -4784,6 +4733,58 @@
           }
         }
       ],
+      "rank": 1
+    },
+    {
+      "line": "E6",
+      "mode": "bus",
+      "op": "buses",
+      "color": "#0059a9",
+      "dirs": [
+        {
+          "dir": "0",
+          "headsign": "Piazza dei Martiri",
+          "variants": 1,
+          "tripCount": 53,
+          "stops": 14,
+          "lengthKm": 3.72,
+          "stats": {
+            "observations": 141,
+            "matched": 141,
+            "noCandidates": 0,
+            "viterbiBreaks": 0,
+            "bridged": 0,
+            "rawStretchCount": 0,
+            "rawMeters": 0,
+            "meanError": 2.7029921225971845,
+            "roundaboutSegs": 15,
+            "extStart": 0,
+            "extEnd": 0
+          }
+        },
+        {
+          "dir": "1",
+          "headsign": "Trieste e Trento",
+          "variants": 1,
+          "tripCount": 53,
+          "stops": 12,
+          "lengthKm": 2.14,
+          "stats": {
+            "observations": 74,
+            "matched": 74,
+            "noCandidates": 0,
+            "viterbiBreaks": 0,
+            "bridged": 0,
+            "rawStretchCount": 0,
+            "rawMeters": 0,
+            "meanError": 2.9038208688414913,
+            "roundaboutSegs": 0,
+            "extStart": 0,
+            "extEnd": 0
+          }
+        }
+      ],
+      "label": "6",
       "rank": 1
     },
     {

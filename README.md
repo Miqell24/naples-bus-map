@@ -59,3 +59,7 @@ http://localhost:8140.
 
 Data: ANM (Azienda Napoletana Mobilità) · base map © OpenFreeMap /
 OpenMapTiles / OpenStreetMap contributors.
+
+## 17.09.2026 — requested fixes
+
+- **Alibus.** ANM's airport shuttle `ALIB` prints as the city writes it (`LBL.set('ALIB', 'Alibus')`); the key stays. Applied to the published build with `transit-maps/tools/lists.mjs`.
